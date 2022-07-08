@@ -8,8 +8,9 @@ define([
     'app/init',
     'app/util',
     'app/map/util',
-    'app/map/overlay/util'
-], function($, Init, Util, MapUtil, MapOverlayUtil){
+    'app/map/overlay/util',
+    'i18n'
+], function($, Init, Util, MapUtil, MapOverlayUtil, __){
     'use strict';
 
     let config = {
@@ -328,7 +329,7 @@ define([
                 class: config.overlayLocalHeadlineClass
             }).append(
                 $('<span>', {
-                    html: 'Nearby&nbsp;&nbsp;&nbsp;',
+                    html: __('Nearby') + '&nbsp;&nbsp;&nbsp;',
                     class: 'pull-left'
                 }),
                 $('<span>'),
@@ -425,7 +426,7 @@ define([
                     return 'pf-local-row_' + rowData.id; // characterId
                 },
                 language: {
-                    emptyTable: '<span>You&nbsp;are&nbsp;alone</span>',
+                    emptyTable: __('<span>You&nbsp;are&nbsp;alone</span>'),
                     paginate: {
                         next: '&nbsp;',
                         previous: '&nbsp;'
@@ -477,7 +478,7 @@ define([
                     }, {
                         targets: 2,
                         orderable: true,
-                        title: 'ship&nbsp;name',
+                        title: __('ship&nbsp;name'),
                         width: '80px',
                         data: 'log.ship',
                         render: {
@@ -493,7 +494,7 @@ define([
                     },{
                         targets: 3,
                         orderable: true,
-                        title: 'pilot',
+                        title: __('pilot'),
                         data: 'name',
                         render: {
                             _: (data, type, row, meta) => {

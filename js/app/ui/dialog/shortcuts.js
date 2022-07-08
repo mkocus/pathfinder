@@ -8,7 +8,8 @@ define([
     'app/util',
     'bootbox',
     'app/key',
-], function($, Init, Util, bootbox, Key){
+    'i18n!'
+], function($, Init, Util, bootbox, Key, __){
 
     'use strict';
 
@@ -32,12 +33,12 @@ define([
 
             // show dialog
             let shortcutsDialog = bootbox.dialog({
-                title: 'Keyboard Shortcuts',
+                title: __('Keyboard Shortcuts'),
                 message: content,
                 size: 'large',
                 buttons: {
                     success: {
-                        label: 'close',
+                        label: __('close'),
                         className: 'btn-default'
                     }
                 },

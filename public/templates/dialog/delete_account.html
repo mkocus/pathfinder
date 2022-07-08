@@ -6,7 +6,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="form-group">
-                            <label class="col-sm-3 control-label">Username</label>
+                            <label class="col-sm-3 control-label">{{#translate}}Username{{/translate}}</label>
                             <div class="col-sm-9">
                                 <p class="form-control-static">{{userData.name}}</p>
                             </div>
@@ -33,7 +33,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="form-group">
-                            <label for="captcha" class="col-sm-3 control-label">Captcha</label>
+                            <label for="captcha" class="col-sm-3 control-label">{{#translate}}Captcha{{/translate}}</label>
                             <div class="col-sm-6">
                                 <div class="input-group" title="Enter Captcha" data-placement="right">
                                     <input name="captcha" type="text" class="form-control" id="captcha" data-minlength-error="Min. of 6 characters" placeholder="" data-error="Captcha required" data-minlength="6" maxlength="6" autocomplete="off" required>
@@ -47,13 +47,13 @@
             </div>
 
             <div class="alert alert-warning">
-                <span class="txt-color txt-color-warning">Warning</span>
-                <small>This will permanently remove your account!</small>
+                <span class="txt-color txt-color-warning">{{#translate}}Warning{{/translate}}</span>
+                <small>{{#translate}}This will permanently remove your account!{{/translate}}</small>
             </div>
 
             <div class="{{formErrorContainerClass}} alert alert-danger" style="display: none;">
-                <span class="txt-color txt-color-danger">Error</span>
-                <small> (important non-critical information)</small>
+                <span class="txt-color txt-color-danger">{{#translate}}Error{{/translate}}</span>
+                <small>{{#translate}}(important non-critical information){{/translate}}</small>
             </div>
 
         </form>

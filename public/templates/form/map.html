@@ -19,7 +19,7 @@
                     <label for="{{nameInputId}}" class="col-sm-2 control-label">Name</label>
                     <div class="col-sm-10">
                         <input name="name" type="text" class="form-control" id="{{nameInputId}}" value="{{mapName}}" placeholder="Map name" data-error="Name required" data-minlength="3" data-minlength-error="Min. of 3 characters" required>
-                        <span class="note help-block with-errors">Choose a meaningful name</span>
+                        <span class="note help-block with-errors">{{#translate}}Choose a meaningful name{{/translate}}</span>
                     </div>
                 </div>
             </div>
@@ -57,23 +57,23 @@
 
         <div class="{{formInfoContainerClass}} alert alert-info" style="display: none;">
             <span class="txt-color txt-color-information">Info</span>
-            <small> (important non-critical information)</small>
+            <small>{{#translate}(important non-critical information){{/translate}}</small>
         </div>
 
         <div class="{{formWarningContainerClass}} alert alert-warning" style="display: none;">
             <span class="txt-color txt-color-warning">Warning</span>
-            <small> (important non-critical information)</small>
+            <small>{{#translate}(important non-critical information){{/translate}}</small>
         </div>
 
         <div class="{{formErrorContainerClass}} alert alert-danger" style="display: none;">
             <span class="txt-color txt-color-danger">Error</span>
-            <small> (important non-critical information)</small>
+            <small>{{#translate}(important non-critical information){{/translate}}</small>
         </div>
     </form>
 {{/hasRightMapForm}}
 {{^hasRightMapForm}}
     <div class="alert alert-info">
-        <span class="txt-color txt-color-info">Restricted</span>
-        <small>You don´t have the required roles.</small>
+        <span class="txt-color txt-color-info">{{#translate}}Restricted{{/translate}}</span>
+        <small>{{#translate}}You don´t have the required roles.{{/translate}}</small>
     </div>
 {{/hasRightMapForm}}

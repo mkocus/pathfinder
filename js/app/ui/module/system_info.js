@@ -7,8 +7,9 @@ define([
     'app/init',
     'app/util',
     'app/map/util',
-    'module/base'
-], ($, Init, Util, MapUtil, BaseModule) => {
+    'module/base',
+    'i18n!'
+], ($, Init, Util, MapUtil, BaseModule, __) => {
     'use strict';
 
     let SystemInfoModule = class SystemInfoModule extends BaseModule {
@@ -24,7 +25,7 @@ define([
             let headEl = this.newHeadElement();
 
             let headAliasEl = this.newHeadlineElement(this._systemData.alias || this._systemData.name);
-            headAliasEl.setAttribute('title', 'alias');
+            headAliasEl.setAttribute('title', __('alias'));
             headAliasEl.classList.add('pull-right');
             if(this._systemData.security === 'A'){
                 headAliasEl.classList.add(this._config.fontTriglivianClass);
@@ -36,12 +37,12 @@ define([
             let sysTypeEl = document.createElement('span');
             sysTypeEl.setAttribute('title', 'type');
             sysTypeEl.classList.add(this._config.typeLinkClass);
-            sysTypeEl.textContent = MapUtil.getSystemTypeInfo(this._systemData.type.id, 'name');
+            sysTypeEl.textContent = MapUtil.getSystemTypeInfo(this._systemData.type.id, __('name'));
             headSysTypeEl.append(sysTypeEl, iconEl);
 
             let headSysRegionEl = this.newHeadlineElement();
             let sysRegionEl = document.createElement('span');
-            sysRegionEl.setAttribute('title', 'region');
+            sysRegionEl.setAttribute('title', __('region'));
             sysRegionEl.classList.add(this._config.regionLinkClass);
             if(this._systemData.security === 'A'){
                 sysRegionEl.classList.add(this._config.fontTriglivianClass);
@@ -61,18 +62,18 @@ define([
 
             let headSysNameEl = this.newHeadlineElement();
             let sysNameEl = document.createElement('span');
-            sysNameEl.setAttribute('title', 'system');
+            sysNameEl.setAttribute('title', __('system'));
             if(this._systemData.security === 'A'){
                 sysNameEl.classList.add(this._config.fontTriglivianClass);
             }
             sysNameEl.textContent = this._systemData.name;
             let iconCopyEl = this.newIconElement(['fa-fw', 'fa-copy', this._config.moduleHeadlineIconClass, this._config.textActionIconCopyClass]);
-            iconCopyEl.setAttribute('title', 'copy url');
+            iconCopyEl.setAttribute('title', __('copy url'));
             iconCopyEl.dataset.copy = MapUtil.getMapDeeplinkUrl(this._systemData.mapId, this._systemData.id);
             headSysNameEl.append(sysNameEl, iconCopyEl);
             if(this._systemData.locked){
                 let iconLockedEl = this.newIconElement(['fa-fw', 'fa-lock', this._config.moduleHeadlineIconClass]);
-                iconLockedEl.setAttribute('title', 'locked');
+                iconLockedEl.setAttribute('title', __('locked'));
                 headSysNameEl.append(iconLockedEl);
             }
             for(let linkData of this.getThirdPartySystemLinks(['dotlan', 'eveeye', 'anoik'])){
@@ -366,7 +367,7 @@ define([
                 let mapUrl = $(this).attr('data-copy');
                 Util.copyToClipboard(mapUrl).then(payload => {
                     if(payload.data){
-                        Util.showNotify({title: 'Copied to clipboard', text: mapUrl, type: 'success'});
+                        Util.showNotify({title: __('Copied to clipboard'), text: mapUrl, type: 'success'});
                     }
                 });
             });
@@ -643,7 +644,7 @@ define([
     SystemInfoModule.scope = 'system';                                          // module scope controls how module gets updated and what type of data is injected
     SystemInfoModule.sortArea = 'a';                                            // default sortable area
     SystemInfoModule.position = 2;                                              // default sort/order position within sortable area
-    SystemInfoModule.label = 'Information';                                     // static module label (e.g. description)
+    SystemInfoModule.label = __('Information');                                     // static module label (e.g. description)
     SystemInfoModule.fullDataUpdate = true;                                     // static module requires additional data (e.g. system description,...)
 
     SystemInfoModule.defaultConfig = {

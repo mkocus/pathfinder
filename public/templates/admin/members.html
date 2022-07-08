@@ -15,17 +15,17 @@
                             <table id="table_id" class="stripe order-column row-border dataTable" data-order="[1, &quot;asc&quot;]" data-length-change="0" data-paging-type="full_numbers">
                                 <thead>
                                 <tr>
-                                    <th data-width="50">id</th>
-                                    <th>name</th>
-                                    <th data-width="50">role</th>
-                                    <th data-width="50">share</th>
-                                    <th data-width="50">tracking</th>
-                                    <th data-width="50">security</th>
-                                    <th data-width="85">last login</th>
-                                    <th data-width="85">kicked until</th>
-                                    <th data-width="90" data-orderable="false">kick</th>
-                                    <th data-width="85">banned since</th>
-                                    <th data-width="30" data-orderable="false">ban</th>
+                                    <th data-width="50">{{ @__('id') }}</th>
+                                    <th>{{ @__('name') }}</th>
+                                    <th data-width="50">{{ @__('role') }}</th>
+                                    <th data-width="50">{{ @__('share') }}</th>
+                                    <th data-width="50">{{ @__('tracking') }}</th>
+                                    <th data-width="50">{{ @__('security') }}</th>
+                                    <th data-width="85">{{ @__('last login') }}</th>
+                                    <th data-width="85">{{ @__('kicked until') }}</th>
+                                    <th data-width="90" data-orderable="false">{{ @__('kick') }}</th>
+                                    <th data-width="85">{{ @__('banned since') }}</th>
+                                    <th data-width="30" data-orderable="false">{{ @__('ban') }}</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -52,20 +52,20 @@
                                         <td class="text-right">
                                             <check if="{{ @member->shared }}">
                                                 <true>
-                                                    <span class="label label-info">active</span>
+                                                    <span class="label label-info">{{ @__('active') }}</span>
                                                 </true>
                                                 <false>
-                                                    <span class="label label-default">disabled</span>
+                                                    <span class="label label-default">{{ @__('disabled') }}</span>
                                                 </false>
                                             </check>
                                         </td>
                                         <td class="text-right">
                                             <check if="{{ @member->logLocation }}">
                                                 <true>
-                                                    <span class="label label-success">active</span>
+                                                    <span class="label label-success">{{ @__('active') }}</span>
                                                 </true>
                                                 <false>
-                                                    <span class="label label-warning">disabled</span>
+                                                    <span class="label label-warning">{{ @__('disabled') }}</span>
                                                 </false>
                                             </check>
                                         </td>
@@ -76,7 +76,7 @@
                                             <div class="btn-group btn-group-sm" role="group">
                                                 <check if="{{ @member->kicked }}">
                                                     <true>
-                                                        <a class="btn btn-primary pf-overlay-trigger {{ @disableRow ? 'disabled' : '' }}" href="/admin/{{ @tplPage}}/kick/{{ @member->_id }}">revoke</a>
+                                                        <a class="btn btn-primary pf-overlay-trigger {{ @disableRow ? 'disabled' : '' }}" href="/admin/{{ @tplPage}}/kick/{{ @member->_id }}">{{ @__('revoke') }}</a>
                                                     </true>
                                                     <false>
                                                         <repeat group="{{ @tplKickOptions }}" key="{{ @key }}" value="{{ @label }}">
@@ -90,10 +90,10 @@
                                         <td class="text-right pf-table-button-sm-cell">
                                             <check if="{{ @member->banned }}">
                                                 <true>
-                                                    <a class="btn btn-sm btn-primary pf-overlay-trigger {{ @disableRow ? 'disabled' : '' }}" href="/admin/{{ @tplPage}}/ban/{{ @member->_id }}">revoke</a>
+                                                    <a class="btn btn-sm btn-primary pf-overlay-trigger {{ @disableRow ? 'disabled' : '' }}" href="/admin/{{ @tplPage}}/ban/{{ @member->_id }}">{{ @__('revoke') }}</a>
                                                 </true>
                                                 <false>
-                                                    <a class="btn btn-sm btn-danger pf-overlay-trigger {{ @disableRow ? 'disabled' : '' }}" href="/admin/{{ @tplPage}}/ban/{{ @member->_id }}/1">ban</a>
+                                                    <a class="btn btn-sm btn-danger pf-overlay-trigger {{ @disableRow ? 'disabled' : '' }}" href="/admin/{{ @tplPage}}/ban/{{ @member->_id }}/1">{{ @__('ban') }}</a>
                                                 </false>
                                             </check>
                                         </td>

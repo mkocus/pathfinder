@@ -5,8 +5,9 @@ define([
     'module/base',
     'app/map/map',
     'app/map/util',
-    'app/ui/form_element'
-], ($, Init, Util, BaseModule, Map, MapUtil, FormElement) => {
+    'app/ui/form_element',
+    'i18n!'
+], ($, Init, Util, BaseModule, Map, MapUtil, FormElement, __) => {
     'use strict';
 
     /**
@@ -154,7 +155,7 @@ define([
                     selector: 'td:not(.' + module._config.tableCellActionClass + ')'
                 },
                 language: {
-                    emptyTable: 'No Thera connections found'
+                    emptyTable: __('No Thera connections found')
                 },
                 columnDefs: [
                     {
@@ -174,7 +175,7 @@ define([
                     },{
                         targets: 1,
                         name: 'trueSec',
-                        title: 'sec',
+                        title: __('sec'),
                         width: 15,
                         className:'text-center',
                         data: 'target.trueSec',
@@ -190,7 +191,7 @@ define([
                     },{
                         targets: 2,
                         name: 'systemName',
-                        title: 'system',
+                        title: __('system'),
                         className: module._config.tableCellEllipsisClass,
                         data: 'target',
                         defaultContent: module.getIconForUndefinedCellValue(),
@@ -210,7 +211,7 @@ define([
                     },{
                         targets: 3,
                         name: 'region',
-                        title: 'region',
+                        title: __('region'),
                         className: module._config.tableCellEllipsisClass,
                         data: 'target',
                         defaultContent: module.getIconForUndefinedCellValue(),
@@ -220,7 +221,7 @@ define([
                     },{
                         targets: 4,
                         name: 'outSig',
-                        title: '<i title="Out signature" data-toggle="tooltip" class="fas fa-sign-out-alt fa-rotate-270"></i>',
+                        title: '<i title="'+ __('Out signature') + '" data-toggle="tooltip" class="fas fa-sign-out-alt fa-rotate-270"></i>',
                         width: 12,
                         className: ['text-center', module._config.fontUppercaseClass].join(' '),
                         data: 'sourceSignature',
@@ -231,7 +232,7 @@ define([
                     },{
                         targets: 5,
                         name: 'fakeConnection',
-                        title: 'con.',
+                        title: __('con.'),
                         orderable: false,
                         width: 30,
                         className: 'text-center',
@@ -240,7 +241,7 @@ define([
                     },{
                         targets: 6,
                         name: 'inSig',
-                        title: '<i title="In signature" data-toggle="tooltip" class="fas fa-sign-in-alt fa-rotate-90"></i>',
+                        title: '<i title="'+ __('In signature') + '" data-toggle="tooltip" class="fas fa-sign-in-alt fa-rotate-90"></i>',
                         width: 12,
                         className: ['text-center', module._config.fontUppercaseClass].join(' '),
                         data: 'targetSignature',
@@ -251,7 +252,7 @@ define([
                     },{
                         targets: 7,
                         name: 'wormholeLabel',
-                        title: 'type',
+                        title: __('type'),
                         width: 50,
                         className: module._config.tableCellTypeClass,
                         data: 'wormholeLabel',
@@ -272,7 +273,7 @@ define([
                     },{
                         targets: 8,
                         name: 'estimatedLife',
-                        title: '<i title="estimated lifetime" data-toggle="tooltip" class="fas fa-hourglass-start"></i>',
+                        title: '<i title="'+ __('estimated lifetime') + '" data-toggle="tooltip" class="fas fa-hourglass-start"></i>',
                         width: 15,
                         className: 'text-right',
                         data: 'estimatedEol',
@@ -336,7 +337,7 @@ define([
                                                 acc.connectionIds.push(BaseModule.Util.getObjVal(rowData, 'connectionId'));
                                                 return acc;
                                             }, deleteData);
-                                        label = `delete ${deleteData.systemIds.length} systems`;
+                                        label = __(`delete %s systems`).replace('%s', deleteData.systemIds.length);
                                     }else{
                                         // get current row data (important!)
                                         // -> "rowData" param is not current state, values are "on createCell()" state
@@ -388,7 +389,7 @@ define([
                                                             rowsSelected.remove().draw();
                                                         }else{
                                                             // error
-                                                            this.showNotify({title: 'Failed to delete system', type: 'error'});
+                                                            this.showNotify({title: __('Failed to delete system'), type: 'error'});
                                                         }
                                                         $(module.moduleElement).hideLoadingAnimation();
                                                     }
@@ -943,10 +944,10 @@ define([
                 }, '');
 
                 if(hadData && notification.length){
-                    this.showNotify({title: 'Thera connections updated', text: notification, type: 'success', textTrusted: true});
+                    this.showNotify({title: __('Thera connections updated'), text: notification, type: 'success', textTrusted: true});
                 }
             }else{
-                console.warn('Table update failed for Thera connections. MapData is missing');
+                console.warn(__('Table update failed for Thera connections. MapData is missing'));
             }
         }
 

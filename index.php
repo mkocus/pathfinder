@@ -23,5 +23,6 @@ Lib\Config::instance($f3);
 
 // initiate cron-jobs
 Lib\Cron::instance();
+Lib\I18n::instance($f3);
 
 $f3->run();

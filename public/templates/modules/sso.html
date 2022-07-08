@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-xs-12 col-md-8 col-md-offset-2">
                 <div class="alert alert-danger" >
-                    <span class="txt-color txt-color-danger">Access denied</span>
+                    <span class="txt-color txt-color-danger">{{ @__('Access denied') }}</span>
                     <small>{{ @SESSION.SSO.ERROR }}</small>
                 </div>
             </div>
@@ -21,7 +21,7 @@
                 </svg>
             </a>
             <br>
-            <a target="_blank" href="http://community.eveonline.com/news/dev-blogs/eve-online-sso-and-what-you-need-to-know" rel="noopener">What is this?</a>
+            <a target="_blank" href="http://community.eveonline.com/news/dev-blogs/eve-online-sso-and-what-you-need-to-know" rel="noopener">{{ @__('What is this?') }}</a>
         </div>
     </div>
 </div>

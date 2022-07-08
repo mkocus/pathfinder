@@ -4,12 +4,13 @@
 
 define([
     'jquery',
+    'i18n!',
     'app/init',
     'app/util',
     'app/render',
     'app/map/worker',
     'peityInlineChart',
-], ($, Init, Util, Render, MapWorker) => {
+], ($, __, Init, Util, Render, MapWorker) => {
     'use strict';
 
     let config = {
@@ -313,7 +314,7 @@ define([
                 $('<i>', {
                     class: 'fas fa-fw fa-play pf-help txt-color txt-color-success'
                 })
-                    .attr('title', 'Started. In execution…')
+                    .attr('title', __('Started. In execution…'))
                     .attr('data-name', addStatusName)
                     .attr('data-type', addStatusType)
             ).initTooltips({container: 'body'});
@@ -463,7 +464,7 @@ define([
             },
             status: {
                 type: 'warning',
-                label:  'CONNECTING…',
+                label:  __('CONNECTING…'),
                 class: 'txt-color-warning'
             }
         });
@@ -487,7 +488,7 @@ define([
             updateWebSocketPanel({
                 status: {
                     type: 'warning',
-                    label:  'OPEN wait for response…',
+                    label:  __('OPEN wait for response…'),
                     class: 'txt-color-warning'
                 }
             });
@@ -506,7 +507,7 @@ define([
                 updateWebSocketPanel({
                     status: {
                         type: 'success',
-                        label:  'CONNECTED',
+                        label:  __('CONNECTED'),
                         class: 'txt-color-success'
                     }
                 });
@@ -532,7 +533,7 @@ define([
                 updateWebSocketPanel({
                     status: {
                         type: 'warning',
-                        label:  'INVALID RESPONSE',
+                        label:  __('INVALID RESPONSE'),
                         class: 'txt-color-warning'
                     }
                 });
@@ -544,7 +545,7 @@ define([
             updateWebSocketPanel({
                 status: {
                     type: 'danger',
-                    label:  'CONNECTION ERROR',
+                    label:  __('CONNECTION ERROR'),
                     class: 'txt-color-danger'
                 }
             });
@@ -556,7 +557,7 @@ define([
             updateWebSocketPanel({
                 status: {
                     type: 'danger',
-                    label:  'CONNECTION FAILED',
+                    label:  __('CONNECTION FAILED'),
                     class: 'txt-color-danger'
                 }
             });

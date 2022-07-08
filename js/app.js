@@ -25,11 +25,13 @@ requirejs.config({
         mappage: './app/mappage',                                       // initial start "map page" view
         setup: './app/setup',                                           // initial start "setup page" view
         admin: './app/admin',                                           // initial start "admin page" view
+        i18n: './app/i18n',                                             // i18n function
+        mustache: './app/lib/mustache',                                 // mustache wrapper
 
         jquery: 'lib/jquery-3.4.1.min',                                 // v3.4.1   jQuery
         bootstrap: 'lib/bootstrap.min',                                 // v3.3.0   Bootstrap js code - http://getbootstrap.com/javascript
         text: 'lib/requirejs/text',                                     // v2.0.12  A RequireJS/AMD loader plugin for loading text resources.
-        mustache: 'lib/mustache.min',                                   // v3.0.1   Javascript template engine - http://mustache.github.io
+        mustacheOrg: 'lib/mustache.min',                                // v3.0.1   Javascript template engine - http://mustache.github.io
         localForage: 'lib/localforage.min',                             // v1.7.3   localStorage library - https://localforage.github.io/localForage/
         velocity: 'lib/velocity.min',                                   // v1.5.1   animation engine - http://julian.com/research/velocity
         velocityUI: 'lib/velocity.ui.min',                              // v5.2.0   plugin for velocity - http://julian.com/research/velocity/#uiPack

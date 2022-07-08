@@ -1,13 +1,13 @@
 <form role="form" class="form-horizontal">
     <div class="row">
         <div class="col-xs-4 col-sm-3 col-md-2">
-            <h4><i class="fas fa-fw fa-cogs"></i>&nbsp;&nbsp;Update options</h4>
+            <h4><i class="fas fa-fw fa-cogs"></i>&nbsp;&nbsp;{{#translate}}Update options{{/translate}}</h4>
 
             <div class="checkbox checkbox-warning">
                 <input id="{{sigReaderLazyUpdateId}}" name="deleteOld" value="1" type="checkbox" {{#sigInfoLazyUpdateStatus}}checked=""{{/sigInfoLazyUpdateStatus}}>
-                <label for="{{sigReaderLazyUpdateId}}">'lazy' delete&nbsp;
+                <label for="{{sigReaderLazyUpdateId}}">{{#translate}}'lazy' delete{{/translate}}&nbsp;
                     (<i class="fas fa-fw fa-exchange-alt"></i>)
-                    <i class="fas fa-fw fa-question-circle pf-help-light" title="Delete saved signatures, not found in scan result"></i>
+                    <i class="fas fa-fw fa-question-circle pf-help-light" title="{{#translate}}Delete saved signatures, not found in scan result{{/translate}}"></i>
                 </label>
             </div>
 
@@ -15,18 +15,18 @@
 
             <div class="checkbox checkbox-danger">
                 <input id="{{sigReaderConnectionDeleteId}}" name="deleteConnection" value="1" type="checkbox">
-                <label for="{{sigReaderConnectionDeleteId}}">Delete 'leads to'
-                    <i class="fas fa-fw fa-question-circle pf-help-light" title="Delete 'leads to' connections from map, on signature delete"></i>
+                <label for="{{sigReaderConnectionDeleteId}}">{{#translate}}Delete 'leads to'{{/translate}}
+                    <i class="fas fa-fw fa-question-circle pf-help-light" title="{{#translate}}Delete 'leads to' connections from map, on signature delete{{/translate}}"></i>
                 </label>
             </div>
         </div>
         <div class="col-xs-8 col-sm-9 col-md-10">
             <div class="form-group has-feedback" style="margin-bottom: 0;">
-                <label for="{{sigInfoTextareaId}}" class="col-sm-2 control-label">Scan result</label>
+                <label for="{{sigInfoTextareaId}}" class="col-sm-2 control-label">{{#translate}}Scan result{{/translate}}</label>
                 <div class="col-sm-10">
-                    <textarea id="{{sigInfoTextareaId}}" name="clipboard" class="form-control" rows="4" data-clipboard="rdd" data-required-error="Scan result can not be empty" required></textarea>
+                    <textarea id="{{sigInfoTextareaId}}" name="clipboard" class="form-control" rows="4" data-clipboard="rdd" data-required-error="{{#translate}}Scan result can not be empty{{/translate}}" required></textarea>
                     <div class="help-block with-errors">
-                        Copy ( <kbd>ctrl</kbd> + <kbd>c</kbd> ) and paste ( <kbd>ctrl</kbd> + <kbd>v</kbd> ) scan result.
+                        {{#translate}}Copy ( <kbd>ctrl</kbd> + <kbd>c</kbd> ) and paste ( <kbd>ctrl</kbd> + <kbd>v</kbd> ) scan result.{{/translate}}
                     </div>
                     <span class="fas form-control-feedback" aria-hidden="true"></span>
                 </div>
@@ -36,8 +36,8 @@
 </form>
 
 <h4>
-    <i class="fas fa-eye fa-fw"></i>&nbsp;&nbsp;Preview&nbsp;&nbsp;
-    <span class="label label-default txt-color txt-color-warning bg-color bg-color-grayDarker">beta</span>
+    <i class="fas fa-eye fa-fw"></i>&nbsp;&nbsp;{{#translate}}Preview{{/translate}}&nbsp;&nbsp;
+    <span class="label label-default txt-color txt-color-warning bg-color bg-color-grayDarker">{{#translate}}beta{{/translate}}</span>
     {{{sigInfoProgressElement}}}
     <span class="progress-label-right">0%</span>
 </h4>
@@ -46,25 +46,25 @@
 
 <div class="flex-row flex-between">
     <div class="flex-col flex-grow well well-sm flex-row flex-between">
-        <div class="flex-col">Signatures:</div>
-        <div class="flex-col" title="New signatures found">
-            new&nbsp;
+        <div class="flex-col">{{#translate}}Signatures:{{/translate}}</div>
+        <div class="flex-col" title="{{#translate}}New signatures found{{/translate}}">
+            {{#translate}}new{{/translate}}&nbsp;
             <kbd id="{{sigInfoCountSigNewId}}" class="txt-color" data-class="txt-color-success">0</kbd>
         </div>
-        <div class="flex-col" title="Update signatures">
-            change&nbsp;
+        <div class="flex-col" title="{{#translate}}Update signatures{{/translate}}">
+            {{#translate}}change{{/translate}}&nbsp;
             <kbd id="{{sigInfoCountSigChangeId}}" class="txt-color" data-class="txt-color-warning">0</kbd>
         </div>
-        <div class="flex-col" title="Delete signatures">
-            delete&nbsp;
+        <div class="flex-col" title="{{#translate}}Delete signatures{{/translate}}">
+            {{#translate}}delete{{/translate}}&nbsp;
             <kbd id="{{sigInfoCountSigDeleteId}}" class="txt-color" data-class="txt-color-red">0</kbd>
         </div>
     </div>
 
     <div class="flex-col well well-sm flex-row flex-between">
-        <div class="flex-col">Connections:</div>
-        <div class="flex-col" title="Delete linked connections">
-            delete&nbsp;
+        <div class="flex-col">{{#translate}}Connections:{{/translate}}</div>
+        <div class="flex-col" title="{{#translate}}Delete linked connections{{/translate}}">
+            {{#translate}}delete{{/translate}}&nbsp;
             <kbd id="{{sigInfoCountConDeleteId}}" class="txt-color" data-class="txt-color-red">0</kbd>
         </div>
     </div>

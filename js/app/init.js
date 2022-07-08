@@ -2,18 +2,20 @@
  *  Init
  */
 
-define([], () => {
+define([
+    'i18n!'
+], (__) => {
     'use strict';
 
     let frigWH = {
-        1: 'E004 - C1',
-        2: 'L005 - C2',
-        3: 'Z006 - C3',
-        4: 'M001 - C4',
-        5: 'C008 - C5',
-        6: 'G008 - C6',
-        7: 'Q003 - 0.0',
-        8: 'A009 - C13'
+        1: __('E004 - C1'),
+        2: __('L005 - C2'),
+        3: __('Z006 - C3'),
+        4: __('M001 - C4'),
+        5: __('C008 - C5'),
+        6: __('G008 - C6'),
+        7: __('Q003 - 0.0'),
+        8: __('A009 - C13')
     };
 
     return {
@@ -96,79 +98,79 @@ define([], () => {
         mapIcons: [                                                         // map tab-icons
             {
                 class: 'fa-desktop',
-                label: 'desktop',
+                label: __('desktop'),
                 unicode: '&#xf108;'
             }, {
                 class: 'fa-space-shuttle',
-                label: 'space shuttle',
+                label: __('space shuttle'),
                 unicode: '&#xf197;'
             }, {
                 class: 'fa-anchor',
-                label: 'anchor',
+                label: __('anchor'),
                 unicode: '&#xf13d;'
             }, {
                 class: 'fa-satellite',
-                label: 'satellite',
+                label: __('satellite'),
                 unicode: '&#xf7bf;'
             }, {
                 class: 'fa-skull-crossbones',
-                label: 'skull crossbones',
+                label: __('skull crossbones'),
                 unicode: '&#xf714;'
             }, {
                 class: 'fa-fire',
-                label: 'fire',
+                label: __('fire'),
                 unicode: '&#xf06d;'
             }, {
                 class: 'fa-bookmark',
-                label: 'bookmark',
+                label: __('bookmark'),
                 unicode: '&#xf02e;'
             }, {
                 class: 'fa-cube',
-                label: 'cube',
+                label: __('cube'),
                 unicode: '&#xf1b2;'
             }, {
                 class: 'fa-star',
-                label: 'star',
+                label: __('star'),
                 unicode: '&#xf005;'
             }, {
                 class: 'fa-hat-wizard',
-                label: 'hat wizard',
+                label: __('hat wizard'),
                 unicode: '&#xf6e8;'
             },{
                 class: 'fa-cross',
-                label: 'cross',
+                label: __('cross'),
                 unicode: '&#xf654;'
             }, {
                 class: 'fa-cannabis',
-                label: 'cannabis',
+                label: __('cannabis'),
                 unicode: '&#xf55f;'
             }, {
                 class: 'fa-spider',
-                label: 'spider',
+                label: __('spider'),
                 unicode: '&#xf717;'
             }, {
                 class: 'fa-plane',
-                label: 'plane',
+                label: __('plane'),
                 unicode: '&#xf072;'
             }, {
                 class: 'fa-globe',
-                label: 'globe',
+                label: __('globe'),
                 unicode: '&#xf0ac;'
             }, {
                 class: 'fa-rocket',
-                label: 'rocket',
+                label: __('rocket'),
                 unicode: '&#xf135;'
             }, {
                 class: 'fa-life-ring',
-                label: 'life ring',
+                label: __('life ring'),
                 unicode: '&#xf1cd;'
             }, {
                 class: 'fa-heart',
-                label: 'heart',
+                label: __('heart'),
                 unicode: '&#xf004;'
             }, {
                 class: 'fa-poop',
-                label: 'poop',
+                label: __('poop'),
                 unicode: '&#xf619;'
             }
         ],
@@ -177,46 +179,46 @@ define([], () => {
             logTypes: {
                 info: {
                     class: 'pf-log-info',
-                    label: 'info'
+                    label: __('info')
                 },
                 warning: {
                     class: 'pf-log-warning',
-                    label: 'warning'
+                    label: __('warning')
                 },
                 error: {
                     class: 'pf-log-error',
-                    label: 'error'
+                    label: __('error')
                 }
             },
             // system effects
             systemEffects: {
                 effect: {
                     class: 'pf-system-effect',
-                    name: 'no effect'
+                    name: __('no effect')
                 },
                 magnetar: {
                     class: 'pf-system-effect-magnetar',
-                    name: 'magnetar'
+                    name: __('magnetar')
                 },
                 redGiant: {
                     class: 'pf-system-effect-redgiant',
-                    name: 'red giant'
+                    name: __('red giant')
                 },
                 pulsar: {
                     class: 'pf-system-effect-pulsar',
-                    name: 'pulsar'
+                    name: __('pulsar')
                 },
                 wolfRayet: {
                     class: 'pf-system-effect-wolfrayet',
-                    name: 'wolf rayet'
+                    name: __('wolf rayet')
                 },
                 cataclysmic: {
                     class: 'pf-system-effect-cataclysmic',
-                    name: 'cataclysmic'
+                    name: __('cataclysmic')
                 },
                 blackHole: {
                     class: 'pf-system-effect-blackhole',
-                    name: 'black hole'
+                    name: __('black hole')
                 }
             },
             // system security
@@ -319,7 +321,7 @@ define([], () => {
             systemInfo: {
                 rally: {
                     class: 'pf-system-info-rally',
-                    label: 'rally point'
+                    label: __('rally point')
                 }
             },
             // planets
@@ -483,59 +485,59 @@ define([], () => {
                 type: 'wh_jump_mass_xl',
                 class: 'pf-jump-mass-xl',
                 label: 'XL',
-                text: 'capital ships'
+                text: __('capital ships')
             },
             wh_jump_mass_l: {
                 jumpMassMin: 375000000,
                 type: 'wh_jump_mass_l',
                 class: 'pf-jump-mass-l',
                 label: 'L',
-                text: 'larger ships'
+                text: __('larger ships')
             },
             wh_jump_mass_m: {
                 jumpMassMin: 62000000,
                 type: 'wh_jump_mass_m',
                 class: 'pf-jump-mass-m',
                 label: 'M',
-                text: 'medium ships'
+                text: __('medium ships')
             },
             wh_jump_mass_s: {
                 jumpMassMin: 5000,
                 type: 'wh_jump_mass_s',
                 class: 'pf-jump-mass-s',
                 label: 'S',
-                text: 'smallest ships'
+                text: __('smallest ships')
             }
         },
         // signature groups
         signatureGroups: {
             1: {
                 name: '(combat site|kampfgebiet|site de combat|Боевой район|战斗地点)',
-                label: 'Combat'
+                label: __('Combat')
             },
             2: {
                 name: '(relic site|reliktgebiet|site de reliques|Археологический район|遗迹地点)',
-                label: 'Relic'
+                label: __('Relic')
             },
             3: {
                 name: '(data site|datengebiet|site de données|Информационный район|数据地点)',
-                label: 'Data'
+                label: __('Data')
             },
             4: {
                 name: '(gas site|gasgebiet|site de collecte de gaz|Газовый район|气云地点)',
-                label: 'Gas'
+                label: __('Gas')
             },
             5: {
                 name: '(wormhole|wurmloch|trou de ver|Червоточина|虫洞)',
-                label: 'Wormhole'
+                label: __('Wormhole')
             },
             6: {
                 name: '(ore site|mineraliengebiet|site de minerai|Астероидный район|矿石地点)',
-                label: 'Ore'
+                label: __('Ore')
             },
             7: {
                 name: '(ghost|Призрачный)',
-                label: 'Ghost'
+                label: __('Ghost')
             }
         },
         // frigate wormholes
@@ -553,21 +555,21 @@ define([], () => {
         },
         // Drifter wormholes (can only appear in k-space)
         drifterWormholes: {
-            1: 'S877 - C14 Sentinel',
-            2: 'B735 - C15 Barbican',
-            3: 'V928 - C16 Vidette',
-            4: 'C414 - C17 Conflux',
-            5: 'R259 - C18 Redoubt'
+            1: __('S877 - C14 Sentinel'),
+            2: __('B735 - C15 Barbican'),
+            3: __('V928 - C16 Vidette'),
+            4: __('C414 - C17 Conflux'),
+            5: __('R259 - C18 Redoubt')
         },
         // incoming wormholes
         incomingWormholes: {
-            1: 'K162 - C1/2/3 (unknown)',
-            2: 'K162 - C4/5 (dangerous)',
-            3: 'K162 - C6 (deadly)',
-            4: 'K162 - H',
-            5: 'K162 - L',
-            6: 'K162 - 0.0',
-            7: 'K162 - C12 Thera'
+            1: __('K162 - C1/2/3 (unknown)'),
+            2: __('K162 - C4/5 (dangerous)'),
+            3: __('K162 - C6 (deadly)'),
+            4: __('K162 - H'),
+            5: __('K162 - L'),
+            6: __('K162 - 0.0'),
+            7: __('K162 - C12 Thera')
         }
     };
 });

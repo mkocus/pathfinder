@@ -6,8 +6,9 @@ define([
     'jquery',
     'app/init',
     'app/util',
-    'bootbox'
-], ($, Init, Util, bootbox) => {
+    'bootbox',
+    'i18n!'
+], ($, Init, Util, bootbox, __) => {
     'use strict';
 
     let config = {
@@ -30,7 +31,7 @@ define([
 
             bootbox.dialog({
                 className: config.creditsDialogClass,
-                title: 'Licence',
+                title: __('Licence'),
                 message: content
             });
         });

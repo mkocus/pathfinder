@@ -8,8 +8,9 @@ define([
     'app/util',
     'app/map/overlay/util',
     'app/map/util',
-    'app/lib/cron'
-], ($, Init, Util, MapOverlayUtil, MapUtil, Cron) => {
+    'app/lib/cron',
+    'i18n!'    
+], ($, Init, Util, MapOverlayUtil, MapUtil, Cron, __) => {
     'use strict';
 
     /**
@@ -343,7 +344,7 @@ define([
      */
     let options = {
         filter: {
-            title: 'active filter',
+            title: __('active filter'),
             trigger: 'active',
             class: 'pf-map-overlay-filter',
             iconClass: ['fas', 'fa-fw', 'fa-filter'],
@@ -357,37 +358,37 @@ define([
             }
         },
         mapSnapToGrid: {
-            title: 'grid',
+            title: __('grid'),
             trigger: 'active',
             class: 'pf-map-overlay-grid',
             iconClass: ['fas', 'fa-fw', 'fa-th']
         },
         mapMagnetizer: {
-            title: 'magnetizer',
+            title: __('magnetizer'),
             trigger: 'active',
             class: 'pf-map-overlay-magnetizer',
             iconClass: ['fas', 'fa-fw', 'fa-magnet']
         },
         systemRegion: {
-            title: 'regions',
+            title: __('regions'),
             trigger: 'active',
             class: 'pf-map-overlay-region',
             iconClass: ['fas', 'fa-fw', 'fa-map-marked-alt']
         },
         systemCompact: {
-            title: 'compact layout',
+            title: __('compact layout'),
             trigger: 'active',
             class: 'pf-map-overlay-compact',
             iconClass: ['fas', 'fa-fw', 'fa-compress']
         },
         connectionSignatureOverlays: {
-            title: 'signature overlays',
+            title: __('signature overlays'),
             trigger: 'active',
             class: 'pf-map-overlay-endpoint',
             iconClass: ['fas', 'fa-fw', 'fa-link']
         },
         systemPopover: {
-            title: 'sovereignty',
+            title: __('sovereignty'),
             trigger: 'hover',
             class: 'pf-map-overlay-popover',
             iconClass: ['fas', 'fa-fw', 'fa-landmark'],
@@ -423,7 +424,7 @@ define([
             }
         },
         connection: {
-            title: 'WH data',
+            title: __('WH data'),
             trigger: 'hover',
             class: 'pf-map-overlay-connection-wh',
             iconClass: ['fas', 'fa-fw', 'fa-fighter-jet'],
@@ -473,7 +474,7 @@ define([
             }
         },
         connectionEol: {
-            title: 'EOL',
+            title: __('EOL'),
             trigger: 'hover',
             class: 'pf-map-overlay-connection-eol',
             iconClass: ['fas', 'fa-fw', 'fa-hourglass-end'],
@@ -770,8 +771,8 @@ define([
 
                             let html = '<div><table>';
                             html += '<tr><td>' + endpoint.id + '</td><td class="text-right"></td></tr>';
-                            html += '<tr><td>Scope:</td><td class="text-right">' + endpoint.scope + '</td></tr>';
-                            html += '<tr><td>Type:</td><td class="text-right">' + types.toString() + '</td></tr>';
+                            html += '<tr><td>' + __('Scope') + ':</td><td class="text-right">' + endpoint.scope + '</td></tr>';
+                            html += '<tr><td>' + __('Type') + ':</td><td class="text-right">' + types.toString() + '</td></tr>';
                             html += '</table></div>';
 
                             return $(html).on('click', function(){

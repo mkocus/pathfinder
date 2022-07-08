@@ -3,17 +3,17 @@
     <div class="pf-splash-title">
         <h1>
             <span class="txt-color txt-color-danger">
-                <i class="fas fa-fw fa-exclamation-circle"></i> Error - {{ @errorData->code }}
+                <i class="fas fa-fw fa-exclamation-circle"></i> {{ @__('Error - %s', @errorData->code) }}
             </span>
         </h1>
         <p class="lead">
-            Oooops, Something went wrong!
-            You have experienced a technical error. We apologize.<br><br>
+            {{ @__('Oooops, Something went wrong!
+            You have experienced a technical error. We apologize.') }}<br><br>
 
-            Status: '{{ @errorData->status }}'<br>
+            {{ @__('Status: \'%s\'', @errorData->status) }}<br>
 
             <check if="{{ @errorData->text }}">
-                Message: {{ @errorData->text }}
+                {{ @__('Message: %s', @errorData->text) }}
             </check>
         </p>
     </div>
