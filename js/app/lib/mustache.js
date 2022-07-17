@@ -15,6 +15,7 @@ define([
                 };
             };
             return mustache.render(template, data);
-        }
+        },
+        parse: mustache.parse
     };
 });

@@ -10,8 +10,8 @@ define([
     'app/render',
     'app/counter',
     'bootbox',
-    'peityInlineChart',
-    'i18n!'
+    'i18n!',
+    'peityInlineChart'
 ], ($, Init, Util, Render, Counter, bootbox, __) => {
     'use strict';
 

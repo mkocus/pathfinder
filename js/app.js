@@ -12,6 +12,7 @@ requirejs.config({
     baseUrl: 'js',                                                      // src root path - dynamically set !below! ("build_js" | "js")
 
     paths: {
+        i18n: './app/i18n',                                             // i18n function
         conf: 'app/conf',                                               // path     config files
         dialog: 'app/ui/dialog',                                        // path     dialog files
         layout: 'app/ui/layout',                                        // path     layout files
@@ -25,7 +26,6 @@ requirejs.config({
         mappage: './app/mappage',                                       // initial start "map page" view
         setup: './app/setup',                                           // initial start "setup page" view
         admin: './app/admin',                                           // initial start "admin page" view
-        i18n: './app/i18n',                                             // i18n function
         mustache: './app/lib/mustache',                                 // mustache wrapper
 
         jquery: 'lib/jquery-3.4.1.min',                                 // v3.4.1   jQuery

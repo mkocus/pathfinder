@@ -4,10 +4,11 @@
 
 define([
     'jquery',
+    'i18n!',
     'app/init',
     'app/util',
     'datatables.loader'
-], ($, Init, Util, dtLoader) => {
+], ($, __, Init, Util, dtLoader) => {
 
     'use strict';
 

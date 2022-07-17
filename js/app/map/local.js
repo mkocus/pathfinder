@@ -9,7 +9,7 @@ define([
     'app/util',
     'app/map/util',
     'app/map/overlay/util',
-    'i18n'
+    'i18n!'
 ], function($, Init, Util, MapUtil, MapOverlayUtil, __){
     'use strict';
 

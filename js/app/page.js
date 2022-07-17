@@ -1200,7 +1200,7 @@ define([
                     breadcrumbHtml += '<span class="pf-head-breadcrumb-item">';
 
                     if(isCurrentLocation){
-                        breadcrumbHtml += '<i class="fas fa-fw fa-map-marker-alt" title="' . __('current location') +'"></i>';
+                        breadcrumbHtml += '<i class="fas fa-fw fa-map-marker-alt" title="' + __('current location') +'"></i>';
 
                         if(stationId > 0){
                             breadcrumbHtml += '<i class="fas fa-home" title="' + stationName + '"></i>';
