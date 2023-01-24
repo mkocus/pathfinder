@@ -9,8 +9,9 @@ define([
     'app/util',
     'bootbox',
     'app/map/util',
-    'app/map/magnetizing'
-], ($, Init, Util, bootbox, MapUtil, Magnetizer) => {
+    'app/map/magnetizing',
+    'i18n!'
+], ($, Init, Util, bootbox, MapUtil, Magnetizer, __) => {
     'use strict';
 
     let config = {
@@ -155,7 +156,7 @@ define([
 
         // show error if system max count reached ---------------------------------------------------------------------
         if(mapSystemCount >= maxAllowedSystems){
-            Util.showNotify({title: 'Max system count exceeded', text: 'Limit of ' + maxAllowedSystems + ' systems reached', type: 'warning'});
+            Util.showNotify({title: __('Max system count exceeded'), text: __('Limit of %s systems reached').replace('%s', maxAllowedSystems), type: 'warning'});
             return;
         }
 
@@ -271,7 +272,7 @@ define([
                                 context.systemDialog.find('.modal-content').hideLoadingAnimation();
                             }).then(
                                 payload => {
-                                    Util.showNotify({title: 'New system', text: payload.data.name, type: 'success'});
+                                    Util.showNotify({title: __('New system'), text: payload.data.name, type: 'success'});
 
                                     callback(payload.context.map, payload.data, payload.context.sourceSystem, payload.context.connectionData);
                                     bootbox.hideAll();
@@ -504,14 +505,14 @@ define([
                             let notDeletedCount = validDeleteSystems.length - deletedSystems.length;
 
                             Util.showNotify({
-                                title: 'Failed to delete systems',
-                                text: '(' + notDeletedCount + '/' +  validDeleteSystems.length + ') systems could not be deleted',
+                                title: __('Failed to delete systems'),
+                                text: __('(%1 / %2) systems could not be deleted').replace('%1', notDeletedCount).replace('%2', validDeleteSystems.length),
                                 type: 'warning'}
                             );
                         }else if(deletedSystems.length === 1){
-                            Util.showNotify({title: 'System deleted', text: $(deletedSystems[0]).data('name'), type: 'success'});
+                            Util.showNotify({title: __('System deleted'), text: $(deletedSystems[0]).data('name'), type: 'success'});
                         }else{
-                            Util.showNotify({title: systems.length + ' systems deleted', type: 'success'});
+                            Util.showNotify({title: __('%s systems deleted').replace('%s', systems.length), type: 'success'});
                         }
                     });
                 }

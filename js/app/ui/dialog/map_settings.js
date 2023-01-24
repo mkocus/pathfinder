@@ -11,7 +11,8 @@ define([
     'app/map/util',
     'app/module_map',
     'app/map/overlay/util',
-], ($, Init, Util, Render, bootbox, MapUtil, ModuleMap, MapOverlayUtil) => {
+    'i18n!'
+], ($, Init, Util, Render, bootbox, MapUtil, ModuleMap, MapOverlayUtil, __) => {
     'use strict';
 
     let config = {
@@ -106,7 +107,7 @@ define([
                     }
                 };
 
-                let dialogTitle = 'Map settings';
+                let dialogTitle = __('Map settings');
 
                 // if there are no maps -> hide settings tab
                 let hideEditTab = mapData === false;
@@ -381,7 +382,7 @@ define([
                                     }).then(
                                         payload => {
                                             let mapData = Util.getObjVal(payload, 'data.mapData');
-                                            Util.showNotify({title: dialogTitle, text: `Map: ${Util.getObjVal(mapData, 'name')}`, type: 'success'});
+                                            Util.showNotify({title: dialogTitle, text: __('Map') + `: ${Util.getObjVal(mapData, 'name')}`, type: 'success'});
 
                                             // update map-tab Element
                                             let tabLinkEls = Util.getMapTabLinkElements(Util.getMapModule()[0], Util.getObjVal(mapData, 'id'));
@@ -668,7 +669,7 @@ define([
                     callback();
                 }
 
-                Util.showNotify({title: 'Import finished', text: 'Map(s) imported', type: 'success'});
+                Util.showNotify({title: __('Import finished'), text: __('Map(s) imported'), type: 'success'});
             }
         }).fail(function(jqXHR, status, error){
             let reason = status + ' ' + error;
@@ -758,7 +759,7 @@ define([
 
                     Util.request('DELETE', 'Map', mapId, {}, {}).then(
                         payload => {
-                            Util.showNotify({title: 'Map deleted', text: 'Map: ' + mapName, type: 'success'});
+                            Util.showNotify({title: __('Map deleted'), text: __('Map') + ': ' + mapName, type: 'success'});
                         },
                         Util.handleAjaxErrorResponse
                     ).finally(() => mapDeleteDialog.modal('hide'));

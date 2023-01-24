@@ -7,8 +7,9 @@ define([
     'app/init',
     'app/util',
     'bootbox',
-    'app/map/util'
-], ($, Init, Util, bootbox, MapUtil) => {
+    'app/map/util',
+    'i18n!'
+], ($, Init, Util, bootbox, MapUtil, __) => {
     'use strict';
 
     let config = {
@@ -124,7 +125,7 @@ define([
 
         let effectsDialog = bootbox.dialog({
             className: config.systemEffectDialogClass,
-            title: 'System effect information',
+            title: __('System effect information'),
             message: cache.systemEffectDialog,
             size: 'large',
             show: false

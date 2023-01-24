@@ -1,5 +1,6 @@
 define([
     'jquery',
+    'i18n!',
     'app/init',
     'app/util',
     'app/map/map',
@@ -19,6 +20,7 @@ define([
     'app/counter'
 ], (
     $,
+    __,
     Init,
     Util,
     Map,
@@ -1396,11 +1398,11 @@ define([
                     let promiseUpdateTab = [];
 
                     let tabDeletedCallback = payload => {
-                        Util.showNotify({title: 'Map removed', text: payload.data.mapName + ' deleted', type: 'warning'});
+                        Util.showNotify({title: __('Map removed'), text: payload.data.mapName + __(' deleted'), type: 'warning'});
                     };
 
                     let tabAddCallback = payload => {
-                        Util.showNotify({title: 'Map added', text: payload.data.mapName + ' added', type: 'success'});
+                        Util.showNotify({title: __('Map added'), text: payload.data.mapName + __(' added'), type: 'success'});
                     };
 
                     // tab element already exists
@@ -1515,7 +1517,7 @@ define([
         return new Promise(updateMapModuleExecutor).then(payload => {
             // log client map update time
             let duration = Util.timeStop(logKeyClientMapData);
-            Util.log(logKeyClientMapData, {duration: duration, type: 'client', description: 'update map'});
+            Util.log(logKeyClientMapData, {duration: duration, type: 'client', description: __('update map')});
         });
     };
 
@@ -1777,7 +1779,7 @@ define([
                         showbuttons: false,
                         onblur: 'submit',
                         highlight: false,
-                        title: 'layout settings',
+                        title: __('layout settings'),
                         placement: 'left',
                         pk: mapId,
                         value: selectedValues,

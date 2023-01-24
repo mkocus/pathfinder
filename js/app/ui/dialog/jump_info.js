@@ -7,8 +7,9 @@ define([
     'app/init',
     'app/util',
     'bootbox',
-    'app/map/util'
-], ($, Init, Util, bootbox, MapUtil) => {
+    'app/map/util',
+    'i18n!'
+], ($, Init, Util, bootbox, MapUtil, __) => {
     'use strict';
 
     let config = {
@@ -52,7 +53,7 @@ define([
                     {label: '', class: 'separator-right', style: 'width: 55px;'},
                     {colspan: 6, label: 'W-space', class: 'separator-right'},
                     {colspan: 3, label: 'K-space', class: 'separator-right'},
-                    {label: 'Thera', class: 'separator-right'},
+                    {label: __('Thera'), class: 'separator-right'},
                     {label: iconShattered}
                 ]
             ];
@@ -142,13 +143,13 @@ define([
                 formatTime: function(){
                     return function(value, render){
                         let time = render(value);
-                        return time.length ? time + '&nbsp;h' : 'unknown';
+                        return time.length ? time + '&nbsp;h' : __('unknown');
                     };
                 },
                 sigStrengthValue: function(){
                     return function(value, render){
                         let float = render(value);
-                        return float.length ? parseFloat(float).toLocaleString() + '&nbsp;&#37;' : 'unknown';
+                        return float.length ? parseFloat(float).toLocaleString() + '&nbsp;&#37;' : __('unknown');
                     };
                 },
                 securityClass: function(){
@@ -172,10 +173,10 @@ define([
                     lengthMenu: [[15, 25, 35, 50, -1], [15, 25, 35, 50, 'All']],
                     autoWidth: false,
                     language: {
-                        emptyTable:  'No wormholes',
-                        zeroRecords: 'No wormholes found',
-                        lengthMenu:  'Show _MENU_ wormholes',
-                        info:        'Showing _START_ to _END_ of _TOTAL_ wormholes'
+                        emptyTable:  __('No wormholes'),
+                        zeroRecords: __('No wormholes found'),
+                        lengthMenu:  __('Show _MENU_ wormholes'),
+                        info:        __('Showing _START_ to _END_ of _TOTAL_ wormholes')
                     },
                     columnDefs: [],
                     data: null      // use DOM data overwrites [] default -> data.loader.js
@@ -202,10 +203,10 @@ define([
                     info: false,
                     autoWidth: false,
                     language: {
-                        emptyTable:  'No wormholes',
-                        zeroRecords: 'No wormholes found',
-                        lengthMenu:  'Show _MENU_ wormholes',
-                        info:        'Showing _START_ to _END_ of _TOTAL_ wormholes'
+                        emptyTable:  __('No wormholes'),
+                        zeroRecords: __('No wormholes found'),
+                        lengthMenu:  __('Show _MENU_ wormholes'),
+                        info:        __('Showing _START_ to _END_ of _TOTAL_ wormholes')
                     },
                     columnDefs: [],
                     data: null      // use DOM data overwrites [] default -> data.loader.js

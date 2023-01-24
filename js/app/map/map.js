@@ -17,9 +17,10 @@ define([
     'app/map/system',
     'app/map/layout',
     'app/map/magnetizing',
-    'app/map/scrollbar',
+    'app/map/scrollbar', 
+    'i18n!',
     'app/map/local'
-], ($, Init, Util, Key, DragSelect, EventHandler, bootbox, MapUtil, MapContextMenu, MapOverlay, MapOverlayUtil, System, Layout, Magnetizer, Scrollbar) => {
+], ($, Init, Util, Key, DragSelect, EventHandler, bootbox, MapUtil, MapContextMenu, MapOverlay, MapOverlayUtil, System, Layout, Magnetizer, Scrollbar, __) => {
 
     'use strict';
 
@@ -62,30 +63,30 @@ define([
     let mapOptions = {
         mapSnapToGrid : {
             buttonId: Util.config.menuButtonGridId,
-            description: 'Grid snapping',
+            description: __('Grid snapping'),
             class: 'mapGridClass'
         },
         mapMagnetizer: {
             buttonId: Util.config.menuButtonMagnetizerId,
-            description: 'Magnetizer',
+            description: __('Magnetizer'),
             onEnable: Magnetizer.initMagnetizer,
             onDisable: Magnetizer.destroyMagnetizer
         },
         systemRegion : {
             buttonId: Util.config.menuButtonRegionId,
-            description: 'Region names',
+            description: __('Region names'),
             class: 'systemRegionClass',
             onEnable: MapOverlay.toggleInfoSystemRegion,
             onDisable: MapOverlay.toggleInfoSystemRegion,
         },
         systemCompact : {
             buttonId: Util.config.menuButtonCompactId,
-            description: 'Compact system layout',
+            description: __('Compact system layout'),
             class: 'systemCompactClass'
         },
         connectionSignatureOverlays : {
             buttonId: Util.config.menuButtonEndpointId,
-            description: 'Endpoint overlay',
+            description: __('Endpoint overlay'),
             onEnable: MapOverlay.showInfoSignatureOverlays,
             onDisable: MapOverlay.hideInfoSignatureOverlays,
         }
@@ -708,7 +709,7 @@ define([
                     Util.getLocalStore('map').setItem(`${mapId}.filterScopes`, filterScopes);
                     MapUtil.filterMapByScopes(map, filterScopes);
 
-                    Util.showNotify({title: 'Scope filter changed', text: filterScopeLabel, type: 'success'});
+                    Util.showNotify({title: __('Scope filter changed'), text: filterScopeLabel, type: 'success'});
                 });
                 break;
             case 'delete_systems':
@@ -734,7 +735,7 @@ define([
      */
     let connectionActions = (action, connection) => {
         if(!connection._jsPlumb){
-            Util.showNotify({title: 'Connection not found', type: 'error'});
+            Util.showNotify({title: __('Connection not found'), type: 'error'});
             return;
         }
 
@@ -787,7 +788,7 @@ define([
 
                         MapOverlayUtil.getMapOverlay(mapElement, 'timer').startMapUpdateCounter();
 
-                        Util.showNotify({title: 'Connection scope changed', text: 'New scope: ' + newScopeName, type: 'success'});
+                        Util.showNotify({title: __('Connection scope changed'), text: __('New scope: ') + newScopeName, type: 'success'});
 
                         MapUtil.markAsChanged(connection);
                     }
@@ -829,7 +830,7 @@ define([
                 // an "state_active" connection is required before adding more "selected" connections
                 let activeConnections = MapUtil.getConnectionsByType(map, 'state_active');
                 if(activeConnections.length >= config.maxActiveConnections && !connection.hasType('state_active')){
-                    Util.showNotify({title: 'Connection select limit', text: 'You can´t select more connections', type: 'warning'});
+                    Util.showNotify({title: __('Connection select limit'), text: __('You can´t select more connections'), type: 'warning'});
                 }else{
                     if(activeConnections.length > 0){
                         MapUtil.toggleConnectionActive(map, [connection]);
@@ -1639,7 +1640,7 @@ define([
             type: 'text',
             name: 'alias',
             emptytext: system.data('name'),
-            title: 'System alias',
+            title: __('System alias'),
             placement: 'top',
             onblur: 'submit',
             toggle: 'manual',       // is triggered manually on dblClick
@@ -1730,7 +1731,7 @@ define([
                         title = 'Connection switched';
                     }
 
-                    Util.showNotify({title: title, text: 'Scope: ' + scope, type: 'success'});
+                    Util.showNotify({title: title, text: __('Scope: ') + scope, type: 'success'});
                     resolve({
                         action: 'saveConnection',
                         data: {
@@ -2144,7 +2145,7 @@ define([
             map.setDraggable(system, true);
 
             if(! hideNotification){
-                Util.showNotify({title: 'System unlocked', text: systemName, type: 'unlock'});
+                Util.showNotify({title: __('System unlocked'), text: systemName, type: 'unlock'});
             }
         }else{
             system.data('locked', true);
@@ -2154,7 +2155,7 @@ define([
             map.setDraggable(system, false);
 
             if(! hideNotification){
-                Util.showNotify({title: 'System locked', text: systemName,  type: 'lock'});
+                Util.showNotify({title: __('System locked'), text: systemName,  type: 'lock'});
             }
         }
 
@@ -3151,7 +3152,7 @@ define([
                 .then(payload => MapUtil.zoomToDefaultScale(mapConfig.map))
                 .then(payload => MapUtil.scrollToDefaultPosition(mapConfig.map))
                 .then(payload => {
-                    Util.showNotify({title: 'Map initialized', text: mapConfig.config.name  + ' - loaded', type: 'success'});
+                    Util.showNotify({title: __('Map initialized'), text: mapConfig.config.name  + ' - loaded', type: 'success'});
                 })
                 .then(() => resolve(payload));
         }else{

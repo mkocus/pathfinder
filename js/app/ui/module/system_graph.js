@@ -6,8 +6,9 @@ define([
     'jquery',
     'app/util',
     'module/base',
-    'morris'
-], ($, Util, BaseModule, Morris) => {
+    'morris',
+    'i18n!'
+], ($, Util, BaseModule, Morris, __) => {
     'use strict';
 
     let SystemGraphModule = class SystemGraphModule extends BaseModule {
@@ -268,7 +269,7 @@ define([
                 tooltipData.title = '<i class="fas fa-download"></i><span class="pull-right ">' + Util.formatTimeParts(updatedDiff) + '</span>';
             }else{
                 // make container a bit smaller -> no graph shown
-                graphElement.css('height', '22px').text('No data');
+                graphElement.css('height', '22px').text(__('No data'));
             }
 
             return tooltipData;
@@ -329,7 +330,7 @@ define([
                 html: true,
                 trigger: 'hover',
                 container: 'body',
-                title: 'Info',
+                title: __('Info'),
                 content: table,
                 delay: {
                     show: 0,
@@ -347,7 +348,7 @@ define([
     SystemGraphModule.scope = 'system';                     // module scope controls how module gets updated and what type of data is injected
     SystemGraphModule.sortArea = 'a';                       // default sortable area
     SystemGraphModule.position = 3;                         // default sort/order position within sortable area
-    SystemGraphModule.label = 'Graphs';                     // static module label (e.g. description)
+    SystemGraphModule.label = __('Graphs');                     // static module label (e.g. description)
 
     SystemGraphModule.defaultConfig = {
         className: 'pf-system-graph-module',                // class for module
@@ -356,7 +357,7 @@ define([
         systemGraphClass: 'pf-system-graph',                // class for each graph
         systemGraphs: {
             jumps: {
-                headline: 'Jumps',
+                headline: __('Jumps'),
                 postUnits: 'jumps',
                 ykeys: ['y'],
                 nbYkeys2: 0,
@@ -366,7 +367,7 @@ define([
                 infoLabels: ['Avg. jumps']
             },
             shipKills: {
-                headline: 'Ship/POD Kills',
+                headline: __('Ship/POD Kills'),
                 postUnits: 'kills',
                 ykeys: ['y', 'z'],
                 nbYkeys2: 1,
@@ -376,7 +377,7 @@ define([
                 infoLabels: ['Avg. ship kills', 'Avg. pod kills']
             },
             factionKills: {
-                headline: 'NPC Kills',
+                headline: __('NPC Kills'),
                 postUnits: 'kills',
                 ykeys: ['y'],
                 nbYkeys2: 0,

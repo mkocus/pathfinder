@@ -1,0 +1,3374 @@
+msgid ""
+msgstr ""
+
+msgid "You have already admin privileges. Switch character?"
+msgstr "You have already admin privileges. Switch character?"
+
+msgid "Admin login"
+msgstr "Admin login"
+
+msgid "Admin access"
+msgstr "Admin access"
+
+msgid "Click the SSO button below for <em>PATHFINDER</em> access with admin roles"
+msgstr "Click the SSO button below for <em>PATHFINDER</em> access with admin roles"
+
+msgid "Admin roles require at least one of these in-game corporation roles granted to your character"
+msgstr "Admin roles require at least one of these in-game corporation roles granted to your character"
+
+msgid "<kbd>director</kbd>, <kbd>personnel_manager</kbd> or <kbd>security_officer</kbd>"
+msgstr "<kbd>director</kbd>, <kbd>personnel_manager</kbd> or <kbd>security_officer</kbd>"
+
+msgid "The admin SSO requires additional <em>ESI</em> scopes to be accepted, in order to get in-game roles from <em>EVE</em>"
+msgstr "The admin SSO requires additional <em>ESI</em> scopes to be accepted, in order to get in-game roles from <em>EVE</em>"
+
+msgid "id"
+msgstr "id"
+
+msgid "name"
+msgstr "name"
+
+msgid "scope"
+msgstr "scope"
+
+msgid "type"
+msgstr "type"
+
+msgid "created"
+msgstr "created"
+
+msgid "created by"
+msgstr "created by"
+
+msgid "updated"
+msgstr "updated"
+
+msgid "updated by"
+msgstr "updated by"
+
+msgid "active"
+msgstr "active"
+
+msgid "delete"
+msgstr "delete"
+
+msgid "deactivate"
+msgstr "deactivate"
+
+msgid "activate"
+msgstr "activate"
+
+msgid "role"
+msgstr "role"
+
+msgid "share"
+msgstr "share"
+
+msgid "tracking"
+msgstr "tracking"
+
+msgid "security"
+msgstr "security"
+
+msgid "last login"
+msgstr "last login"
+
+msgid "kicked until"
+msgstr "kicked until"
+
+msgid "kick"
+msgstr "kick"
+
+msgid "banned since"
+msgstr "banned since"
+
+msgid "ban"
+msgstr "ban"
+
+msgid "disabled"
+msgstr "disabled"
+
+msgid "revoke"
+msgstr "revoke"
+
+msgid "Map roles"
+msgstr "Map roles"
+
+msgid "Managed mode"
+msgstr "Managed mode"
+
+msgid "Cache expire"
+msgstr "Cache expire"
+
+msgid "Roles are cached for 2min"
+msgstr "Roles are cached for 2min"
+
+msgid "save"
+msgstr "save"
+
+msgid "Shows status information for external used APIs. Provides a general health indicator per route and method."
+msgstr "Shows status information for external used APIs. Provides a general health indicator per route and method."
+
+msgid "base url"
+msgstr "base url"
+
+msgid "datasource"
+msgstr "datasource"
+
+msgid "status for"
+msgstr "status for"
+
+msgid "timeout"
+msgstr "timeout"
+
+msgid "connect timeout"
+msgstr "connect timeout"
+
+msgid "read timeout"
+msgstr "read timeout"
+
+msgid "proxy"
+msgstr "proxy"
+
+msgid "verify"
+msgstr "verify"
+
+msgid "debug"
+msgstr "debug"
+
+msgid "route"
+msgstr "route"
+
+msgid "Ship"
+msgstr "Ship"
+
+msgid "Jump mass"
+msgstr "Jump mass"
+
+msgid "Character"
+msgstr "Character"
+
+msgid "<em class=\"pf-brand\">pathfinder</em> is an open source project. You can view the source code for this project at the link below. This application is licensed under the <em class=\"pf-brand\">MIT License</em> License. The terms of this license are available at the link below. In addition there are a number of third party libraries which have been used, as detailed below."
+msgstr "<em class=\"pf-brand\">pathfinder</em> is an open source project. You can view the source code for this project at the link below. This application is licensed under the <em class=\"pf-brand\">MIT License</em> License. The terms of this license are available at the link below. In addition there are a number of third party libraries which have been used, as detailed below."
+
+msgid "pathfinder"
+msgstr "pathfinder"
+
+msgid "Repository"
+msgstr "Repository"
+
+msgid "Github"
+msgstr "Github"
+
+msgid "Media"
+msgstr "Media"
+
+msgid "YouTube"
+msgstr "YouTube"
+
+msgid "Licence"
+msgstr "Licence"
+
+msgid "If you like <em class=\"pf-brand\">pathfinder</em>, why not make a donation?"
+msgstr "If you like <em class=\"pf-brand\">pathfinder</em>, why not make a donation?"
+
+msgid "CCP Copyright Notice"
+msgstr "CCP Copyright Notice"
+
+msgid "EVE Online and the EVE logo are the registered trademarks of CCP hf. All rights are reserved worldwide. All other trademarks are the property of their respective owners. EVE Online, the EVE logo, EVE and all associated logos and designs are the intellectual property of CCP hf. All artwork, screenshots, characters, vehicles, storylines, world facts or other recognizable features of the intellectual property relating to these trademarks are likewise the intellectual property of CCP hf. CCP is in no way responsible for the content on or functioning of this website, nor can it be liable for any damage arising from the use of this website."
+msgstr "EVE Online and the EVE logo are the registered trademarks of CCP hf. All rights are reserved worldwide. All other trademarks are the property of their respective owners. EVE Online, the EVE logo, EVE and all associated logos and designs are the intellectual property of CCP hf. All artwork, screenshots, characters, vehicles, storylines, world facts or other recognizable features of the intellectual property relating to these trademarks are likewise the intellectual property of CCP hf. CCP is in no way responsible for the content on or functioning of this website, nor can it be liable for any damage arising from the use of this website."
+
+msgid "Username"
+msgstr "Username"
+
+msgid "Captcha"
+msgstr "Captcha"
+
+msgid "Warning"
+msgstr "Warning"
+
+msgid "This will permanently remove your account!"
+msgstr "This will permanently remove your account!"
+
+msgid "Error"
+msgstr "Error"
+
+msgid "(important non-critical information)"
+msgstr "(important non-critical information)"
+
+msgid "Copy and paste D-Scan result. Press <kbd>ctrl</kbd> + <kbd>c</kbd> (copy) then <kbd>ctrl</kbd> + <kbd>v</kbd> (paste).<br> This tool can add and update structures."
+msgstr "Copy and paste D-Scan result. Press <kbd>ctrl</kbd> + <kbd>c</kbd> (copy) then <kbd>ctrl</kbd> + <kbd>v</kbd> (paste).<br> This tool can add and update structures."
+
+msgid "Wormholes"
+msgstr "Wormholes"
+
+msgid "Statics"
+msgstr "Statics"
+
+msgid "Jump distance"
+msgstr "Jump distance"
+
+msgid "Leads to"
+msgstr "Leads to"
+
+msgid "Size"
+msgstr "Size"
+
+msgid "Mass total"
+msgstr "Mass total"
+
+msgid "Mass individual"
+msgstr "Mass individual"
+
+msgid "Mass regeneration"
+msgstr "Mass regeneration"
+
+msgid "Sig strength"
+msgstr "Sig strength"
+
+msgid "Mass"
+msgstr "Mass"
+
+msgid "Base Distance"
+msgstr "Base Distance"
+
+msgid "Distance to jump range"
+msgstr "Distance to jump range"
+
+msgid "min"
+msgstr "min"
+
+msgid "max"
+msgstr "max"
+
+msgid "The new base distance would scale as high as ~14km from the wormhole for the largest ships, and the random factor for each jump would range from 2km (for a fresh wormhole) to 5km (for a crit wormhole) in either direction. The distance from a wormhole that ships must be within to jump will remain 5km as always."
+msgstr "The new base distance would scale as high as ~14km from the wormhole for the largest ships, and the random factor for each jump would range from 2km (for a fresh wormhole) to 5km (for a crit wormhole) in either direction. The distance from a wormhole that ships must be within to jump will remain 5km as always."
+
+msgid "By CCP Fozzie | Mass-Based Spawn Distance after Wormhole Jumps"
+msgstr "By CCP Fozzie | Mass-Based Spawn Distance after Wormhole Jumps"
+
+msgid "New map"
+msgstr "New map"
+
+msgid "Edit map"
+msgstr "Edit map"
+
+msgid "Settings"
+msgstr "Settings"
+
+msgid "Import/Export"
+msgstr "Import/Export"
+
+msgid "Map options"
+msgstr "Map options"
+
+msgid "Auto delete outdated wormholes"
+msgstr "Auto delete outdated wormholes"
+
+msgid "outdated WHs (~2 days)"
+msgstr "outdated WHs (~2 days)"
+
+msgid "Auto delete expired wormholes"
+msgstr "Auto delete expired wormholes"
+
+msgid "expired EOL WHs (~4h 15min)"
+msgstr "expired EOL WHs (~4h 15min)"
+
+msgid "Persistent system aliases"
+msgstr "Persistent system aliases"
+
+msgid "Preserve custom aliases on system delete"
+msgstr "Preserve custom aliases on system delete"
+
+msgid "Persistent system signatures"
+msgstr "Persistent system signatures"
+
+msgid "Preserve signature data on system delete (~3 days)"
+msgstr "Preserve signature data on system delete (~3 days)"
+
+msgid "Track \"Abyssal\" connections"
+msgstr "Track \"Abyssal\" connections"
+
+msgid "Jumps into 'Abyssal' sites are tracked on map"
+msgstr "Jumps into 'Abyssal' sites are tracked on map"
+
+msgid "Save map changes to logfile"
+msgstr "Save map changes to logfile"
+
+msgid "Map changes will be stored in a log file"
+msgstr "Map changes will be stored in a log file"
+
+msgid "Store user statistics"
+msgstr "Store user statistics"
+
+msgid "Map changes will be tracked in order to generate user statistics"
+msgstr "Map changes will be tracked in order to generate user statistics"
+
+msgid "WebHook"
+msgstr "WebHook"
+
+msgid "Copy a WebHook URL from Slack configuration page for 'Incoming WebHooks'"
+msgstr "Copy a WebHook URL from Slack configuration page for 'Incoming WebHooks'"
+
+msgid "Wrong domain. https://hooks.slack.com/)"
+msgstr "Wrong domain. https://hooks.slack.com/)"
+
+msgid "Set a 'username' for your Slack bot"
+msgstr "Set a 'username' for your Slack bot"
+
+msgid "Bot icon"
+msgstr "Bot icon"
+
+msgid "Set a 'icon' for your Slack bot (e.g. :boom:)"
+msgstr "Set a 'icon' for your Slack bot (e.g. :boom:)"
+
+msgid "Allowed chars (A-z, 0-9, _, -)"
+msgstr "Allowed chars (A-z, 0-9, _, -)"
+
+msgid "Channel 'rally point'"
+msgstr "Channel 'rally point'"
+
+msgid "Send new 'Rally point' notifications to a Slack channel"
+msgstr "Send new 'Rally point' notifications to a Slack channel"
+
+msgid "Globally disabled for this map type"
+msgstr "Globally disabled for this map type"
+
+msgid "Channel 'map changes'"
+msgstr "Channel 'map changes'"
+
+msgid "Send map changes to a Slack channel. This can be used in addition or replacement for the logfiles. (check 'Map logging' section above)"
+msgstr "Send map changes to a Slack channel. This can be used in addition or replacement for the logfiles. (check 'Map logging' section above)"
+
+msgid "Slack WebHooks are disabled for your map type '{{ mapData.config.type.name }}'"
+msgstr "Slack WebHooks are disabled for your map type '{{ mapData.config.type.name }}'"
+
+msgid "Discord notifications"
+msgstr "Discord notifications"
+
+msgid "WebHook 'rally point'"
+msgstr "WebHook 'rally point'"
+
+msgid "Copy a WebHook URL from Discord channel configuration page"
+msgstr "Copy a WebHook URL from Discord channel configuration page"
+
+msgid "Set a 'username' for your Discord bot"
+msgstr "Set a 'username' for your Discord bot"
+
+msgid "Please set a bot name"
+msgstr "Please set a bot name"
+
+msgid "WebHook 'map changes'"
+msgstr "WebHook 'map changes'"
+
+msgid "Wrong URL. https://discord.com/api/webhooks/YYYY/ZZZZ"
+msgstr "Wrong URL. https://discord.com/api/webhooks/YYYY/ZZZZ"
+
+msgid "Discord WebHooks are disabled for your map type '{{ mapData.config.type.name }}'"
+msgstr "Discord WebHooks are disabled for your map type '{{ mapData.config.type.name }}'"
+
+msgid "Restricted"
+msgstr "Restricted"
+
+msgid "You don´t have the required roles."
+msgstr "You don´t have the required roles."
+
+msgid "Share settings"
+msgstr "Share settings"
+
+msgid "Use this feature with caution! - Shared map entities have full map access. They even can take over control by removing other entities from this list."
+msgstr "Use this feature with caution! - Shared map entities have full map access. They even can take over control by removing other entities from this list."
+
+msgid "Reduce this risk by creating a new map for joined OPs."
+msgstr "Reduce this risk by creating a new map for joined OPs."
+
+msgid "Search character name (max {{maxCharacter}})"
+msgstr "Search character name (max {{maxCharacter}})"
+
+msgid "Corporations"
+msgstr "Corporations"
+
+msgid "Search corporation name (max {{maxCorporation}})"
+msgstr "Search corporation name (max {{maxCorporation}})"
+
+msgid "Alliances"
+msgstr "Alliances"
+
+msgid "Search alliance name (max {{maxAlliance}})"
+msgstr "Search alliance name (max {{maxAlliance}})"
+
+msgid "Map export"
+msgstr "Map export"
+
+msgid "Export name"
+msgstr "Export name"
+
+msgid "Export"
+msgstr "Export"
+
+msgid "Import file"
+msgstr "Import file"
+
+msgid "Import"
+msgstr "Import"
+
+msgid "Drop file here"
+msgstr "Drop file here"
+
+msgid "Info"
+msgstr "Info"
+
+msgid "Information"
+msgstr "Information"
+
+msgid "Activity"
+msgstr "Activity"
+
+msgid "Log"
+msgstr "Log"
+
+msgid "Refresh"
+msgstr "Refresh"
+
+msgid "Your browser window is to small. Resize it to obtain more columns."
+msgstr "Your browser window is to small. Resize it to obtain more columns."
+
+msgid "Map"
+msgstr "Map"
+
+msgid "Systems"
+msgstr "Systems"
+
+msgid "Connections"
+msgstr "Connections"
+
+msgid "Active pilots"
+msgstr "Active pilots"
+
+msgid "Log viewer"
+msgstr "Log viewer"
+
+msgid "Map config:"
+msgstr "Map config:"
+
+msgid "enabled"
+msgstr "enabled"
+
+msgid "System"
+msgstr "System"
+
+msgid "Connection"
+msgstr "Connection"
+
+msgid "Signature"
+msgstr "Signature"
+
+msgid "Share"
+msgstr "Share"
+
+msgid "Chart"
+msgstr "Chart"
+
+msgid "Notification"
+msgstr "Notification"
+
+msgid "Statistics"
+msgstr "Statistics"
+
+msgid "Logging"
+msgstr "Logging"
+
+msgid "Map types"
+msgstr "Map types"
+
+msgid "<em class=\"pf-brand\">pathfinder</em>&nbsp;&nbsp;supports 3 different types of maps. Systems <small>(<i class=\"fas fa-sun fa-fw\"></i><a href=\"#\" data-target=\"#pf-manual-system\">more</a>)</small> and connections <small>(<i class=\"fas fa-code-branch fa-rotate-270 fa-fw\"></i><a href=\"#\" data-target=\"#pf-manual-connection\">more</a>)</small> can be added to them. Maps are also referred to as <em>\"Chain Map\"</em> or <em>\"Chain\"</em>:"
+msgstr "<em class=\"pf-brand\">pathfinder</em>&nbsp;&nbsp;supports 3 different types of maps. Systems <small>(<i class=\"fas fa-sun fa-fw\"></i><a href=\"#\" data-target=\"#pf-manual-system\">more</a>)</small> and connections <small>(<i class=\"fas fa-code-branch fa-rotate-270 fa-fw\"></i><a href=\"#\" data-target=\"#pf-manual-connection\">more</a>)</small> can be added to them. Maps are also referred to as <em>\"Chain Map\"</em> or <em>\"Chain\"</em>:"
+
+msgid "private map<small> (is not visible for other pilots, unless you invite them)</small>"
+msgstr "private map<small> (is not visible for other pilots, unless you invite them)</small>"
+
+msgid "corporation map<small> (can be used by any corporation member)</small>"
+msgstr "corporation map<small> (can be used by any corporation member)</small>"
+
+msgid "alliance map<small> (can be used by any alliance member)</small>"
+msgstr "alliance map<small> (can be used by any alliance member)</small>"
+
+msgid "global map<small> (this maps are static and can´t be created by users)</small>"
+msgstr "global map<small> (this maps are static and can´t be created by users)</small>"
+
+msgid "Up to 5 different maps can be used simultaneously. <span class=\"txt-color txt-color-blue\">Alliance maps</span> require appropriate rules to be created."
+msgstr "Up to 5 different maps can be used simultaneously. <span class=\"txt-color txt-color-blue\">Alliance maps</span> require appropriate rules to be created."
+
+msgid "Map scope"
+msgstr "Map scope"
+
+msgid "Each map has a <em>\"scope\"</em> that affects how systems will be added automatically to it:"
+msgstr "Each map has a <em>\"scope\"</em> that affects how systems will be added automatically to it:"
+
+msgid "wormholes -<small> (w-space systems and chain exit systems are tracked)</small>"
+msgstr "wormholes -<small> (w-space systems and chain exit systems are tracked)</small>"
+
+msgid "stargates -<small> (k-space systems and direct neighboured systems are tracked)</small>"
+msgstr "stargates -<small> (k-space systems and direct neighboured systems are tracked)</small>"
+
+msgid "all -<small> (any system will be tracked)</small>"
+msgstr "all -<small> (any system will be tracked)</small>"
+
+msgid "none -<small> (system tracking is disabled)</small>"
+msgstr "none -<small> (system tracking is disabled)</small>"
+
+msgid "Map tracking"
+msgstr "Map tracking"
+
+msgid "If \"map tracking\" is <span class=\"txt-color txt-color-greenLight\">on</span>, new systems <small>(<i class=\"fas fa-sun fa-fw\"></i><a href=\"#\" data-target=\"#pf-manual-system\">more</a>)</small> and connections <small>(<i class=\"fas fa-code-branch fa-rotate-270 fa-fw\"></i><a href=\"#\" data-target=\"#pf-manual-connection\">more</a>)</small> will be automatically added to the current map <small>(<i class=\"fas fa-sitemap fa-fw\"></i><a href=\"#\" data-target=\"#pf-manual-map\">more</a>)</small>. This can only work if your current position is known by <em class=\"pf-brand\">pathfinder</em>.<br> The map scope <small>(<i class=\"fas fa-crosshairs fa-fw\"></i><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-map-scope\">more</a>)</small> defines which systems are affected.<br> The connection scope <small>(<i class=\"fas fa-crosshairs fa-fw\"></i><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-connection-scope\">more</a>)</small> will be auto-detected (e.g. wormhole connection). This is achieved by calculating the jump distance between your current system and system you came from."
+msgstr "If \"map tracking\" is <span class=\"txt-color txt-color-greenLight\">on</span>, new systems <small>(<i class=\"fas fa-sun fa-fw\"></i><a href=\"#\" data-target=\"#pf-manual-system\">more</a>)</small> and connections <small>(<i class=\"fas fa-code-branch fa-rotate-270 fa-fw\"></i><a href=\"#\" data-target=\"#pf-manual-connection\">more</a>)</small> will be automatically added to the current map <small>(<i class=\"fas fa-sitemap fa-fw\"></i><a href=\"#\" data-target=\"#pf-manual-map\">more</a>)</small>. This can only work if your current position is known by <em class=\"pf-brand\">pathfinder</em>.<br> The map scope <small>(<i class=\"fas fa-crosshairs fa-fw\"></i><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-map-scope\">more</a>)</small> defines which systems are affected.<br> The connection scope <small>(<i class=\"fas fa-crosshairs fa-fw\"></i><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-connection-scope\">more</a>)</small> will be auto-detected (e.g. wormhole connection). This is achieved by calculating the jump distance between your current system and system you came from."
+
+msgid "Context menu"
+msgstr "Context menu"
+
+msgid "<kbd>right click</kbd> somewhere on the map to open the context menu."
+msgstr "<kbd>right click</kbd> somewhere on the map to open the context menu."
+
+msgid "Add a new system at the position, you clicked at"
+msgstr "Add a new system at the position, you clicked at"
+
+msgid "Select all (unlocked) systems on the map"
+msgstr "Select all (unlocked) systems on the map"
+
+msgid "Filter map connections by a scope <small><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-connection-scope\">more</a></small>"
+msgstr "Filter map connections by a scope <small><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-connection-scope\">more</a></small>"
+
+msgid "Map related options (edit map, information)"
+msgstr "Map related options (edit map, information)"
+
+msgid "Delete selected systems <small><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-delete\">more</a></small>"
+msgstr "Delete selected systems <small><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-delete\">more</a></small>"
+
+msgid "Select methods"
+msgstr "Select methods"
+
+msgid "Frame Select:<small> Multiple systems can be selected by </small><kbd>click</kbd> + <kbd>drag</kbd>"
+msgstr "Frame Select:<small> Multiple systems can be selected by </small><kbd>click</kbd> + <kbd>drag</kbd>"
+
+msgid "Click Select:<small> Individual systems can be selected by holding </small><kbd>ctrl</kbd> + <kbd>click</kbd> <small> at a system</small>"
+msgstr "Click Select:<small> Individual systems can be selected by holding </small><kbd>ctrl</kbd> + <kbd>click</kbd> <small> at a system</small>"
+
+msgid "Locked systems <small>(<i class=\"fas fa-lock fa-fw\"></i><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-locked\">more</a>)</small> can´t be selected."
+msgstr "Locked systems <small>(<i class=\"fas fa-lock fa-fw\"></i><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-locked\">more</a>)</small> can´t be selected."
+
+msgid "Grid snapping"
+msgstr "Grid snapping"
+
+msgid "The <em>\"Grid snapping\"</em> option can be activated on the \"Map Menu\" <small>(<i class=\"fas fa-sitemap fa-fw\"></i>)</small>. Systems will snap to a <samp>20x20px</samp> grid. A grid overlay appears on the map."
+msgstr "The <em>\"Grid snapping\"</em> option can be activated on the \"Map Menu\" <small>(<i class=\"fas fa-sitemap fa-fw\"></i>)</small>. Systems will snap to a <samp>20x20px</samp> grid. A grid overlay appears on the map."
+
+msgid "Magnetizing"
+msgstr "Magnetizing"
+
+msgid "The <em>\"Magnetizing\"</em> option can be activated on the \"Map Menu\" <small>(<i class=\"fas fa-sitemap fa-fw\"></i>)</small>. If active, systems effect each other while <kbd>move</kbd>/<kbd>drag&amp;drop</kbd> and will rearrange themselves automatically on the map. This prevents system \"overlapping\""
+msgstr "The <em>\"Magnetizing\"</em> option can be activated on the \"Map Menu\" <small>(<i class=\"fas fa-sitemap fa-fw\"></i>)</small>. If active, systems effect each other while <kbd>move</kbd>/<kbd>drag&amp;drop</kbd> and will rearrange themselves automatically on the map. This prevents system \"overlapping\""
+
+msgid "Signatures"
+msgstr "Signatures"
+
+msgid "The <em>\"Signatures\"</em> option adds additional overlays to all connection endpoints. If a Connection <small>(<i class=\"fas fa-code-branch fa-rotate-270 fa-fw\"></i><a href=\"#\" data-target=\"#pf-manual-connection\">more</a>)</small> has a Signature <small>(<i class=\"fas fa-signature fa-fw\"></i><a href=\"#\" data-target=\"#pf-manual-signature\">more</a>)</small> mapped to it, in either the source or target system, <em class=\"pf-brand\">pathfinder</em> displays that information on map"
+msgstr "The <em>\"Signatures\"</em> option adds additional overlays to all connection endpoints. If a Connection <small>(<i class=\"fas fa-code-branch fa-rotate-270 fa-fw\"></i><a href=\"#\" data-target=\"#pf-manual-connection\">more</a>)</small> has a Signature <small>(<i class=\"fas fa-signature fa-fw\"></i><a href=\"#\" data-target=\"#pf-manual-signature\">more</a>)</small> mapped to it, in either the source or target system, <em class=\"pf-brand\">pathfinder</em> displays that information on map"
+
+msgid "The <em>\"Compact\"</em> option triggers a \"compressed\" map layout. Active Pilots are shown \"inline\" next to the name of a system."
+msgstr "The <em>\"Compact\"</em> option triggers a \"compressed\" map layout. Active Pilots are shown \"inline\" next to the name of a system."
+
+msgid "Update counter"
+msgstr "Update counter"
+
+msgid "The <em>\"Update counter\"</em> starts counting backwards during map interaction. While the counter is active, no data is pushed to server. Once the counter hits 0, all map date will be stored and active pilots will receive the map updates.<br> There is no need for any safe/edit buttons."
+msgstr "The <em>\"Update counter\"</em> starts counting backwards during map interaction. While the counter is active, no data is pushed to server. Once the counter hits 0, all map date will be stored and active pilots will receive the map updates.<br> There is no need for any safe/edit buttons."
+
+msgid "Solar system / Wormhole system"
+msgstr "Solar system / Wormhole system"
+
+msgid "Systems are represented by rectangle boxes on a map <small>(<i class=\"fas fa-sitemap fa-fw\"></i><a href=\"#\" data-target=\"#pf-manual-map\">more</a>)</small>. Pilots can interact with systems like \"delete systems\" <small>(<i class=\"fas fa-trash fa-fw\"></i><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-delete\">more</a>)</small> or \"move systems\" <small>(<i class=\"fas fa-hand-paper fa-fw\"></i><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-move\">more</a>)</small>."
+msgstr "Systems are represented by rectangle boxes on a map <small>(<i class=\"fas fa-sitemap fa-fw\"></i><a href=\"#\" data-target=\"#pf-manual-map\">more</a>)</small>. Pilots can interact with systems like \"delete systems\" <small>(<i class=\"fas fa-trash fa-fw\"></i><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-delete\">more</a>)</small> or \"move systems\" <small>(<i class=\"fas fa-hand-paper fa-fw\"></i><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-move\">more</a>)</small>."
+
+msgid "Active system"
+msgstr "Active system"
+
+msgid "Any system on a map can be set as \"active\" by <kbd>click</kbd>. <br> Just one system per map can have an active state. The active system has a <span style=\"-webkit-box-shadow: #ffffbb 0px 0px 8px 0px;box-shadow: #ffffbb 0px 0px 8px 0px; display: inline-block; margin: 0 5px; padding: 0 3px;\">light yellow</span> shadow. Additional system information is shown below the map."
+msgstr "Any system on a map can be set as \"active\" by <kbd>click</kbd>. <br> Just one system per map can have an active state. The active system has a <span style=\"-webkit-box-shadow: #ffffbb 0px 0px 8px 0px;box-shadow: #ffffbb 0px 0px 8px 0px; display: inline-block; margin: 0 5px; padding: 0 3px;\">light yellow</span> shadow. Additional system information is shown below the map."
+
+msgid "Name / Alias"
+msgstr "Name / Alias"
+
+msgid "Systems can be renamed with an alias by <kbd>double-click</kbd> the name. System aliases are stored server side and are visible to any pilot on the map."
+msgstr "Systems can be renamed with an alias by <kbd>double-click</kbd> the name. System aliases are stored server side and are visible to any pilot on the map."
+
+msgid "Security status"
+msgstr "Security status"
+
+msgid "Any <em>\"K-space\"</em> system in <em>\"New Eden\"</em> has a fixed <em>\"Security status\"</em> between <samp>-1.0</samp> and <samp>+1.0</samp>. <em>\"W-space\"</em> systems always have a Security status of <samp>-1.0</samp>. They can be distinguished into <em>\"Classes\"</em> [C1 - C6].<br> The label color of a system indicates the <em>\"Security Status\"</em>."
+msgstr "Any <em>\"K-space\"</em> system in <em>\"New Eden\"</em> has a fixed <em>\"Security status\"</em> between <samp>-1.0</samp> and <samp>+1.0</samp>. <em>\"W-space\"</em> systems always have a Security status of <samp>-1.0</samp>. They can be distinguished into <em>\"Classes\"</em> [C1 - C6].<br> The label color of a system indicates the <em>\"Security Status\"</em>."
+
+msgid "K-space"
+msgstr "K-space"
+
+msgid "High security system"
+msgstr "High security system"
+
+msgid "Low security system"
+msgstr "Low security system"
+
+msgid "Null security system"
+msgstr "Null security system"
+
+msgid "W-space"
+msgstr "W-space"
+
+msgid "C1, C2"
+msgstr "C1, C2"
+
+msgid "Low class wormhole"
+msgstr "Low class wormhole"
+
+msgid "C3, C4"
+msgstr "C3, C4"
+
+msgid "Mid class wormhole"
+msgstr "Mid class wormhole"
+
+msgid "C5, C6"
+msgstr "C5, C6"
+
+msgid "High class wormhole"
+msgstr "High class wormhole"
+
+msgid "C12"
+msgstr "C12"
+
+msgid "Thera class wormhole"
+msgstr "Thera class wormhole"
+
+msgid "C13"
+msgstr "C13"
+
+msgid "Shattered wormhole"
+msgstr "Shattered wormhole"
+
+msgid "C14&nbsp;-&nbsp;C18"
+msgstr "C14&nbsp;-&nbsp;C18"
+
+msgid "Drifter wormhole"
+msgstr "Drifter wormhole"
+
+msgid "A-space"
+msgstr "A-space"
+
+msgid "Abyss system"
+msgstr "Abyss system"
+
+msgid "System status"
+msgstr "System status"
+
+msgid "The border color indicates the current status of a system.<br> The status can be changed by using the context menu <small>(<a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-contextmenu\">more</a>)</small>."
+msgstr "The border color indicates the current status of a system.<br> The status can be changed by using the context menu <small>(<a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-contextmenu\">more</a>)</small>."
+
+msgid "no status set <small>(unknown)</small>"
+msgstr "no status set <small>(unknown)</small>"
+
+msgid "friendly <small>(in the possession of your corp/ally or allied entities)</small>"
+msgstr "friendly <small>(in the possession of your corp/ally or allied entities)</small>"
+
+msgid "occupied <small>(hostiles structures found but not active)</small>"
+msgstr "occupied <small>(hostiles structures found but not active)</small>"
+
+msgid "hostile <small>(hostile activity noticed recently)</small>"
+msgstr "hostile <small>(hostile activity noticed recently)</small>"
+
+msgid "empty <small>(system is not occupied or active)</small>"
+msgstr "empty <small>(system is not occupied or active)</small>"
+
+msgid "unscanned <small>(system has unscanned signatures)</small>"
+msgstr "unscanned <small>(system has unscanned signatures)</small>"
+
+msgid "System effect"
+msgstr "System effect"
+
+msgid "Effects of wormhole systems are shown by a <i class=\"fas fa-square fa-fw\"></i> at the top right of a system."
+msgstr "Effects of wormhole systems are shown by a <i class=\"fas fa-square fa-fw\"></i> at the top right of a system."
+
+msgid "No effect"
+msgstr "No effect"
+
+msgid "Magnetar"
+msgstr "Magnetar"
+
+msgid "Red Giant"
+msgstr "Red Giant"
+
+msgid "Pulsar"
+msgstr "Pulsar"
+
+msgid "Wolf-Rayet"
+msgstr "Wolf-Rayet"
+
+msgid "Cataclysmic Variable"
+msgstr "Cataclysmic Variable"
+
+msgid "Blackhole"
+msgstr "Blackhole"
+
+msgid "If a system has active pilots, a tooltip is shown with the current number of pilots. <br> Systems with active pilots are bigger than empty systems and provide morermation than others.<br> During <kbd>mouseover</kbd> the <small>(<i class=\"fas fa-angle-down fa-fw\"></i>)</small> icon more detailed information is shown."
+msgstr "If a system has active pilots, a tooltip is shown with the current number of pilots. <br> Systems with active pilots are bigger than empty systems and provide morermation than others.<br> During <kbd>mouseover</kbd> the <small>(<i class=\"fas fa-angle-down fa-fw\"></i>)</small> icon more detailed information is shown."
+
+msgid "Move"
+msgstr "Move"
+
+msgid "Any system that is not <em>\"Locked\"</em> <small>(<i class=\"fas fa-lock fa-fw\"></i><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-locked\">more</a>)</small> can be moved, by <kbd>click</kbd> + <kbd>drag</kbd> the systems security label (top right).<br> In order to move multiple systems at once, make sure all of them are selected <small>(<a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-map-select\">more</a>)</small>. Now <kbd>drag</kbd> one selected systems and all others follow."
+msgstr "Any system that is not <em>\"Locked\"</em> <small>(<i class=\"fas fa-lock fa-fw\"></i><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-locked\">more</a>)</small> can be moved, by <kbd>click</kbd> + <kbd>drag</kbd> the systems security label (top right).<br> In order to move multiple systems at once, make sure all of them are selected <small>(<a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-map-select\">more</a>)</small>. Now <kbd>drag</kbd> one selected systems and all others follow."
+
+msgid "<kbd>right click</kbd> a system on the map to open the context menu."
+msgstr "<kbd>right click</kbd> a system on the map to open the context menu."
+
+msgid "Adds a new system that connects to this system"
+msgstr "Adds a new system that connects to this system"
+
+msgid "Lock this system <small><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-locked\">more</a></small>"
+msgstr "Lock this system <small><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-locked\">more</a></small>"
+
+msgid "Set \"Rally Point\" for this system <small><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-rally\">more</a></small>"
+msgstr "Set \"Rally Point\" for this system <small><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-rally\">more</a></small>"
+
+msgid "Changes the status of this system <small><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-status\">more</a></small>"
+msgstr "Changes the status of this system <small><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-status\">more</a></small>"
+
+msgid "Waypoint options for this system <small><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-waypoint\">more</a></small>"
+msgstr "Waypoint options for this system <small><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-waypoint\">more</a></small>"
+
+msgid "Delete this system and all connections <small><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-delete\">more</a></small>"
+msgstr "Delete this system and all connections <small><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-delete\">more</a></small>"
+
+msgid "Rally point"
+msgstr "Rally point"
+
+msgid "Systems can be marked as <span class=\"pf-system-info-rally\"><span class=\"pf-system-head\" style=\"padding: 0 5px;\">Rally point</span></span>. When a new \"<em>Rally point</em>\" is set, you can optional enter a message and set various \"<em>Poke</em>\" options, in order to send notifications to other active pilots.<br> <em>Slack</em> and Email pokes require a valid map configuration (map settings dialog) before they can be used."
+msgstr "Systems can be marked as <span class=\"pf-system-info-rally\"><span class=\"pf-system-head\" style=\"padding: 0 5px;\">Rally point</span></span>. When a new \"<em>Rally point</em>\" is set, you can optional enter a message and set various \"<em>Poke</em>\" options, in order to send notifications to other active pilots.<br> <em>Slack</em> and Email pokes require a valid map configuration (map settings dialog) before they can be used."
+
+msgid "Desktop poke -<small> (send OS browser popup messages)</small>"
+msgstr "Desktop poke -<small> (send OS browser popup messages)</small>"
+
+msgid "Slack poke -<small> (send poke message to a <em>Slack</em> channel)</small>"
+msgstr "Slack poke -<small> (send poke message to a <em>Slack</em> channel)</small>"
+
+msgid "Discord poke -<small> (send poke message to a <em>Discord</em> channel)</small>"
+msgstr "Discord poke -<small> (send poke message to a <em>Discord</em> channel)</small>"
+
+msgid "Email poke -<small> (send a mail with your poke message)</small>"
+msgstr "Email poke -<small> (send a mail with your poke message)</small>"
+
+msgid "Waypoints"
+msgstr "Waypoints"
+
+msgid "Waypoints can be set to systems. Waypoint options are identical to their in game options."
+msgstr "Waypoints can be set to systems. Waypoint options are identical to their in game options."
+
+msgid "set destination -<small> (clear other waypoints and set new destination)</small>"
+msgstr "set destination -<small> (clear other waypoints and set new destination)</small>"
+
+msgid "add new [start] -<small> (add new waypoint in front of your waypoint queue)</small>"
+msgstr "add new [start] -<small> (add new waypoint in front of your waypoint queue)</small>"
+
+msgid "add new [end] -<small> (add new waypoint to the end of your waypoint queue)</small>"
+msgstr "add new [end] -<small> (add new waypoint to the end of your waypoint queue)</small>"
+
+msgid "Locked system"
+msgstr "Locked system"
+
+msgid "Locked systems can´t be selected <small>(<a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-map-select\">more</a>)</small>, moved <small>(<i class=\"fas fa-hand-paper fa-fw\"></i><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-move\">more</a>)</small> or deleted <small>(<i class=\"fas fa-trash fa-fw\"></i><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-delete\">more</a>)</small>."
+msgstr "Locked systems can´t be selected <small>(<a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-map-select\">more</a>)</small>, moved <small>(<i class=\"fas fa-hand-paper fa-fw\"></i><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-move\">more</a>)</small> or deleted <small>(<i class=\"fas fa-trash fa-fw\"></i><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-delete\">more</a>)</small>."
+
+msgid "Delete system"
+msgstr "Delete system"
+
+msgid "Any system that is not \"Locked\" <small>(<i class=\"fas fa-lock fa-fw\"></i><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-locked\">more</a>)</small> can be deleted from a map."
+msgstr "Any system that is not \"Locked\" <small>(<i class=\"fas fa-lock fa-fw\"></i><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-locked\">more</a>)</small> can be deleted from a map."
+
+msgid "Connections between systems are represented by solid lines. Any connection requires two systems that are connected together."
+msgstr "Connections between systems are represented by solid lines. Any connection requires two systems that are connected together."
+
+msgid "Connect systems"
+msgstr "Connect systems"
+
+msgid "Systems can be connected to each other by several ways."
+msgstr "Systems can be connected to each other by several ways."
+
+msgid "Drag Connection: <kbd>click</kbd><small> a systems name and </small><kbd>drag</kbd><small> a new connection to any other system</small>"
+msgstr "Drag Connection: <kbd>click</kbd><small> a systems name and </small><kbd>drag</kbd><small> a new connection to any other system</small>"
+
+msgid "Switch Connection: <kbd>click</kbd><small> a <em>\"Connection Endpoints\"</em> and </small><kbd>drag</kbd><small> it to any other system</small>"
+msgstr "Switch Connection: <kbd>click</kbd><small> a <em>\"Connection Endpoints\"</em> and </small><kbd>drag</kbd><small> it to any other system</small>"
+
+msgid "Add new System: <small>Add a system by using the context menu of a system (<a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-contextmenu\">more</a>)</small>"
+msgstr "Add new System: <small>Add a system by using the context menu of a system (<a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-contextmenu\">more</a>)</small>"
+
+msgid "Connection scope"
+msgstr "Connection scope"
+
+msgid "Each connection has its own <em>\"Scope\"</em>. Scopes represent connection types that exist in game.<br> Maps can be filtered by specific scopes <small>(<a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-map-contextmenu\">more</a>)</small>.<br> The <em>\"Scope\"</em> of a connection can be changed by using the context menu of a connection <small>(<a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-connection-contextmenu\">more</a>)</small>."
+msgstr "Each connection has its own <em>\"Scope\"</em>. Scopes represent connection types that exist in game.<br> Maps can be filtered by specific scopes <small>(<a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-map-contextmenu\">more</a>)</small>.<br> The <em>\"Scope\"</em> of a connection can be changed by using the context menu of a connection <small>(<a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-connection-contextmenu\">more</a>)</small>."
+
+msgid "Wormhole - <em>\"k-space\"</em> connections"
+msgstr "Wormhole - <em>\"k-space\"</em> connections"
+
+msgid "Stargate - static <em>\"k-space\"</em> connections"
+msgstr "Stargate - static <em>\"k-space\"</em> connections"
+
+msgid "Jumpbridge - player build <em>\"k-space\"</em> connections"
+msgstr "Jumpbridge - player build <em>\"k-space\"</em> connections"
+
+msgid "Abyssal - PVE zone entrance <em>\"a-space\"</em> connections"
+msgstr "Abyssal - PVE zone entrance <em>\"a-space\"</em> connections"
+
+msgid "Connection mass status"
+msgstr "Connection mass status"
+
+msgid "Wormholes go through various mass stages over lifetime.<br> To reflect the mass status on map, wormholes can be flagged.<br> The status can be changed by using the context menu <small>(<a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-connection-contextmenu\">more</a>)</small>."
+msgstr "Wormholes go through various mass stages over lifetime.<br> To reflect the mass status on map, wormholes can be flagged.<br> The status can be changed by using the context menu <small>(<a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-connection-contextmenu\">more</a>)</small>."
+
+msgid "fresh - <em>\"… has not yet had its stability significantly disrupted\"</em> (>50%)"
+msgstr "fresh - <em>\"… has not yet had its stability significantly disrupted\"</em> (>50%)"
+
+msgid "reduced - <em>\"… had its stability reduced, but not to a critical degree\"</em> (50% - 10%)"
+msgstr "reduced - <em>\"… had its stability reduced, but not to a critical degree\"</em> (50% - 10%)"
+
+msgid "critical - <em>\"… is on the verge of collapse\"</em> (&lt;10%)"
+msgstr "critical - <em>\"… is on the verge of collapse\"</em> (&lt;10%)"
+
+msgid "Connection ship size"
+msgstr "Connection ship size"
+
+msgid "Wormhole connections have a \"max jump mass\". Ships whose total mass exceed this mass, can not go through the hole.<br> The size of a wormhole can be set by using the context menu <small>(<a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-connection-contextmenu\">more</a>)</small>."
+msgstr "Wormhole connections have a \"max jump mass\". Ships whose total mass exceed this mass, can not go through the hole.<br> The size of a wormhole can be set by using the context menu <small>(<a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-connection-contextmenu\">more</a>)</small>."
+
+msgid "Small - <em>\"Only the smallest ships can pass through this wormhole\"</em> (Frigates, Destroyers,…)"
+msgstr "Small - <em>\"Only the smallest ships can pass through this wormhole\"</em> (Frigates, Destroyers,…)"
+
+msgid "Medium - <em>\"Up to medium size ships can pass through this wormhole\"</em> (Nestors, BCs,…)"
+msgstr "Medium - <em>\"Up to medium size ships can pass through this wormhole\"</em> (Nestors, BCs,…)"
+
+msgid "Large - <em>\"Larger ships can pass through this wormhole\"</em> (BSs, Orcas,…)"
+msgstr "Large - <em>\"Larger ships can pass through this wormhole\"</em> (BSs, Orcas,…)"
+
+msgid "Capital - <em>\"Very large ships can pass through this wormhole\"</em> (FAXes, Dreads, Freighters,…)"
+msgstr "Capital - <em>\"Very large ships can pass through this wormhole\"</em> (FAXes, Dreads, Freighters,…)"
+
+msgid "Connection lifetime"
+msgstr "Connection lifetime"
+
+msgid "The lifetime information of a wormhole indicates roughly what kind of time is remaining on the wormhole before it dies of natural causes.<br> Wormholes set to \"EOL\" (End Of Lifetime) can automatically be removed from the map 4h later on (check map settings).<br> EOL status can be set by using the context menu <small>(<a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-connection-contextmenu\">more</a>)</small>."
+msgstr "The lifetime information of a wormhole indicates roughly what kind of time is remaining on the wormhole before it dies of natural causes.<br> Wormholes set to \"EOL\" (End Of Lifetime) can automatically be removed from the map 4h later on (check map settings).<br> EOL status can be set by using the context menu <small>(<a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-connection-contextmenu\">more</a>)</small>."
+
+msgid "EOL - <em>\"Wormhole is reaching the end of its natural lifetime\"</em> (less than 4 hours)"
+msgstr "EOL - <em>\"Wormhole is reaching the end of its natural lifetime\"</em> (less than 4 hours)"
+
+msgid "Context menu (connection)"
+msgstr "Context menu (connection)"
+
+msgid "<kbd>right click</kbd> a connection on the map to open the context menu."
+msgstr "<kbd>right click</kbd> a connection on the map to open the context menu."
+
+msgid "Toggle \"EOL\" (End Of Lifetime). Less than 4 hours until collapse <small><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-connection-frig\">more</a></small>"
+msgstr "Toggle \"EOL\" (End Of Lifetime). Less than 4 hours until collapse <small><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-connection-frig\">more</a></small>"
+
+msgid "Toggle \"Preserve Mass\" for connection <small><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-connection-mass\">more</a></small>"
+msgstr "Toggle \"Preserve Mass\" for connection <small><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-connection-mass\">more</a></small>"
+
+msgid "Set \"mass status\". Total mass passed through ['fresh', 'reduced', 'critical'] <small><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-connection-status\">more</a></small>"
+msgstr "Set \"mass status\". Total mass passed through ['fresh', 'reduced', 'critical'] <small><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-connection-status\">more</a></small>"
+
+msgid "Set \"ship size\" for connection (mass per jump) ['S', 'M', 'L', 'XL'] <small><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-connection-size\">more</a></small>"
+msgstr "Set \"ship size\" for connection (mass per jump) ['S', 'M', 'L', 'XL'] <small><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-connection-size\">more</a></small>"
+
+msgid "Changes connection scope ['wormhole', 'stargate', 'jumpbridge'] <small><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-connection-scope\">more</a></small>"
+msgstr "Changes connection scope ['wormhole', 'stargate', 'jumpbridge'] <small><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-connection-scope\">more</a></small>"
+
+msgid "Delete/detach this connection <small><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-connection-delete\">more</a></small>"
+msgstr "Delete/detach this connection <small><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-connection-delete\">more</a></small>"
+
+msgid "Preserve mass"
+msgstr "Preserve mass"
+
+msgid "Wormholes can be labeled with a&nbsp;&nbsp;<span class=\"label label-danger\"><i class=\"fas fa-exclamation-triangle\"></i> save mass</span> flag.<br> Let your mates know about critical connections that should be mass-saved (e.g. <span class=\"pf-system-sec-highSec\">H</span> security exits)."
+msgstr "Wormholes can be labeled with a&nbsp;&nbsp;<span class=\"label label-danger\"><i class=\"fas fa-exclamation-triangle\"></i> save mass</span> flag.<br> Let your mates know about critical connections that should be mass-saved (e.g. <span class=\"pf-system-sec-highSec\">H</span> security exits)."
+
+msgid "Delete/detach connection"
+msgstr "Delete/detach connection"
+
+msgid "Connections can be detached by several ways."
+msgstr "Connections can be detached by several ways."
+
+msgid "Drag Connection: <small> <em>\"Connection Endpoints\"</em> can be </small><kbd>click</kbd> + <kbd>drag</kbd><small> away from its current system</small>"
+msgstr "Drag Connection: <small> <em>\"Connection Endpoints\"</em> can be </small><kbd>click</kbd> + <kbd>drag</kbd><small> away from its current system</small>"
+
+msgid "Delete Connection: <small>Delete a connection by using the context menu of a connection (<a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-connection-contextmenu\">more</a>)</small>"
+msgstr "Delete Connection: <small>Delete a connection by using the context menu of a connection (<a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-connection-contextmenu\">more</a>)</small>"
+
+msgid "Delete System: <small>Delete a system by using the context menu of a connection (<a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-contextmenu\">more</a>)</small>"
+msgstr "Delete System: <small>Delete a system by using the context menu of a connection (<a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-contextmenu\">more</a>)</small>"
+
+msgid "Delete Systems: <small>Delete multiple systems by using the context menu of a map (<a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-map-contextmenu\">more</a>)</small>"
+msgstr "Delete Systems: <small>Delete multiple systems by using the context menu of a map (<a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-map-contextmenu\">more</a>)</small>"
+
+msgid "Endpoints"
+msgstr "Endpoints"
+
+msgid "The two endpoints of a connection support <kbd>drag&amp;drop</kbd> for either twitch the connection to a a new target system or use the context menu for endpoint specific actions."
+msgstr "The two endpoints of a connection support <kbd>drag&amp;drop</kbd> for either twitch the connection to a a new target system or use the context menu for endpoint specific actions."
+
+msgid "Context menu (endpoint)"
+msgstr "Context menu (endpoint)"
+
+msgid "<kbd>right click</kbd> a connection endpoint on the map to open the context menu."
+msgstr "<kbd>right click</kbd> a connection endpoint on the map to open the context menu."
+
+msgid "Toggles this endpoint <em>\"bubbled\"</em> <small><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-endpoint-bubble\">more</a></small>"
+msgstr "Toggles this endpoint <em>\"bubbled\"</em> <small><a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-endpoint-bubble\">more</a></small>"
+
+msgid "Bubbled (endpoint)"
+msgstr "Bubbled (endpoint)"
+
+msgid "A connection endpoint (e.g. wormhole, stargate,..) can be flagged as <em>\"bubbled\"</em>. Bubbled endpoints have a&nbsp;&nbsp;<span class=\"pf-endpoint-bubble\"></span>&nbsp;&nbsp;mark around them on map."
+msgstr "A connection endpoint (e.g. wormhole, stargate,..) can be flagged as <em>\"bubbled\"</em>. Bubbled endpoints have a&nbsp;&nbsp;<span class=\"pf-endpoint-bubble\"></span>&nbsp;&nbsp;mark around them on map."
+
+msgid "Signature module"
+msgstr "Signature module"
+
+msgid "The <em>\"Signature table\"</em> of a system is shown below the map. Any active system <small>(<a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-active\">more</a>)</small> has its own <em>\"Signature table\"</em>. Signatures found in a system can be added to the table in order to share information. The table represents a record of the current scan process of a system."
+msgstr "The <em>\"Signature table\"</em> of a system is shown below the map. Any active system <small>(<a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-active\">more</a>)</small> has its own <em>\"Signature table\"</em>. Signatures found in a system can be added to the table in order to share information. The table represents a record of the current scan process of a system."
+
+msgid "Progress bar"
+msgstr "Progress bar"
+
+msgid "The scan <em>\"Progress bar\"</em> is a visual indicator for the scan progress of a system. You can see how many signatures are scanned already and what is left. Anytime a new signature is added to the <em>\"Signature table\"</em> the <em>\"Progress bar\"</em> will be updated automatically. The bar color indicates the progress."
+msgstr "The scan <em>\"Progress bar\"</em> is a visual indicator for the scan progress of a system. You can see how many signatures are scanned already and what is left. Anytime a new signature is added to the <em>\"Signature table\"</em> the <em>\"Progress bar\"</em> will be updated automatically. The bar color indicates the progress."
+
+msgid "not scanned <small>(System scanned to &lt;30%)</small>"
+msgstr "not scanned <small>(System scanned to &lt;30%)</small>"
+
+msgid "bad scanned <small>(System scanned to &lt;100%)</small>"
+msgstr "bad scanned <small>(System scanned to &lt;100%)</small>"
+
+msgid "full scanned <small>(System scanned to 100%)</small>"
+msgstr "full scanned <small>(System scanned to 100%)</small>"
+
+msgid "Signature reader"
+msgstr "Signature reader"
+
+msgid "The <em>\"Signature reader\"</em> functionality allows pilots to add and update multiple signatures at once. In order to copy signatures from <em>\"EVE\"</em> to <em class=\"pf-brand\">pathfinder</em>, do the following steps."
+msgstr "The <em>\"Signature reader\"</em> functionality allows pilots to add and update multiple signatures at once. In order to copy signatures from <em>\"EVE\"</em> to <em class=\"pf-brand\">pathfinder</em>, do the following steps."
+
+msgid "<kbd>ctrl</kbd> + <kbd>a</kbd> <small>(select all/some signatures in the scanning window)</small>"
+msgstr "<kbd>ctrl</kbd> + <kbd>a</kbd> <small>(select all/some signatures in the scanning window)</small>"
+
+msgid "<kbd>ctrl</kbd> + <kbd>c</kbd> <small>(copy selected signatures to clipboard)</small>"
+msgstr "<kbd>ctrl</kbd> + <kbd>c</kbd> <small>(copy selected signatures to clipboard)</small>"
+
+msgid "<kbd>click</kbd> the <em>\"Signature reader\"</em> button <small>(open the <em>\"Signature reader\"</em> dialog)</small>"
+msgstr "<kbd>click</kbd> the <em>\"Signature reader\"</em> button <small>(open the <em>\"Signature reader\"</em> dialog)</small>"
+
+msgid "<kbd>ctrl</kbd> + <kbd>v</kbd> on the input field <small>(paste copied signatures into dialog)</small>"
+msgstr "<kbd>ctrl</kbd> + <kbd>v</kbd> on the input field <small>(paste copied signatures into dialog)</small>"
+
+msgid "Advanced pilots can skip number 3.!<br> Make sure, you have the right system marked as active <small>(<a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-active\">more</a>)</small>.<br> <kbd>click</kbd> the browser tab were <em class=\"pf-brand\">pathfinder</em> is open. Then press <kbd>ctrl</kbd> + <kbd>v</kbd>.<br> <em class=\"pf-brand\">pathfinder</em> automatically detect the data format and updates the <em>\"Signature table\"</em>."
+msgstr "Advanced pilots can skip number 3.!<br> Make sure, you have the right system marked as active <small>(<a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-active\">more</a>)</small>.<br> <kbd>click</kbd> the browser tab were <em class=\"pf-brand\">pathfinder</em> is open. Then press <kbd>ctrl</kbd> + <kbd>v</kbd>.<br> <em class=\"pf-brand\">pathfinder</em> automatically detect the data format and updates the <em>\"Signature table\"</em>."
+
+msgid "Delete signatures"
+msgstr "Delete signatures"
+
+msgid "Signatures can be detached by several ways."
+msgstr "Signatures can be detached by several ways."
+
+msgid "Clear Signatures: <small>Delete all signatures by </small><kbd>click</kbd><small> at the <em>\"Clear Signatures\"</em> button</small>"
+msgstr "Clear Signatures: <small>Delete all signatures by </small><kbd>click</kbd><small> at the <em>\"Clear Signatures\"</em> button</small>"
+
+msgid "Delete Signature: <small>Delete a signature by </small><kbd>click</kbd><small> at the (<i class=\"fas fa-times fa-fw\"></i>) button at the end of a row</small>"
+msgstr "Delete Signature: <small>Delete a signature by </small><kbd>click</kbd><small> at the (<i class=\"fas fa-times fa-fw\"></i>) button at the end of a row</small>"
+
+msgid "Automatically: <small>Signatures will be deleted automatically after some days</small>"
+msgstr "Automatically: <small>Signatures will be deleted automatically after some days</small>"
+
+msgid "Sharing maps"
+msgstr "Sharing maps"
+
+msgid "The concept of map sharing is pretty complex and powerful. By default all sharing options are disabled, so there is no reason to be concerned about map security. All map types <small>(<i class=\"fas fa-sitemap fa-fw\"></i><a href=\"#\" data-target=\"#pf-manual-map\">more</a>)</small> can be temporary shared with allied entities e.g. for \"<em>Joint-Ops</em>\".<br> The map type is preserved for the period of sharing (private maps can be shared with other users, corporation maps can be shared with other corporations,..). Do the following steps to share your map with your friend/allied corporation/allied alliance:"
+msgstr "The concept of map sharing is pretty complex and powerful. By default all sharing options are disabled, so there is no reason to be concerned about map security. All map types <small>(<i class=\"fas fa-sitemap fa-fw\"></i><a href=\"#\" data-target=\"#pf-manual-map\">more</a>)</small> can be temporary shared with allied entities e.g. for \"<em>Joint-Ops</em>\".<br> The map type is preserved for the period of sharing (private maps can be shared with other users, corporation maps can be shared with other corporations,..). Do the following steps to share your map with your friend/allied corporation/allied alliance:"
+
+msgid "Get in contact with your friend and convince him to temporary enable \"map invite\", for the type of map you are planning to share, in the \"<em>Share settings</em>\" dialog"
+msgstr "Get in contact with your friend and convince him to temporary enable \"map invite\", for the type of map you are planning to share, in the \"<em>Share settings</em>\" dialog"
+
+msgid "Open the \"<em>Map settings</em>\" dialog on the map you are planning to share. Switch to the \"<em>Settings</em>\" tab and search for a character name or corporation/alliance "
+msgstr "Open the \"<em>Map settings</em>\" dialog on the map you are planning to share. Switch to the \"<em>Settings</em>\" tab and search for a character name or corporation/alliance "
+
+msgid "If you can not find the \"option\" you are looking for, make sure he has enabled the \"map invite\" option"
+msgstr "If you can not find the \"option\" you are looking for, make sure he has enabled the \"map invite\" option"
+
+msgid "Save the \"<em>Map settings</em>\" with the new \"share\" option. Wait a few seconds until the new settings take effect"
+msgstr "Save the \"<em>Map settings</em>\" with the new \"share\" option. Wait a few seconds until the new settings take effect"
+
+msgid "If you were successful, you will see a small <i class=\"fas fa-share-alt fa-fw\"></i> icon in your map tab"
+msgstr "If you were successful, you will see a small <i class=\"fas fa-share-alt fa-fw\"></i> icon in your map tab"
+
+msgid "Disable the \"map invite\" flag and enjoy the shared map (prevent hostiles from invite you to their maps)"
+msgstr "Disable the \"map invite\" flag and enjoy the shared map (prevent hostiles from invite you to their maps)"
+
+msgid "For now, all corporation/alliance members have the right to change/set the \"map invite\" flag. Make sure not to share your corp/ally maps with hostile entities, and/or remove them from the map once the Op is over. If you are paranoid, delete the shared map"
+msgstr "For now, all corporation/alliance members have the right to change/set the \"map invite\" flag. Make sure not to share your corp/ally maps with hostile entities, and/or remove them from the map once the Op is over. If you are paranoid, delete the shared map"
+
+msgid "Keep the limit of shared maps in mind. If you, your friend/corp/ally have reached the limit of shared maps, you can´t start a new shared map"
+msgstr "Keep the limit of shared maps in mind. If you, your friend/corp/ally have reached the limit of shared maps, you can´t start a new shared map"
+
+msgid "Please be aware of the fact, that any entity that has map access, can take over map control and hijack the map by removing you/your corp/your ally from the access list"
+msgstr "Please be aware of the fact, that any entity that has map access, can take over map control and hijack the map by removing you/your corp/your ally from the access list"
+
+msgid "Check the lifetime cycle for \"<em>Private maps</em>\". If a map reaches the end, it will be removed for all users who have access"
+msgstr "Check the lifetime cycle for \"<em>Private maps</em>\". If a map reaches the end, it will be removed for all users who have access"
+
+msgid "<em class=\"pf-brand\">pathfinder</em> comes along with several visual charts graphs. In order to provide the pilot with useful information about his environment, data visualisation is a good way to compress the amount of relevant data."
+msgstr "<em class=\"pf-brand\">pathfinder</em> comes along with several visual charts graphs. In order to provide the pilot with useful information about his environment, data visualisation is a good way to compress the amount of relevant data."
+
+msgid "Routes"
+msgstr "Routes"
+
+msgid "The <em>\"Route\"</em> search module is available for any active system <small>(<a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-active\">more</a>)</small>. Each system jump is represented by a <i class=\"fas fa-square fa-fw\"></i> with the color of its <em>\"Security status\"</em> <small>(<a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-security\">more</a>)</small>."
+msgstr "The <em>\"Route\"</em> search module is available for any active system <small>(<a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-active\">more</a>)</small>. Each system jump is represented by a <i class=\"fas fa-square fa-fw\"></i> with the color of its <em>\"Security status\"</em> <small>(<a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-security\">more</a>)</small>."
+
+msgid "Recent activity"
+msgstr "Recent activity"
+
+msgid "The <em>\"Recent activity\"</em> bar chart is available for any active system <small>(<a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-active\">more</a>)</small>. The chart shows all ship kills in a system during the last <samp>24h</samp>. If <em class=\"pf-brand\">pathfinder</em> detects recent kills (within the last hour), a small label is shown above the graph."
+msgstr "The <em>\"Recent activity\"</em> bar chart is available for any active system <small>(<a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-active\">more</a>)</small>. The chart shows all ship kills in a system during the last <samp>24h</samp>. If <em class=\"pf-brand\">pathfinder</em> detects recent kills (within the last hour), a small label is shown above the graph."
+
+msgid "<span class=\"txt-color txt-color-success\">Success</span><small> (success message after pilot interaction)</small>"
+msgstr "<span class=\"txt-color txt-color-success\">Success</span><small> (success message after pilot interaction)</small>"
+
+msgid "<span class=\"txt-color txt-color-information\">Info</span><small> (non-important additional information)</small>"
+msgstr "<span class=\"txt-color txt-color-information\">Info</span><small> (non-important additional information)</small>"
+
+msgid "<span class=\"txt-color txt-color-warning\">Warning</span><small> (important non-critical information)</small>"
+msgstr "<span class=\"txt-color txt-color-warning\">Warning</span><small> (important non-critical information)</small>"
+
+msgid "<span class=\"txt-color txt-color-danger\">Error</span><small> (very important information of error)</small>"
+msgstr "<span class=\"txt-color txt-color-danger\">Error</span><small> (very important information of error)</small>"
+
+msgid "Desktop push notifications"
+msgstr "Desktop push notifications"
+
+msgid "<em class=\"pf-brand\">pathfinder</em> supports desktop push notifications. The first time this kind of notification is send to a client, a Browser security question must be confirmed. In order to test desktop push notifications <kbd>click</kbd> the \"Notification test\" <small>(<i class=\"fas fa-bullhorn fa-fw\"></i>)</small> option in the main menu.<br> Events that trigger desktop notification."
+msgstr "<em class=\"pf-brand\">pathfinder</em> supports desktop push notifications. The first time this kind of notification is send to a client, a Browser security question must be confirmed. In order to test desktop push notifications <kbd>click</kbd> the \"Notification test\" <small>(<i class=\"fas fa-bullhorn fa-fw\"></i>)</small> option in the main menu.<br> Events that trigger desktop notification."
+
+msgid "New Rally point <small>(<i class=\"fas fa-volume-up fa-fw\"></i> <a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-rally\">more</a>)</small>"
+msgstr "New Rally point <small>(<i class=\"fas fa-volume-up fa-fw\"></i> <a href=\"#\" data-target=\"#pf-manual-scrollspy-anchor-system-rally\">more</a>)</small>"
+
+msgid "<em class=\"pf-brand\">pathfinder</em> can log user statistics for each map. Activate <em>User statistics</em> for a map in the map settings dialog.<br> <em>User statistics</em> can be globally disabled for some map types on this installation. In order to provide the pilot with useful information about his environment, data visualisation is a good way to compress the amount of relevant data."
+msgstr "<em class=\"pf-brand\">pathfinder</em> can log user statistics for each map. Activate <em>User statistics</em> for a map in the map settings dialog.<br> <em>User statistics</em> can be globally disabled for some map types on this installation. In order to provide the pilot with useful information about his environment, data visualisation is a good way to compress the amount of relevant data."
+
+msgid "Just as the \"<em>Statistics</em>\" logging <small>(<a href=\"#\" data-target=\"#pf-manual-statistics\">more</a>)</small>, which is primarily useful for character comparison, <em class=\"pf-brand\">pathfinder</em> logs a lot more useful stuff \"under the hood\". Some of these map specific logs can also be seen by the users.<br> Map specific log settings can be changed for each map individually; see map settings dialog <small>(<i class=\"fas fa-cogs fa-fw\"></i>)</small>.<br> Some log methods might be globally disabled for some map types <small>(<i class=\"fas fa-sitemap fa-fw\"></i><a href=\"#\" data-target=\"#pf-manual-map\">more</a>)</small>."
+msgstr "Just as the \"<em>Statistics</em>\" logging <small>(<a href=\"#\" data-target=\"#pf-manual-statistics\">more</a>)</small>, which is primarily useful for character comparison, <em class=\"pf-brand\">pathfinder</em> logs a lot more useful stuff \"under the hood\". Some of these map specific logs can also be seen by the users.<br> Map specific log settings can be changed for each map individually; see map settings dialog <small>(<i class=\"fas fa-cogs fa-fw\"></i>)</small>.<br> Some log methods might be globally disabled for some map types <small>(<i class=\"fas fa-sitemap fa-fw\"></i><a href=\"#\" data-target=\"#pf-manual-map\">more</a>)</small>."
+
+msgid "Write log files"
+msgstr "Write log files"
+
+msgid "When enabled, <em class=\"pf-brand\">pathfinder</em> will write a physical log file with map related events. There is UI in the \"map information\" dialog available (log file viewer)."
+msgstr "When enabled, <em class=\"pf-brand\">pathfinder</em> will write a physical log file with map related events. There is UI in the \"map information\" dialog available (log file viewer)."
+
+msgid "Send logs to a <em>Slack</em> channel"
+msgstr "Send logs to a <em>Slack</em> channel"
+
+msgid "Map logs can also be send to a <em>Slack</em> channel. This requires a valid \"<em>WebHook</em>\" configuration for your map.<br> <em>Slack´s Webhook API</em> has bad response times, use this feature with caution! It can slow down other map updates."
+msgstr "Map logs can also be send to a <em>Slack</em> channel. This requires a valid \"<em>WebHook</em>\" configuration for your map.<br> <em>Slack´s Webhook API</em> has bad response times, use this feature with caution! It can slow down other map updates."
+
+msgid "Send logs to a <em>Discord</em> channel"
+msgstr "Send logs to a <em>Discord</em> channel"
+
+msgid "Map logs can also be send to a <em>Discord</em> channel. This requires a valid \"<em>WebHook</em>\" configuration for your map."
+msgstr "Map logs can also be send to a <em>Discord</em> channel. This requires a valid \"<em>WebHook</em>\" configuration for your map."
+
+msgid "From"
+msgstr "From"
+
+msgid "To"
+msgstr "To"
+
+msgid "Options"
+msgstr "Options"
+
+msgid "Shortest"
+msgstr "Shortest"
+
+msgid "Secure"
+msgstr "Secure"
+
+msgid "Maps"
+msgstr "Maps"
+
+msgid "Add maps to search"
+msgstr "Add maps to search"
+
+msgid "Filter"
+msgstr "Filter"
+
+msgid "include wormhole connections"
+msgstr "include wormhole connections"
+
+msgid "Stage 2 (reduced)"
+msgstr "Stage 2 (reduced)"
+
+msgid "include reduced connections"
+msgstr "include reduced connections"
+
+msgid "Stage 3 (critical)"
+msgstr "Stage 3 (critical)"
+
+msgid "include critical connections"
+msgstr "include critical connections"
+
+msgid "End of life (EOL)"
+msgstr "End of life (EOL)"
+
+msgid "include EOL connections"
+msgstr "include EOL connections"
+
+msgid "Stargates"
+msgstr "Stargates"
+
+msgid "include stargate connections"
+msgstr "include stargate connections"
+
+msgid "Jump Bridges"
+msgstr "Jump Bridges"
+
+msgid "include jump bridge connections"
+msgstr "include jump bridge connections"
+
+msgid "Size min"
+msgstr "Size min"
+
+msgid "Thera"
+msgstr "Thera"
+
+msgid "include known Thera connections"
+msgstr "include known Thera connections"
+
+msgid "Bubbled"
+msgstr "Bubbled"
+
+msgid "include bubbled source/destination endpoints"
+msgstr "include bubbled source/destination endpoints"
+
+msgid "Set default systems (max {{maxSelectionLength}}) for route search"
+msgstr "Set default systems (max {{maxSelectionLength}}) for route search"
+
+msgid "Select <em>\"Thera\"</em> also works."
+msgstr "Select <em>\"Thera\"</em> also works."
+
+msgid "Connections from <em><a target=\"_blank\" href=\"//www.eve-scout.com\" rel=\"noopener\">eve-scout.com</a></em> API"
+msgstr "Connections from <em><a target=\"_blank\" href=\"//www.eve-scout.com\" rel=\"noopener\">eve-scout.com</a></em> API"
+
+msgid "Account"
+msgstr "Account"
+
+msgid "unknown"
+msgstr "unknown"
+
+msgid "Email required"
+msgstr "Email required"
+
+msgid "Confirm Email"
+msgstr "Confirm Email"
+
+msgid "Confirm your email"
+msgstr "Confirm your email"
+
+msgid "Email fields do not match"
+msgstr "Email fields do not match"
+
+msgid "Captcha required"
+msgstr "Captcha required"
+
+msgid "important non-critical information"
+msgstr "important non-critical information"
+
+msgid "Before other pilots, corporations or alliances can invite you to their maps, you have to enable the associated option."
+msgstr "Before other pilots, corporations or alliances can invite you to their maps, you have to enable the associated option."
+
+msgid "Check out the \"<a href=\"javascript:void(0);\" onclick=\"$(document).triggerMenuEvent('Manual');\">manual</a>\" for more information"
+msgstr "Check out the \"<a href=\"javascript:void(0);\" onclick=\"$(document).triggerMenuEvent('Manual');\">manual</a>\" for more information"
+
+msgid "Private maps \"<em class=\"pf-map-type-private\">{{name}}</em>\"</h4>"
+msgstr "Private maps \"<em class=\"pf-map-type-private\">{{name}}</em>\"</h4>"
+
+msgid "map invite for private maps"
+msgstr "map invite for private maps"
+
+msgid "map invite for corporation maps"
+msgstr "map invite for corporation maps"
+
+msgid "Alliance maps \"<em class=\"pf-map-type-alliance\">{{name}}</em>\""
+msgstr "Alliance maps \"<em class=\"pf-map-type-alliance\">{{name}}</em>\""
+
+msgid "map invite for alliance maps"
+msgstr "map invite for alliance maps"
+
+msgid "Auto update current location"
+msgstr "Auto update current location"
+
+msgid "Auto select current location"
+msgstr "Auto select current location"
+
+msgid "Auto select current system after jump. Unsaved changes (e.g. system description) will be discarded!"
+msgstr "Auto select current system after jump. Unsaved changes (e.g. system description) will be discarded!"
+
+msgid "beta"
+msgstr "beta"
+
+msgid "Update options"
+msgstr "Update options"
+
+msgid "'lazy' delete"
+msgstr "'lazy' delete"
+
+msgid "Delete saved signatures, not found in scan result"
+msgstr "Delete saved signatures, not found in scan result"
+
+msgid "Delete 'leads to'"
+msgstr "Delete 'leads to'"
+
+msgid "Delete 'leads to' connections from map, on signature delete"
+msgstr "Delete 'leads to' connections from map, on signature delete"
+
+msgid "Scan result"
+msgstr "Scan result"
+
+msgid "Scan result can not be empty"
+msgstr "Scan result can not be empty"
+
+msgid "Copy ( <kbd>ctrl</kbd> + <kbd>c</kbd> ) and paste ( <kbd>ctrl</kbd> + <kbd>v</kbd> ) scan result."
+msgstr "Copy ( <kbd>ctrl</kbd> + <kbd>c</kbd> ) and paste ( <kbd>ctrl</kbd> + <kbd>v</kbd> ) scan result."
+
+msgid "Preview"
+msgstr "Preview"
+
+msgid "Signatures:"
+msgstr "Signatures:"
+
+msgid "New signatures found"
+msgstr "New signatures found"
+
+msgid "new"
+msgstr "new"
+
+msgid "Update signatures"
+msgstr "Update signatures"
+
+msgid "change"
+msgstr "change"
+
+msgid "Connections:"
+msgstr "Connections:"
+
+msgid "Delete linked connections"
+msgstr "Delete linked connections"
+
+msgid "Private"
+msgstr "Private"
+
+msgid "Corporation"
+msgstr "Corporation"
+
+msgid "Alliance"
+msgstr "Alliance"
+
+msgid "Weekly"
+msgstr "Weekly"
+
+msgid "Monthly"
+msgstr "Monthly"
+
+msgid "Yearly"
+msgstr "Yearly"
+
+msgid "character"
+msgstr "character"
+
+msgid "maps"
+msgstr "maps"
+
+msgid "map."
+msgstr "map."
+
+msgid "systems"
+msgstr "systems"
+
+msgid "sys."
+msgstr "sys."
+
+msgid "connection"
+msgstr "connection"
+
+msgid "con."
+msgstr "con."
+
+msgid "signatures"
+msgstr "signatures"
+
+msgid "sig."
+msgstr "sig."
+
+msgid "sum"
+msgstr "sum"
+
+msgid "Search system name"
+msgstr "Search system name"
+
+msgid "Lock system"
+msgstr "Lock system"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "System intel"
+msgstr "System intel"
+
+msgid "Alias"
+msgstr "Alias"
+
+msgid "first create"
+msgstr "first create"
+
+msgid "Description"
+msgstr "Description"
+
+msgid "last update/delete"
+msgstr "last update/delete"
+
+msgid "Desktop poke"
+msgstr "Desktop poke"
+
+msgid "Send desktop notifications to active pilots"
+msgstr "Send desktop notifications to active pilots"
+
+msgid "Slack poke"
+msgstr "Slack poke"
+
+msgid "Send Slack message to a public channel"
+msgstr "Send Slack message to a public channel"
+
+msgid "Discord poke"
+msgstr "Discord poke"
+
+msgid "Send Discord message to a public channel"
+msgstr "Send Discord message to a public channel"
+
+msgid "Mail poke"
+msgstr "Mail poke"
+
+msgid "Send E-Mail with rally point data"
+msgstr "Send E-Mail with rally point data"
+
+msgid "Message <span class=\"txt-color txt-color-grayLight\">[optional]</span>"
+msgstr "Message <span class=\"txt-color txt-color-grayLight\">[optional]</span>"
+
+msgid "Attach deeplink"
+msgstr "Attach deeplink"
+
+msgid "Map sync"
+msgstr "Map sync"
+
+msgid "Processes"
+msgstr "Processes"
+
+msgid "Choose a meaningful name"
+msgstr "Choose a meaningful name"
+
+msgid "All <a href=\"http://www.eveonline.com/\" target=\"_blank\" rel=\"noopener\">EVE ONLINE</a> related materials are property of <a target=\"_blank\" href=\"http://www.ccpgames.com\" rel=\"noopener\">CCP Games</a>"
+msgstr "All <a href=\"http://www.eveonline.com/\" target=\"_blank\" rel=\"noopener\">EVE ONLINE</a> related materials are property of <a target=\"_blank\" href=\"http://www.ccpgames.com\" rel=\"noopener\">CCP Games</a>"
+
+msgid "PATHFINDER - System Mapping Tool"
+msgstr "PATHFINDER - System Mapping Tool"
+
+msgid "<em class=\"pf-brand\">pathfinder</em> is an open source mapping tool for <em class=\"pf-brand\"><a href=\"http://www.eveonline.com/\" target=\"_blank\" rel=\"noopener\">EVE ONLINE</a></em>."
+msgstr "<em class=\"pf-brand\">pathfinder</em> is an open source mapping tool for <em class=\"pf-brand\"><a href=\"http://www.eveonline.com/\" target=\"_blank\" rel=\"noopener\">EVE ONLINE</a></em>."
+
+msgid "Please do not respond to this e-mail. <a href=\"#\">Unsubscribe</a>."
+msgstr "Please do not respond to this e-mail. <a href=\"#\">Unsubscribe</a>."
+
+msgid "Powered by"
+msgstr "Powered by"
+
+msgid "Please do not respond to this e-mail. <a href=\"#\" style=\"text-decoration: underline; color: #63676a; font-size: 12px; text-align: center;\">Unsubscribe</a>"
+msgstr "Please do not respond to this e-mail. <a href=\"#\" style=\"text-decoration: underline; color: #63676a; font-size: 12px; text-align: center;\">Unsubscribe</a>"
+
+msgid "Access denied"
+msgstr "Access denied"
+
+msgid "What is this?"
+msgstr "What is this?"
+
+msgid "Web-Socket stats"
+msgstr "Web-Socket stats"
+
+msgid "con"
+msgstr "con"
+
+msgid "map name"
+msgstr "map name"
+
+msgid "chars"
+msgstr "chars"
+
+msgid "character name"
+msgstr "character name"
+
+msgid "last update"
+msgstr "last update"
+
+msgid "client"
+msgstr "client"
+
+msgid "Reload stats"
+msgstr "Reload stats"
+
+msgid "Connected"
+msgstr "Connected"
+
+msgid "WebSocket"
+msgstr "WebSocket"
+
+msgid "(persistent)"
+msgstr "(persistent)"
+
+msgid "SharedWorker"
+msgstr "SharedWorker"
+
+msgid "Ajax"
+msgstr "Ajax"
+
+msgid "(long polling)"
+msgstr "(long polling)"
+
+msgid "Last sync"
+msgstr "Last sync"
+
+msgid "Error - %s"
+msgstr "Error - %s"
+
+msgid "Status: \"<b>%s</b>\"."
+msgstr "Status: \"<b>%s</b>\"."
+
+msgid "Use your browsers Back button to navigate to the page you have previously come <a href=\"%s\">from</a>."
+msgstr "Use your browsers Back button to navigate to the page you have previously come <a href=\"%s\">from</a>."
+
+msgid "Message: %s"
+msgstr "Message: %s"
+
+msgid "Oooops, Something went wrong! You have experienced a technical error. We apologize."
+msgstr "Oooops, Something went wrong! You have experienced a technical error. We apologize."
+
+msgid "Status: '%s'"
+msgstr "Status: '%s'"
+
+msgid "Maintenance"
+msgstr "Maintenance"
+
+msgid "Server is temporary under scheduled maintenance.<br>Please wait a few minutes&hellip;"
+msgstr "Server is temporary under scheduled maintenance.<br>Please wait a few minutes&hellip;"
+
+msgid "set destination"
+msgstr "set destination"
+
+msgid "SSO&nbsp;login"
+msgstr "SSO&nbsp;login"
+
+msgid "Scheduled maintenance: Update v2.0.0-rc.1 <i class=\"fas fa-long-arrow-alt-right\"></i> v2.0.0; Shutdown: ~20:15 (UTC). ETA ~20:30 (UTC)"
+msgstr "Scheduled maintenance: Update v2.0.0-rc.1 <i class=\"fas fa-long-arrow-alt-right\"></i> v2.0.0; Shutdown: ~20:15 (UTC). ETA ~20:30 (UTC)"
+
+msgid "Members"
+msgstr "Members"
+
+msgid "SSO"
+msgstr "SSO"
+
+msgid "PATHFINDER is an 'open source' mapping tool for EVE ONLINE, primarily developed to enrich the gameplay of small scale PvP and PvE."
+msgstr "PATHFINDER is an 'open source' mapping tool for EVE ONLINE, primarily developed to enrich the gameplay of small scale PvP and PvE."
+
+msgid "Login"
+msgstr "Login"
+
+msgid "Features"
+msgstr "Features"
+
+msgid "Admin"
+msgstr "Admin"
+
+msgid "Install"
+msgstr "Install"
+
+msgid "About"
+msgstr "About"
+
+msgid "FAQ"
+msgstr "FAQ"
+
+msgid "License"
+msgstr "License"
+
+msgid "Disable '/setup' route in routes.ini on production environment!"
+msgstr "Disable '/setup' route in routes.ini on production environment!"
+
+msgid "Setup"
+msgstr "Setup"
+
+msgid "Pathfinder"
+msgstr "Pathfinder"
+
+msgid "<span class=\"txt-color txt-color-greenDark\"><e class=\"fas fa-fw fa-lock\"></e>SSL</span> encrypted connection"
+msgstr "<span class=\"txt-color txt-color-greenDark\"><e class=\"fas fa-fw fa-lock\"></e>SSL</span> encrypted connection"
+
+msgid "User friendly <a class=\"pf-navbar-manual\" href=\"#\">manual</a>"
+msgstr "User friendly <a class=\"pf-navbar-manual\" href=\"#\">manual</a>"
+
+msgid "Open Source Project <a target=\"_blank\" href=\"%s\" alt=\"GitHub\" rel=\"noopener\"><i class=\"fab fa-github fa-fw\"></i><em>Github</em></a>"
+msgstr "Open Source Project <a target=\"_blank\" href=\"%s\" alt=\"GitHub\" rel=\"noopener\"><i class=\"fab fa-github fa-fw\"></i><em>Github</em></a>"
+
+msgid "Developer/install <a target=\"_blank\" href=\"%s/wiki\" rel=\"noopener\">wiki</a>"
+msgstr "Developer/install <a target=\"_blank\" href=\"%s/wiki\" rel=\"noopener\">wiki</a>"
+
+msgid "<em>CCP</em> s <em>SSO</em> login"
+msgstr "<em>CCP</em> s <em>SSO</em> login"
+
+msgid "Cookie based <a target=\"_blank\" href=\"//github.com/exodus4d/pathfinder/issues/138#issuecomment-216036606\" rel=\"noopener\">login system</a>"
+msgstr "Cookie based <a target=\"_blank\" href=\"//github.com/exodus4d/pathfinder/issues/138#issuecomment-216036606\" rel=\"noopener\">login system</a>"
+
+msgid "<em>ESI</em> API support</a>"
+msgstr "<em>ESI</em> API support</a>"
+
+msgid "HTML5 features"
+msgstr "HTML5 features"
+
+msgid "Full screen support"
+msgstr "Full screen support"
+
+msgid "Browser notification system"
+msgstr "Browser notification system"
+
+msgid "Advanced client-side caching - 'local storage'"
+msgstr "Advanced client-side caching - 'local storage'"
+
+msgid "Advanced user access config"
+msgstr "Advanced user access config"
+
+msgid "Access can be limited to specific corps/allys"
+msgstr "Access can be limited to specific corps/allys"
+
+msgid "Integrated Task Manager"
+msgstr "Integrated Task Manager"
+
+msgid "Live performance graphs"
+msgstr "Live performance graphs"
+
+msgid "Print/export client site log files for debugging"
+msgstr "Print/export client site log files for debugging"
+
+msgid "<em>SMTP</em> support"
+msgstr "<em>SMTP</em> support"
+
+msgid "<a target=\"_blank\" href=\"//slack.com\" rel=\"noopener\"><i class=\"fab fa-fw fa-slack-hash\"></i><em>Slack</em></a> email notifications"
+msgstr "<a target=\"_blank\" href=\"//slack.com\" rel=\"noopener\"><i class=\"fab fa-fw fa-slack-hash\"></i><em>Slack</em></a> email notifications"
+
+msgid "Responsive layout"
+msgstr "Responsive layout"
+
+msgid "Map module"
+msgstr "Map module"
+
+msgid "Live synchronisation between clients"
+msgstr "Live synchronisation between clients"
+
+msgid "Multiple map support"
+msgstr "Multiple map support"
+
+msgid "Share maps with other players or groups"
+msgstr "Share maps with other players or groups"
+
+msgid "Invite other players to maps"
+msgstr "Invite other players to maps"
+
+msgid "Advanced drag &amp; drop support"
+msgstr "Advanced drag &amp; drop support"
+
+msgid "Select multiple systems by <kbd>ctrl</kbd> + <kbd>click</kbd>"
+msgstr "Select multiple systems by <kbd>ctrl</kbd> + <kbd>click</kbd>"
+
+msgid "Select and move multiple systems at once"
+msgstr "Select and move multiple systems at once"
+
+msgid "Establish new connections by drag one system to another"
+msgstr "Establish new connections by drag one system to another"
+
+msgid "Prevent systems from overlapping (magnetization)"
+msgstr "Prevent systems from overlapping (magnetization)"
+
+msgid "Track fleet movements"
+msgstr "Track fleet movements"
+
+msgid "Pilot/Ship names"
+msgstr "Pilot/Ship names"
+
+msgid "In-/decreasing pilot count per system"
+msgstr "In-/decreasing pilot count per system"
+
+msgid "Location tracking (<em>ESI</em>)"
+msgstr "Location tracking (<em>ESI</em>)"
+
+msgid "Locked"
+msgstr "Locked"
+
+msgid "Friendly"
+msgstr "Friendly"
+
+msgid "Occupied"
+msgstr "Occupied"
+
+msgid "Hostile"
+msgstr "Hostile"
+
+msgid "Empty"
+msgstr "Empty"
+
+msgid "Unscanned"
+msgstr "Unscanned"
+
+msgid "Connection scopes"
+msgstr "Connection scopes"
+
+msgid "Stargate"
+msgstr "Stargate"
+
+msgid "Wormhole"
+msgstr "Wormhole"
+
+msgid "Jumpbridge"
+msgstr "Jumpbridge"
+
+msgid "In game actions (<em>ESI</em>)"
+msgstr "In game actions (<em>ESI</em>)"
+
+msgid "Set destination"
+msgstr "Set destination"
+
+msgid "add waypoint"
+msgstr "add waypoint"
+
+msgid "Keyboard shortcuts"
+msgstr "Keyboard shortcuts"
+
+msgid "Easy system selection by holding <kbd>ctrl</kbd> + <kbd>drag</kbd>"
+msgstr "Easy system selection by holding <kbd>ctrl</kbd> + <kbd>drag</kbd>"
+
+msgid "Integrated live search for systems"
+msgstr "Integrated live search for systems"
+
+msgid "TrueSec, Region, Constallation information"
+msgstr "TrueSec, Region, Constallation information"
+
+msgid "Filter maps by connection scopes"
+msgstr "Filter maps by connection scopes"
+
+msgid "Map information dialog"
+msgstr "Map information dialog"
+
+msgid "Easy access to all map information"
+msgstr "Easy access to all map information"
+
+msgid "Edit systems and connections"
+msgstr "Edit systems and connections"
+
+msgid "System module"
+msgstr "System module"
+
+msgid "Quick access to all relevant information"
+msgstr "Quick access to all relevant information"
+
+msgid "Name/Alias"
+msgstr "Name/Alias"
+
+msgid "Wormhole class"
+msgstr "Wormhole class"
+
+msgid "Wormhole type"
+msgstr "Wormhole type"
+
+msgid "True Sec"
+msgstr "True Sec"
+
+msgid "Constellation"
+msgstr "Constellation"
+
+msgid "Region"
+msgstr "Region"
+
+msgid "Wormhole static information"
+msgstr "Wormhole static information"
+
+msgid "Optional renaming of Systems"
+msgstr "Optional renaming of Systems"
+
+msgid "Individual system description"
+msgstr "Individual system description"
+
+msgid "Receive system warnings from other players"
+msgstr "Receive system warnings from other players"
+
+msgid "Quick information links to 3rd party pages"
+msgstr "Quick information links to 3rd party pages"
+
+msgid "Dotlan</em>"
+msgstr "Dotlan</em>"
+
+msgid "Wormhol.es</em>"
+msgstr "Wormhol.es</em>"
+
+msgid "Share system signature information"
+msgstr "Share system signature information"
+
+msgid "Add/Update multiple signatures at once <kbd>ctrl</kbd> + <kbd>c</kbd>"
+msgstr "Add/Update multiple signatures at once <kbd>ctrl</kbd> + <kbd>c</kbd>"
+
+msgid "Check for new signatures within a second"
+msgstr "Check for new signatures within a second"
+
+msgid "Get notified about new signatures in your current system"
+msgstr "Get notified about new signatures in your current system"
+
+msgid "Receive warnings for not fully scanned systems"
+msgstr "Receive warnings for not fully scanned systems"
+
+msgid "Speed up scanning and work with multiple pilots on the same scanning table"
+msgstr "Speed up scanning and work with multiple pilots on the same scanning table"
+
+msgid "Label signatures for following operations"
+msgstr "Label signatures for following operations"
+
+msgid "Updated signature type information"
+msgstr "Updated signature type information"
+
+msgid "Shown meta information for each signature"
+msgstr "Shown meta information for each signature"
+
+msgid "Creation data/time"
+msgstr "Creation data/time"
+
+msgid "Creation pilot/name"
+msgstr "Creation pilot/name"
+
+msgid "Pilot status"
+msgstr "Pilot status"
+
+msgid "<em><a target=\"_blank\" href=\"//github.com/zKillboard/zKillboard/wiki\" rel=\"noopener\">zkillboard.com</a></em> API integration"
+msgstr "<em><a target=\"_blank\" href=\"//github.com/zKillboard/zKillboard/wiki\" rel=\"noopener\">zkillboard.com</a></em> API integration"
+
+msgid "Detailed information about all recent activities in a system"
+msgstr "Detailed information about all recent activities in a system"
+
+msgid "Visual graph with recent kills and timestamp"
+msgstr "Visual graph with recent kills and timestamp"
+
+msgid "Killmail deep links"
+msgstr "Killmail deep links"
+
+msgid "This even works for wormholes where <em>CCP</em> does not provide any official API data"
+msgstr "This even works for wormholes where <em>CCP</em> does not provide any official API data"
+
+msgid "Live warnings for recent kills in a system"
+msgstr "Live warnings for recent kills in a system"
+
+msgid "Killmail information"
+msgstr "Killmail information"
+
+msgid "Ship type"
+msgstr "Ship type"
+
+msgid "Pilot name"
+msgstr "Pilot name"
+
+msgid "KM timestamp"
+msgstr "KM timestamp"
+
+msgid "Corporation name"
+msgstr "Corporation name"
+
+msgid "Alliance name"
+msgstr "Alliance name"
+
+msgid "Search for routes between systems"
+msgstr "Search for routes between systems"
+
+msgid "Predefined trade hub routes"
+msgstr "Predefined trade hub routes"
+
+msgid "Jita"
+msgstr "Jita"
+
+msgid "Amarr"
+msgstr "Amarr"
+
+msgid "Rens"
+msgstr "Rens"
+
+msgid "Dodixie"
+msgstr "Dodixie"
+
+msgid "Add/Search custom routes"
+msgstr "Add/Search custom routes"
+
+msgid "Advanced search"
+msgstr "Advanced search"
+
+msgid "Search on multiple maps"
+msgstr "Search on multiple maps"
+
+msgid "Filter routes by:"
+msgstr "Filter routes by:"
+
+msgid "'Connection types' (e.g. 'Wormholes"
+msgstr "'Connection types' (e.g. 'Wormholes"
+
+msgid "'Connection scopes' (e.g 'Critical Wormholes"
+msgstr "'Connection scopes' (e.g 'Critical Wormholes"
+
+msgid "Average sec status for a routes"
+msgstr "Average sec status for a routes"
+
+msgid "Sort/Order routes by:"
+msgstr "Sort/Order routes by:"
+
+msgid "System jumps"
+msgstr "System jumps"
+
+msgid "Average sec status"
+msgstr "Average sec status"
+
+msgid "Track ship jump mass for wormholes"
+msgstr "Track ship jump mass for wormholes"
+
+msgid "Compare multiple connections by mass left"
+msgstr "Compare multiple connections by mass left"
+
+msgid "Pre-calculate your current ship mass before jumping"
+msgstr "Pre-calculate your current ship mass before jumping"
+
+msgid "Share player owned structure data"
+msgstr "Share player owned structure data"
+
+msgid "Add/Update multiple structures from D-scan: <kbd>ctrl</kbd> + <kbd>c</kbd>"
+msgstr "Add/Update multiple structures from D-scan: <kbd>ctrl</kbd> + <kbd>c</kbd>"
+
+msgid "Map owner information to structures"
+msgstr "Map owner information to structures"
+
+msgid "Add custom notes to structures"
+msgstr "Add custom notes to structures"
+
+msgid "Mark structures 'online"
+msgstr "Mark structures 'online"
+
+msgid "System statistics module"
+msgstr "System statistics module"
+
+msgid "Live in-game system data"
+msgstr "Live in-game system data"
+
+msgid "System jump data"
+msgstr "System jump data"
+
+msgid "Ship/POD kills"
+msgstr "Ship/POD kills"
+
+msgid "NPC kills"
+msgstr "NPC kills"
+
+msgid "User statistics"
+msgstr "User statistics"
+
+msgid "User activity logging"
+msgstr "User activity logging"
+
+msgid "Private statistics"
+msgstr "Private statistics"
+
+msgid "Corporation statistics"
+msgstr "Corporation statistics"
+
+msgid "Alliance statistics"
+msgstr "Alliance statistics"
+
+msgid "Log history"
+msgstr "Log history"
+
+msgid "week"
+msgstr "week"
+
+msgid "month"
+msgstr "month"
+
+msgid "year"
+msgstr "year"
+
+msgid "Separate *.log files per map"
+msgstr "Separate *.log files per map"
+
+msgid "Logfile viewer (UI)"
+msgstr "Logfile viewer (UI)"
+
+msgid "Logfile filter/analyzer"
+msgstr "Logfile filter/analyzer"
+
+msgid "Download log files (JSON format)"
+msgstr "Download log files (JSON format)"
+
+msgid "Discord/Slack integration"
+msgstr "Discord/Slack integration"
+
+msgid "Send \"rally point\" push notifications"
+msgstr "Send \"rally point\" push notifications"
+
+msgid "Discord, Slack, Desktop, Email"
+msgstr "Discord, Slack, Desktop, Email"
+
+msgid "Send map logs to a custom <em>Discord</em> or <em>Slack</em> channel"
+msgstr "Send map logs to a custom <em>Discord</em> or <em>Slack</em> channel"
+
+msgid "Discord/Slack WebHook API build in"
+msgstr "Discord/Slack WebHook API build in"
+
+msgid "This video, will guide you through the basic functions in <em>PATHFINDER</em>."
+msgstr "This video, will guide you through the basic functions in <em>PATHFINDER</em>."
+
+msgid "The following map types are available. Each map you create can be converted into any of these types at any time. The access level of a map depends on their type. e.g. \"Corporation\" maps can be seen/edited by any pilot in your corporation."
+msgstr "The following map types are available. Each map you create can be converted into any of these types at any time. The access level of a map depends on their type. e.g. \"Corporation\" maps can be seen/edited by any pilot in your corporation."
+
+msgid "Map lifetime <span class=\"badge\">%s</span> days"
+msgstr "Map lifetime <span class=\"badge\">%s</span> days"
+
+msgid "Create up to <span class=\"badge\">%s</span> private maps"
+msgstr "Create up to <span class=\"badge\">%s</span> private maps"
+
+msgid "Share maps with up to <span class=\"badge\">%s</span> users"
+msgstr "Share maps with up to <span class=\"badge\">%s</span> users"
+
+msgid "System information module"
+msgstr "System information module"
+
+msgid "System signature module"
+msgstr "System signature module"
+
+msgid "System route module"
+msgstr "System route module"
+
+msgid "FREE"
+msgstr "FREE"
+
+msgid "Map features"
+msgstr "Map features"
+
+msgid "All \"<em>private</em>\" features for corporation maps"
+msgstr "All \"<em>private</em>\" features for corporation maps"
+
+msgid "Create up to <span class=\"badge\">%s</span> corporation maps"
+msgstr "Create up to <span class=\"badge\">%s</span> corporation maps"
+
+msgid "Share corp maps with up to <span class=\"badge\">%s</span> corps"
+msgstr "Share corp maps with up to <span class=\"badge\">%s</span> corps"
+
+msgid "System killboard module"
+msgstr "System killboard module"
+
+msgid "All \"<em>private</em>\" features for alliance maps"
+msgstr "All \"<em>private</em>\" features for alliance maps"
+
+msgid "All \"<em>corporation</em>\" features for alliance maps"
+msgstr "All \"<em>corporation</em>\" features for alliance maps"
+
+msgid "Create up to <span class=\"badge\">%s</span> alliance maps"
+msgstr "Create up to <span class=\"badge\">%s</span> alliance maps"
+
+msgid "Share alliance maps with up to <span class=\"badge\">%s</span> alliances"
+msgstr "Share alliance maps with up to <span class=\"badge\">%s</span> alliances"
+
+msgid "Characters with in-game corporation roles can grant access to <em>PATHFINDER</em> corporation admin interface."
+msgstr "Characters with in-game corporation roles can grant access to <em>PATHFINDER</em> corporation admin interface."
+
+msgid "Member administration"
+msgstr "Member administration"
+
+msgid "Manage your corporation members"
+msgstr "Manage your corporation members"
+
+msgid "View member information"
+msgstr "View member information"
+
+msgid "Kick members temporary or forever"
+msgstr "Kick members temporary or forever"
+
+msgid "Ban members from installation"
+msgstr "Ban members from installation"
+
+msgid "Map settings"
+msgstr "Map settings"
+
+msgid "Manage global corporation map settings"
+msgstr "Manage global corporation map settings"
+
+msgid "Set default map settings"
+msgstr "Set default map settings"
+
+msgid "Disable some sensitive map settings (e.g. im/export maps)"
+msgstr "Disable some sensitive map settings (e.g. im/export maps)"
+
+msgid "admin&nbsp;SSO&nbsp;login"
+msgstr "admin&nbsp;SSO&nbsp;login"
+
+msgid "Install</span> and hosting"
+msgstr "Install</span> and hosting"
+
+msgid "If your are planning to install or self hosting <em>PATHFINDER</em>, all required information can be found on the project <a target=\"_blank\" href=\"%s/wiki\" rel=\"noopener\">wiki</a>. Updating or bootstrapping the DB gets very simple with the new \"Setup UI\" and can be done by on-click."
+msgstr "If your are planning to install or self hosting <em>PATHFINDER</em>, all required information can be found on the project <a target=\"_blank\" href=\"%s/wiki\" rel=\"noopener\">wiki</a>. Updating or bootstrapping the DB gets very simple with the new \"Setup UI\" and can be done by on-click."
+
+msgid "Requirements check"
+msgstr "Requirements check"
+
+msgid "Checks your server type/status"
+msgstr "Checks your server type/status"
+
+msgid "Checks your installed PHP version"
+msgstr "Checks your installed PHP version"
+
+msgid "Checks for required PHP extensions"
+msgstr "Checks for required PHP extensions"
+
+msgid "Checks your program settings"
+msgstr "Checks your program settings"
+
+msgid "Database setup"
+msgstr "Database setup"
+
+msgid "Check DB connections"
+msgstr "Check DB connections"
+
+msgid "Check DB version"
+msgstr "Check DB version"
+
+msgid "Check DB settings"
+msgstr "Check DB settings"
+
+msgid "Bootstrap or update your current Database with one click"
+msgstr "Bootstrap or update your current Database with one click"
+
+msgid "Check tables/columns for updates"
+msgstr "Check tables/columns for updates"
+
+msgid "Check column indexes/unique keys"
+msgstr "Check column indexes/unique keys"
+
+msgid "Check foreign key constraints"
+msgstr "Check foreign key constraints"
+
+msgid "About</span> this Application"
+msgstr "About</span> this Application"
+
+msgid "<em>PATHFINDER</em> is a one-man spare time project with the aim of combining the latest web technology with clean and attractive interfaces."
+msgstr "<em>PATHFINDER</em> is a one-man spare time project with the aim of combining the latest web technology with clean and attractive interfaces."
+
+msgid "About Me"
+msgstr "About Me"
+
+msgid "I am playing <em><a target=\"_blank\" href=\"//www.eveonline.com/\" rel=\"noopener\">EVE Online</a></em> since almost 4 years. The majority of time (3+ years), my characters were a part of the <em><a target=\"_blank\" href=\"//www.themittani.com/news/j150020-three-alliances-enter-none-leave\" rel=\"noopener\">\"No Holes Barred\"</a></em> alliance. ,one of the oldest and best known wormhole entities that existed in <em>\"New Eden\"</em> (R.I.P). The <em>Pathfinder</em> project was started just a few weeks before the failed invasion of <em>\"Polaris\"</em> took place. The intention behind this project was not to create another mapping tool that already exist. I wanted to make the easiest to use and most powerful 3rd party system mapper, build with the newest web technology available."
+msgstr "I am playing <em><a target=\"_blank\" href=\"//www.eveonline.com/\" rel=\"noopener\">EVE Online</a></em> since almost 4 years. The majority of time (3+ years), my characters were a part of the <em><a target=\"_blank\" href=\"//www.themittani.com/news/j150020-three-alliances-enter-none-leave\" rel=\"noopener\">\"No Holes Barred\"</a></em> alliance. ,one of the oldest and best known wormhole entities that existed in <em>\"New Eden\"</em> (R.I.P). The <em>Pathfinder</em> project was started just a few weeks before the failed invasion of <em>\"Polaris\"</em> took place. The intention behind this project was not to create another mapping tool that already exist. I wanted to make the easiest to use and most powerful 3rd party system mapper, build with the newest web technology available."
+
+msgid "I am currently working as a professional software developer for one of the largest German web pages. The main focus of my daily work is based on large scale frontend applications."
+msgstr "I am currently working as a professional software developer for one of the largest German web pages. The main focus of my daily work is based on large scale frontend applications."
+
+msgid "I decided to make this project <a target=\"_blank\" href=\"%s\" rel=\"noopener\">\"Open Source\"</a>, once the beta testing is finished. It would be a great pleasure to me if you would help me to improve this project by submitting <a target=\"_blank\" href=\"//github.com/exodus4d/pathfinder/issues\" rel=\"noopener\">bug reports</a> or any kind of security issues."
+msgstr "I decided to make this project <a target=\"_blank\" href=\"%s\" rel=\"noopener\">\"Open Source\"</a>, once the beta testing is finished. It would be a great pleasure to me if you would help me to improve this project by submitting <a target=\"_blank\" href=\"//github.com/exodus4d/pathfinder/issues\" rel=\"noopener\">bug reports</a> or any kind of security issues."
+
+msgid "Technology stack"
+msgstr "Technology stack"
+
+msgid "If you are planning to get deeper into the project or even think about hosting it on your own webserver, you should be aware of some important key points. <em>Pathfinder</em> is not comparable with any \"out of the box\" web applications or common CMS systems that come along with an auto-install feature. If you don´t have any experience with the following technologies, stop thinking about your own hosted <em>Pathfinder</em> app."
+msgstr "If you are planning to get deeper into the project or even think about hosting it on your own webserver, you should be aware of some important key points. <em>Pathfinder</em> is not comparable with any \"out of the box\" web applications or common CMS systems that come along with an auto-install feature. If you don´t have any experience with the following technologies, stop thinking about your own hosted <em>Pathfinder</em> app."
+
+msgid "Frontend"
+msgstr "Frontend"
+
+msgid "'<em>Bootstrap</em>' as a HTML, CSS framework"
+msgstr "'<em>Bootstrap</em>' as a HTML, CSS framework"
+
+msgid "'<em>SASS</em>' and '<em>Compass</em>' as a CSS preprocessor"
+msgstr "'<em>SASS</em>' and '<em>Compass</em>' as a CSS preprocessor"
+
+msgid "'<em>RequireJs</em>' as an AMD loader and builder for Javascript"
+msgstr "'<em>RequireJs</em>' as an AMD loader and builder for Javascript"
+
+msgid "'<em>jQuery</em>' as the main Javascript library"
+msgstr "'<em>jQuery</em>' as the main Javascript library"
+
+msgid "≈ 50 self written jQuery plugins"
+msgstr "≈ 50 self written jQuery plugins"
+
+msgid "≈ 40 open source plugins"
+msgstr "≈ 40 open source plugins"
+
+msgid "'<em>Node.js</em>' and '<em>Gulp</em>' as js task runner and CI-build environment"
+msgstr "'<em>Node.js</em>' and '<em>Gulp</em>' as js task runner and CI-build environment"
+
+msgid "Code quality and automated testing"
+msgstr "Code quality and automated testing"
+
+msgid "'<em>JSHint</em>'"
+msgstr "'<em>JSHint</em>'"
+
+msgid "'<em>Jasmine</em>'"
+msgstr "'<em>Jasmine</em>'"
+
+msgid "You should know about some HTML5 APIs"
+msgstr "You should know about some HTML5 APIs"
+
+msgid "'<em>Local Storage</em>'"
+msgstr "'<em>Local Storage</em>'"
+
+msgid "'<em>Page Visibility</em>'"
+msgstr "'<em>Page Visibility</em>'"
+
+msgid "'<em>Web Notifications</em>'"
+msgstr "'<em>Web Notifications</em>'"
+
+msgid "'<em>Fullscreen</em>'"
+msgstr "'<em>Fullscreen</em>'"
+
+msgid "'<em>Fat-Free Framework</em>' as a lightweight PHP framework and ORM mapper"
+msgstr "'<em>Fat-Free Framework</em>' as a lightweight PHP framework and ORM mapper"
+
+msgid "'<em>MySQL</em>' (or '<em>MariaDB</em>"
+msgstr "'<em>MySQL</em>' (or '<em>MariaDB</em>"
+
+msgid "'<em>Memcache, APC or XCache</em>' as a 2nd level cache engine (configurable)"
+msgstr "'<em>Memcache, APC or XCache</em>' as a 2nd level cache engine (configurable)"
+
+msgid "'<em>PHPUnit</em>'"
+msgstr "'<em>PHPUnit</em>'"
+
+msgid "You should know about relational databases, MVC pattern and ORM strategies"
+msgstr "You should know about relational databases, MVC pattern and ORM strategies"
+
+msgid "If you have experiences in developing a Single-Page-Application, that would not hurt :)"
+msgstr "If you have experiences in developing a Single-Page-Application, that would not hurt :)"
+
+msgid "Frequently</span> Asked Questions"
+msgstr "Frequently</span> Asked Questions"
+
+msgid "General questions and answers can be found here"
+msgstr "General questions and answers can be found here"
+
+msgid "Can you give me an introduction into <em>Pathfinder</em> ?"
+msgstr "Can you give me an introduction into <em>Pathfinder</em> ?"
+
+msgid "Unfortunately not. I will probably not have the time to answer any question personally. Make sure you have read the <span class=\"pf-navbar-manual\"><a href=\"javascript:void(0);\">manual</a></span>. <br> If there are still some open questions, please ask in the <a target=\"_blank\" href=\"//forums.eveonline.com/\" rel=\"noopener\">official forums</a> thread for help."
+msgstr "Unfortunately not. I will probably not have the time to answer any question personally. Make sure you have read the <span class=\"pf-navbar-manual\"><a href=\"javascript:void(0);\">manual</a></span>. <br> If there are still some open questions, please ask in the <a target=\"_blank\" href=\"//forums.eveonline.com/\" rel=\"noopener\">official forums</a> thread for help."
+
+msgid "Which browsers are compatible with <em>Pathfinder</em>?"
+msgstr "Which browsers are compatible with <em>Pathfinder</em>?"
+
+msgid "You will get the best user experience with the latest version <a target=\"_blank\" href=\"//www.google.com/chrome/\" rel=\"noopener\"><i class=\"fab fa-chrome\"></i> <em>Google Chrome</em></a> or <a target=\"_blank\" href=\"https://www.mozilla.org/firefox\" rel=\"noopener\"><i class=\"fab fa-firefox\"></i> <em>Firefox</em></a>. <em>Pathfinder</em> uses some \"bloody edge\" web technologies like SVG graphics, Canvas drawing, CSS3, JS (ECMA 5.0) that are not yet fully supported by any other browser like IE or Safari."
+msgstr "You will get the best user experience with the latest version <a target=\"_blank\" href=\"//www.google.com/chrome/\" rel=\"noopener\"><i class=\"fab fa-chrome\"></i> <em>Google Chrome</em></a> or <a target=\"_blank\" href=\"https://www.mozilla.org/firefox\" rel=\"noopener\"><i class=\"fab fa-firefox\"></i> <em>Firefox</em></a>. <em>Pathfinder</em> uses some \"bloody edge\" web technologies like SVG graphics, Canvas drawing, CSS3, JS (ECMA 5.0) that are not yet fully supported by any other browser like IE or Safari."
+
+msgid "Can i use multiple accounts/characters?"
+msgstr "Can i use multiple accounts/characters?"
+
+msgid "Yes, you can add as many characters to your account you want. By accepting the 'Cookie hint"
+msgstr "Yes, you can add as many characters to your account you want. By accepting the 'Cookie hint"
+
+msgid "Whoever said, his program is \"bullet proof\", is lying! But I promise to give my very best to protect any personal or map data that is stored on my server. The login process is handled by <em>CCP</em>´s SSO. There is no account data (or even your <em>EVE Online</em> login data) stored or available to <em>Pathfinder</em>.<br> All client side cookie data is encrypted stored server side and is protected against manipulation or abuse."
+msgstr "Whoever said, his program is \"bullet proof\", is lying! But I promise to give my very best to protect any personal or map data that is stored on my server. The login process is handled by <em>CCP</em>´s SSO. There is no account data (or even your <em>EVE Online</em> login data) stored or available to <em>Pathfinder</em>.<br> All client side cookie data is encrypted stored server side and is protected against manipulation or abuse."
+
+msgid "Can i report bugs or security issues?"
+msgstr "Can i report bugs or security issues?"
+
+msgid "Good work! I am very happy for any technical feedback and improvements. Feel free to contact me with your problem, either by submitting a <a target=\"_blank\" href=\"//github.com/exodus4d/pathfinder/issues\" rel=\"noopener\">bug report</a> or contact me in game. I´ll give my best to find a solution for your problem or path <em>Pathfinder</em>."
+msgstr "Good work! I am very happy for any technical feedback and improvements. Feel free to contact me with your problem, either by submitting a <a target=\"_blank\" href=\"//github.com/exodus4d/pathfinder/issues\" rel=\"noopener\">bug report</a> or contact me in game. I´ll give my best to find a solution for your problem or path <em>Pathfinder</em>."
+
+msgid "I don´t trust you, can I host <em>Pathfinder</em> on my own?"
+msgstr "I don´t trust you, can I host <em>Pathfinder</em> on my own?"
+
+msgid "Yes you can! I developed this application for the great community of <em>EVE Online</em>. The program code is open source and can be used by anyone who have the required software skills. Please make sure to keep all 3rd party plugin licence and respect them. At the moment there is no developer guide available. But one the beta phase is finished, i will probably write a short technical documentation. Do not expect any \"out of the box\" install routine at this point."
+msgstr "Yes you can! I developed this application for the great community of <em>EVE Online</em>. The program code is open source and can be used by anyone who have the required software skills. Please make sure to keep all 3rd party plugin licence and respect them. At the moment there is no developer guide available. But one the beta phase is finished, i will probably write a short technical documentation. Do not expect any \"out of the box\" install routine at this point."
+
+msgid "Server requirements:"
+msgstr "Server requirements:"
+
+msgid "Webserver with a <em><a target=\"_blank\" href=\"//en.wikipedia.org/wiki/LAMP_(software_bundle)\" rel=\"noopener\">LEMP</a></em> environment"
+msgstr "Webserver with a <em><a target=\"_blank\" href=\"//en.wikipedia.org/wiki/LAMP_(software_bundle)\" rel=\"noopener\">LEMP</a></em> environment"
+
+msgid "PHP %s+"
+msgstr "PHP %s+"
+
+msgid "PHP framework <a target=\"_blank\" href=\"http://fatfreeframework.com/system-requirements\" rel=\"noopener\">requirements</a>"
+msgstr "PHP framework <a target=\"_blank\" href=\"http://fatfreeframework.com/system-requirements\" rel=\"noopener\">requirements</a>"
+
+msgid "MySQL %s+"
+msgstr "MySQL %s+"
+
+msgid "Some kind of server side caching. <em><a target=\"_blank\" href=\"//redis.io/\" rel=\"noopener\">Redis</a></em> is preferred, file cache will also work"
+msgstr "Some kind of server side caching. <em><a target=\"_blank\" href=\"//redis.io/\" rel=\"noopener\">Redis</a></em> is preferred, file cache will also work"
+
+msgid "Pathfinder requires cookies to maintain your login state between browser sessions. Read <a target=\"_blank\" href=\"//github.com/exodus4d/pathfinder/issues/138\" rel=\"noopener\">more</a>."
+msgstr "Pathfinder requires cookies to maintain your login state between browser sessions. Read <a target=\"_blank\" href=\"//github.com/exodus4d/pathfinder/issues/138\" rel=\"noopener\">more</a>."
+
+msgid "The following steps will guide you through the database bootstrapping/update process for <em>PATHFINDER</em>."
+msgstr "The following steps will guide you through the database bootstrapping/update process for <em>PATHFINDER</em>."
+
+msgid "Installation"
+msgstr "Installation"
+
+msgid "Version"
+msgstr "Version"
+
+msgid "Package"
+msgstr "Package"
+
+msgid "Contact"
+msgstr "Contact"
+
+msgid "Directories"
+msgstr "Directories"
+
+msgid "Server"
+msgstr "Server"
+
+msgid "Environment variables [optional]"
+msgstr "Environment variables [optional]"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Requirements"
+msgstr "Requirements"
+
+msgid "warning"
+msgstr "warning"
+
+msgid "Environment"
+msgstr "Environment"
+
+msgid "Configuration"
+msgstr "Configuration"
+
+msgid "Modules"
+msgstr "Modules"
+
+msgid "Registration/Login"
+msgstr "Registration/Login"
+
+msgid "Slack"
+msgstr "Slack"
+
+msgid "Discord"
+msgstr "Discord"
+
+msgid "Map Settings"
+msgstr "Map Settings"
+
+msgid "failed"
+msgstr "failed"
+
+msgid "required"
+msgstr "required"
+
+msgid "installed"
+msgstr "installed"
+
+msgid "exist"
+msgstr "exist"
+
+msgid "charset"
+msgstr "charset"
+
+msgid "foreign key"
+msgstr "foreign key"
+
+msgid "Create database"
+msgstr "Create database"
+
+msgid "Setup tables"
+msgstr "Setup tables"
+
+msgid "Fix columns/keys"
+msgstr "Fix columns/keys"
+
+msgid "Database"
+msgstr "Database"
+
+msgid "Redis server No. %s"
+msgstr "Redis server No. %s"
+
+msgid "connected"
+msgstr "connected"
+
+msgid "error"
+msgstr "error"
+
+msgid "Connection failed"
+msgstr "Connection failed"
+
+msgid "Redis server"
+msgstr "Redis server"
+
+msgid "Redis can be used as Cache backend"
+msgstr "Redis can be used as Cache backend"
+
+msgid "Redis can be used as PHP Sessions handler"
+msgstr "Redis can be used as PHP Sessions handler"
+
+msgid "No Redis configuration found"
+msgstr "No Redis configuration found"
+
+msgid "Cache <span class=\"txt-color txt-color-gray\">[optional]"
+msgstr "Cache <span class=\"txt-color txt-color-gray\">[optional]"
+
+msgid "client URI"
+msgstr "client URI"
+
+msgid "file #line"
+msgstr "file #line"
+
+msgid "message"
+msgstr "message"
+
+msgid "broadcast"
+msgstr "broadcast"
+
+msgid "Socket configuration <span class=\"txt-color txt-color-gray\">[optional]"
+msgstr "Socket configuration <span class=\"txt-color txt-color-gray\">[optional]"
+
+msgid "Configuration <kbd class=\"pull-right\">app/cron.ini</kbd>"
+msgstr "Configuration <kbd class=\"pull-right\">app/cron.ini</kbd>"
+
+msgid "Jobs"
+msgstr "Jobs"
+
+msgid "status"
+msgstr "status"
+
+msgid "handler"
+msgstr "handler"
+
+msgid "schedule"
+msgstr "schedule"
+
+msgid "start time"
+msgstr "start time"
+
+msgid "exec.&nbsp;time"
+msgstr "exec.&nbsp;time"
+
+msgid "mem.&nbsp;peak"
+msgstr "mem.&nbsp;peak"
+
+msgid "Cronjob"
+msgstr "Cronjob"
+
+msgid "Import static data"
+msgstr "Import static data"
+
+msgid "count"
+msgstr "count"
+
+msgid "sub count"
+msgstr "sub count"
+
+msgid "Filesystem cache"
+msgstr "Filesystem cache"
+
+msgid "Cookies"
+msgstr "Cookies"
+
+msgid "Invalidate all Cookie data"
+msgstr "Invalidate all Cookie data"
+
+msgid "&nbsp;Clear authentication data"
+msgstr "&nbsp;Clear authentication data"
+
+msgid "Administration"
+msgstr "Administration"
+
+msgid "Perimeter Ambush Point"
+msgstr "Perimeter Ambush Point"
+
+msgid "Perimeter Camp"
+msgstr "Perimeter Camp"
+
+msgid "Phase Catalyst Node"
+msgstr "Phase Catalyst Node"
+
+msgid "The Line"
+msgstr "The Line"
+
+msgid "Perimeter Checkpoint"
+msgstr "Perimeter Checkpoint"
+
+msgid "Perimeter Hangar"
+msgstr "Perimeter Hangar"
+
+msgid "The Ruins of Enclave Cohort 27"
+msgstr "The Ruins of Enclave Cohort 27"
+
+msgid "Sleeper Data Sanctuary"
+msgstr "Sleeper Data Sanctuary"
+
+msgid "Fortification Frontier Stronghold"
+msgstr "Fortification Frontier Stronghold"
+
+msgid "Outpost Frontier Stronghold"
+msgstr "Outpost Frontier Stronghold"
+
+msgid "Solar Cell"
+msgstr "Solar Cell"
+
+msgid "The Oruze Construct"
+msgstr "The Oruze Construct"
+
+msgid "Frontier Barracks"
+msgstr "Frontier Barracks"
+
+msgid "Frontier Command Post"
+msgstr "Frontier Command Post"
+
+msgid "Integrated Terminus"
+msgstr "Integrated Terminus"
+
+msgid "Sleeper Information Sanctum"
+msgstr "Sleeper Information Sanctum"
+
+msgid "Core Garrison"
+msgstr "Core Garrison"
+
+msgid "Core Stronghold"
+msgstr "Core Stronghold"
+
+msgid "Oruze Osobnyk"
+msgstr "Oruze Osobnyk"
+
+msgid "Quarantine Area"
+msgstr "Quarantine Area"
+
+msgid "Core Citadel"
+msgstr "Core Citadel"
+
+msgid "Core Bastion"
+msgstr "Core Bastion"
+
+msgid "Strange Energy Readings"
+msgstr "Strange Energy Readings"
+
+msgid "The Mirror"
+msgstr "The Mirror"
+
+msgid "Epicenter"
+msgstr "Epicenter"
+
+msgid "Expedition Command Outpost Wreck"
+msgstr "Expedition Command Outpost Wreck"
+
+msgid "Planetary Colonization Office Wreck"
+msgstr "Planetary Colonization Office Wreck"
+
+msgid "Testing Facilities"
+msgstr "Testing Facilities"
+
+msgid "Monolith"
+msgstr "Monolith"
+
+msgid "Wormhole in Rock Circle"
+msgstr "Wormhole in Rock Circle"
+
+msgid "Opposing Spatial Rifts"
+msgstr "Opposing Spatial Rifts"
+
+msgid "Sleeper Enclave Debris"
+msgstr "Sleeper Enclave Debris"
+
+msgid "Crystal Resource"
+msgstr "Crystal Resource"
+
+msgid "Wrecked Ships"
+msgstr "Wrecked Ships"
+
+msgid "Unstable Wormhole"
+msgstr "Unstable Wormhole"
+
+msgid "Spatial Rift"
+msgstr "Spatial Rift"
+
+msgid "Heavily Guarded Spatial Rift"
+msgstr "Heavily Guarded Spatial Rift"
+
+msgid "Crystals"
+msgstr "Crystals"
+
+msgid "Ship Graveyard"
+msgstr "Ship Graveyard"
+
+msgid "Sleeper Engineering Station"
+msgstr "Sleeper Engineering Station"
+
+msgid "Sleeper Enclave in Coral Rock"
+msgstr "Sleeper Enclave in Coral Rock"
+
+msgid "Crystals and Stone Circle"
+msgstr "Crystals and Stone Circle"
+
+msgid "Caged Wormhole"
+msgstr "Caged Wormhole"
+
+msgid "Rock Formation and Wormhole"
+msgstr "Rock Formation and Wormhole"
+
+msgid "Particle Acceleration Array"
+msgstr "Particle Acceleration Array"
+
+msgid "Guarded Asteroid Station"
+msgstr "Guarded Asteroid Station"
+
+msgid "Spatial Rift Generator"
+msgstr "Spatial Rift Generator"
+
+msgid "Sleeper Enclave"
+msgstr "Sleeper Enclave"
+
+msgid "Hollow Asteroid"
+msgstr "Hollow Asteroid"
+
+msgid "Ruined Angel Crystal Quarry"
+msgstr "Ruined Angel Crystal Quarry"
+
+msgid "Ruined Angel Monument Site"
+msgstr "Ruined Angel Monument Site"
+
+msgid "Ruined Angel Science Outpost"
+msgstr "Ruined Angel Science Outpost"
+
+msgid "Ruined Angel Temple Site"
+msgstr "Ruined Angel Temple Site"
+
+msgid "Ruined Blood Raider Crystal Quarry"
+msgstr "Ruined Blood Raider Crystal Quarry"
+
+msgid "Ruined Blood Raider Monument Site"
+msgstr "Ruined Blood Raider Monument Site"
+
+msgid "Ruined Blood Raider Science Outpost"
+msgstr "Ruined Blood Raider Science Outpost"
+
+msgid "Ruined Blood Raider Temple Site"
+msgstr "Ruined Blood Raider Temple Site"
+
+msgid "Ruined Guristas Crystal Quarry"
+msgstr "Ruined Guristas Crystal Quarry"
+
+msgid "Ruined Guristas Monument Site"
+msgstr "Ruined Guristas Monument Site"
+
+msgid "Ruined Guristas Science Outpost"
+msgstr "Ruined Guristas Science Outpost"
+
+msgid "Ruined Guristas Temple Site"
+msgstr "Ruined Guristas Temple Site"
+
+msgid "Ruined Sansha Crystal Quarry"
+msgstr "Ruined Sansha Crystal Quarry"
+
+msgid "Ruined Sansha Monument Site"
+msgstr "Ruined Sansha Monument Site"
+
+msgid "Ruined Sansha Science Outpost"
+msgstr "Ruined Sansha Science Outpost"
+
+msgid "Ruined Sansha Temple Site"
+msgstr "Ruined Sansha Temple Site"
+
+msgid "Ruined Serpentis Crystal Quarry"
+msgstr "Ruined Serpentis Crystal Quarry"
+
+msgid "Ruined Serpentis Monument Site"
+msgstr "Ruined Serpentis Monument Site"
+
+msgid "Ruined Serpentis Science Outpost"
+msgstr "Ruined Serpentis Science Outpost"
+
+msgid "Ruined Serpentis Temple Site"
+msgstr "Ruined Serpentis Temple Site"
+
+msgid "Forgotten Perimeter Coronation Platform"
+msgstr "Forgotten Perimeter Coronation Platform"
+
+msgid "Forgotten Perimeter Power Array"
+msgstr "Forgotten Perimeter Power Array"
+
+msgid "Forgotten Perimeter Gateway"
+msgstr "Forgotten Perimeter Gateway"
+
+msgid "Forgotten Perimeter Habitation Coils"
+msgstr "Forgotten Perimeter Habitation Coils"
+
+msgid "Forgotten Frontier Quarantine Outpost"
+msgstr "Forgotten Frontier Quarantine Outpost"
+
+msgid "Forgotten Frontier Recursive Depot"
+msgstr "Forgotten Frontier Recursive Depot"
+
+msgid "Forgotten Frontier Conversion Module"
+msgstr "Forgotten Frontier Conversion Module"
+
+msgid "Forgotten Frontier Evacuation Center"
+msgstr "Forgotten Frontier Evacuation Center"
+
+msgid "Forgotten Core Data Field"
+msgstr "Forgotten Core Data Field"
+
+msgid "Forgotten Core Information Pen"
+msgstr "Forgotten Core Information Pen"
+
+msgid "Forgotten Core Assembly Hall"
+msgstr "Forgotten Core Assembly Hall"
+
+msgid "Forgotten Core Circuitry Disassembler"
+msgstr "Forgotten Core Circuitry Disassembler"
+
+msgid "Abandoned Research Complex DA005"
+msgstr "Abandoned Research Complex DA005"
+
+msgid "Abandoned Research Complex DA015"
+msgstr "Abandoned Research Complex DA015"
+
+msgid "Abandoned Research Complex DC007"
+msgstr "Abandoned Research Complex DC007"
+
+msgid "Abandoned Research Complex DC021"
+msgstr "Abandoned Research Complex DC021"
+
+msgid "Abandoned Research Complex DC035"
+msgstr "Abandoned Research Complex DC035"
+
+msgid "Abandoned Research Complex DG003"
+msgstr "Abandoned Research Complex DG003"
+
+msgid "Central Angel Command Center"
+msgstr "Central Angel Command Center"
+
+msgid "Central Angel Data Mining Site"
+msgstr "Central Angel Data Mining Site"
+
+msgid "Central Angel Sparking Transmitter"
+msgstr "Central Angel Sparking Transmitter"
+
+msgid "Central Angel Survey Site"
+msgstr "Central Angel Survey Site"
+
+msgid "Central Blood Raider Command Center"
+msgstr "Central Blood Raider Command Center"
+
+msgid "Central Blood Raider Data Mining Site"
+msgstr "Central Blood Raider Data Mining Site"
+
+msgid "Central Blood Raider Sparking Transmitter"
+msgstr "Central Blood Raider Sparking Transmitter"
+
+msgid "Central Blood Raider Survey Site"
+msgstr "Central Blood Raider Survey Site"
+
+msgid "Central Guristas Command Center"
+msgstr "Central Guristas Command Center"
+
+msgid "Central Guristas Data Mining Site"
+msgstr "Central Guristas Data Mining Site"
+
+msgid "Central Guristas Sparking Transmitter"
+msgstr "Central Guristas Sparking Transmitter"
+
+msgid "Central Guristas Survey Site"
+msgstr "Central Guristas Survey Site"
+
+msgid "Central Sansha Command Center"
+msgstr "Central Sansha Command Center"
+
+msgid "Central Sansha Data Mining Site"
+msgstr "Central Sansha Data Mining Site"
+
+msgid "Central Sansha Sparking Transmitter"
+msgstr "Central Sansha Sparking Transmitter"
+
+msgid "Central Sansha Survey Site"
+msgstr "Central Sansha Survey Site"
+
+msgid "Central Serpentis Command Center"
+msgstr "Central Serpentis Command Center"
+
+msgid "Central Serpentis Data Mining Site"
+msgstr "Central Serpentis Data Mining Site"
+
+msgid "Central Serpentis Sparking Transmitter"
+msgstr "Central Serpentis Sparking Transmitter"
+
+msgid "Central Serpentis Survey Site"
+msgstr "Central Serpentis Survey Site"
+
+msgid "Unsecured Perimeter Amplifier"
+msgstr "Unsecured Perimeter Amplifier"
+
+msgid "Unsecured Perimeter Information Center"
+msgstr "Unsecured Perimeter Information Center"
+
+msgid "Unsecured Perimeter Comms Relay"
+msgstr "Unsecured Perimeter Comms Relay"
+
+msgid "Unsecured Perimeter Transponder Farm"
+msgstr "Unsecured Perimeter Transponder Farm"
+
+msgid "Unsecured Frontier Database"
+msgstr "Unsecured Frontier Database"
+
+msgid "Unsecured Frontier Receiver"
+msgstr "Unsecured Frontier Receiver"
+
+msgid "Unsecured Frontier Digital Nexus"
+msgstr "Unsecured Frontier Digital Nexus"
+
+msgid "Unsecured Frontier Trinary Hub"
+msgstr "Unsecured Frontier Trinary Hub"
+
+msgid "Unsecured Frontier Enclave Relay"
+msgstr "Unsecured Frontier Enclave Relay"
+
+msgid "Unsecured Frontier Server Bank"
+msgstr "Unsecured Frontier Server Bank"
+
+msgid "Unsecured Core Backup Array"
+msgstr "Unsecured Core Backup Array"
+
+msgid "Unsecured Core Emergence"
+msgstr "Unsecured Core Emergence"
+
+msgid "Barren Perimeter Reservoir"
+msgstr "Barren Perimeter Reservoir"
+
+msgid "Token Perimeter Reservoir"
+msgstr "Token Perimeter Reservoir"
+
+msgid "Minor Perimeter Reservoir"
+msgstr "Minor Perimeter Reservoir"
+
+msgid "Sizeable Perimeter Reservoir"
+msgstr "Sizeable Perimeter Reservoir"
+
+msgid "Ordinary Perimeter Reservoir"
+msgstr "Ordinary Perimeter Reservoir"
+
+msgid "Bountiful Frontier Reservoir"
+msgstr "Bountiful Frontier Reservoir"
+
+msgid "Vast Frontier Reservoir"
+msgstr "Vast Frontier Reservoir"
+
+msgid "Instrumental Core Reservoir"
+msgstr "Instrumental Core Reservoir"
+
+msgid "Vital Core Reservoir"
+msgstr "Vital Core Reservoir"
+
+msgid "Ordinary Perimeter Deposit"
+msgstr "Ordinary Perimeter Deposit"
+
+msgid "Common Perimeter Deposit"
+msgstr "Common Perimeter Deposit"
+
+msgid "Unexceptional Frontier Deposit"
+msgstr "Unexceptional Frontier Deposit"
+
+msgid "Average Frontier Deposit"
+msgstr "Average Frontier Deposit"
+
+msgid "Isolated Core Deposit"
+msgstr "Isolated Core Deposit"
+
+msgid "Uncommon Core Deposit"
+msgstr "Uncommon Core Deposit"
+
+msgid "Infrequent Core Deposit"
+msgstr "Infrequent Core Deposit"
+
+msgid "Unusual Core Deposit"
+msgstr "Unusual Core Deposit"
+
+msgid "Exceptional Core Deposit"
+msgstr "Exceptional Core Deposit"
+
+msgid "Rarified Core Deposit"
+msgstr "Rarified Core Deposit"
+
+msgid "Shattered Debris Field"
+msgstr "Shattered Debris Field"
+
+msgid "Shattered Ice Field"
+msgstr "Shattered Ice Field"
+
+msgid "H121 - C1"
+msgstr "H121 - C1"
+
+msgid "C125 - C2"
+msgstr "C125 - C2"
+
+msgid "O883 - C3"
+msgstr "O883 - C3"
+
+msgid "M609 - C4"
+msgstr "M609 - C4"
+
+msgid "L614 - C5"
+msgstr "L614 - C5"
+
+msgid "S804 - C6"
+msgstr "S804 - C6"
+
+msgid "N110 - H"
+msgstr "N110 - H"
+
+msgid "J244 - L"
+msgstr "J244 - L"
+
+msgid "Z060 - 0.0"
+msgstr "Z060 - 0.0"
+
+msgid "F353 - C12 Thera"
+msgstr "F353 - C12 Thera"
+
+msgid "Z647 - C1"
+msgstr "Z647 - C1"
+
+msgid "D382 - C2"
+msgstr "D382 - C2"
+
+msgid "O477 - C3"
+msgstr "O477 - C3"
+
+msgid "Y683 - C4"
+msgstr "Y683 - C4"
+
+msgid "N062 - C5"
+msgstr "N062 - C5"
+
+msgid "R474 - C6"
+msgstr "R474 - C6"
+
+msgid "B274 - H"
+msgstr "B274 - H"
+
+msgid "A239 - L"
+msgstr "A239 - L"
+
+msgid "E545 - 0.0"
+msgstr "E545 - 0.0"
+
+msgid "F135 - C12 Thera"
+msgstr "F135 - C12 Thera"
+
+msgid "F216 - T Pochven"
+msgstr "F216 - T Pochven"
+
+msgid "V301 - C1"
+msgstr "V301 - C1"
+
+msgid "I182 - C2"
+msgstr "I182 - C2"
+
+msgid "N968 - C3"
+msgstr "N968 - C3"
+
+msgid "T405 - C4"
+msgstr "T405 - C4"
+
+msgid "N770 - C5"
+msgstr "N770 - C5"
+
+msgid "A982 - C6"
+msgstr "A982 - C6"
+
+msgid "D845 - H"
+msgstr "D845 - H"
+
+msgid "U210 - L"
+msgstr "U210 - L"
+
+msgid "K346 - 0.0"
+msgstr "K346 - 0.0"
+
+msgid "P060 - C1"
+msgstr "P060 - C1"
+
+msgid "N766 - C2"
+msgstr "N766 - C2"
+
+msgid "C247 - C3"
+msgstr "C247 - C3"
+
+msgid "X877 - C4"
+msgstr "X877 - C4"
+
+msgid "H900 - C5"
+msgstr "H900 - C5"
+
+msgid "U574 - C6"
+msgstr "U574 - C6"
+
+msgid "S047 - H"
+msgstr "S047 - H"
+
+msgid "N290 - L"
+msgstr "N290 - L"
+
+msgid "K329 - 0.0"
+msgstr "K329 - 0.0"
+
+msgid "Y790 - C1"
+msgstr "Y790 - C1"
+
+msgid "D364 - C2"
+msgstr "D364 - C2"
+
+msgid "M267 - C3"
+msgstr "M267 - C3"
+
+msgid "E175 - C4"
+msgstr "E175 - C4"
+
+msgid "H296 - C5"
+msgstr "H296 - C5"
+
+msgid "V753 - C6"
+msgstr "V753 - C6"
+
+msgid "D792 - H"
+msgstr "D792 - H"
+
+msgid "C140 - L"
+msgstr "C140 - L"
+
+msgid "Z142 - 0.0"
+msgstr "Z142 - 0.0"
+
+msgid "Q317 - C1"
+msgstr "Q317 - C1"
+
+msgid "G024 - C2"
+msgstr "G024 - C2"
+
+msgid "L477 - C3"
+msgstr "L477 - C3"
+
+msgid "Z457 - C4"
+msgstr "Z457 - C4"
+
+msgid "V911 - C5"
+msgstr "V911 - C5"
+
+msgid "W237 - C6"
+msgstr "W237 - C6"
+
+msgid "B520 - H"
+msgstr "B520 - H"
+
+msgid "C391 - L"
+msgstr "C391 - L"
+
+msgid "C248 - 0.0"
+msgstr "C248 - 0.0"
+
+msgid "L005 - C2"
+msgstr "L005 - C2"
+
+msgid "U201 - L"
+msgstr "U201 - L"
+
+msgid "Z971 - C1"
+msgstr "Z971 - C1"
+
+msgid "R943 - C2"
+msgstr "R943 - C2"
+
+msgid "X702 - C3"
+msgstr "X702 - C3"
+
+msgid "O128 - C4"
+msgstr "O128 - C4"
+
+msgid "M555 - C5"
+msgstr "M555 - C5"
+
+msgid "B041 - C6"
+msgstr "B041 - C6"
+
+msgid "A641 - H"
+msgstr "A641 - H"
+
+msgid "R051 - L"
+msgstr "R051 - L"
+
+msgid "V283 - 0.0"
+msgstr "V283 - 0.0"
+
+msgid "T458 - C12 Thera"
+msgstr "T458 - C12 Thera"
+
+msgid "C729 - T Pochven"
+msgstr "C729 - T Pochven"
+
+msgid "N432 - C5"
+msgstr "N432 - C5"
+
+msgid "U319 - C6"
+msgstr "U319 - C6"
+
+msgid "B449 - H"
+msgstr "B449 - H"
+
+msgid "N944 - L"
+msgstr "N944 - L"
+
+msgid "S199 - 0.0"
+msgstr "S199 - 0.0"
+
+msgid "M164 - C12 Thera"
+msgstr "M164 - C12 Thera"
+
+msgid "L031 - C12 Thera"
+msgstr "L031 - C12 Thera"
+
+msgid "U372 - T Pochven"
+msgstr "U372 - T Pochven"
+
+msgid "R081 - C4"
+msgstr "R081 - C4"
+
+msgid "X450 - 0.0"
+msgstr "X450 - 0.0"
+
+msgid "Damage"
+msgstr "Damage"
+
+msgid "Missile exp. radius"
+msgstr "Missile exp. radius"
+
+msgid "Drone tracking"
+msgstr "Drone tracking"
+
+msgid "Targeting range"
+msgstr "Targeting range"
+
+msgid "Tracking speed"
+msgstr "Tracking speed"
+
+msgid "Target Painter strength"
+msgstr "Target Painter strength"
+
+msgid "Heat damage"
+msgstr "Heat damage"
+
+msgid "Overload bonus"
+msgstr "Overload bonus"
+
+msgid "Smart Bomb range"
+msgstr "Smart Bomb range"
+
+msgid "Smart Bomb damage"
+msgstr "Smart Bomb damage"
+
+msgid "Bomb damage"
+msgstr "Bomb damage"
+
+msgid "Shield HP"
+msgstr "Shield HP"
+
+msgid "Armor resist"
+msgstr "Armor resist"
+
+msgid "Capacitor recharge"
+msgstr "Capacitor recharge"
+
+msgid "NOS/Neut drain"
+msgstr "NOS/Neut drain"
+
+msgid "Armor HP"
+msgstr "Armor HP"
+
+msgid "Shield resist"
+msgstr "Shield resist"
+
+msgid "Small Weapon damage"
+msgstr "Small Weapon damage"
+
+msgid "Signature size"
+msgstr "Signature size"
+
+msgid "Local armor repair amount"
+msgstr "Local armor repair amount"
+
+msgid "Local shield boost amount"
+msgstr "Local shield boost amount"
+
+msgid "Shield transfer amount"
+msgstr "Shield transfer amount"
+
+msgid "Remote repair amount"
+msgstr "Remote repair amount"
+
+msgid "Capacitor capacity"
+msgstr "Capacitor capacity"
+
+msgid "Capacitor recharge time"
+msgstr "Capacitor recharge time"
+
+msgid "Remote Capacitor Transmitter amount"
+msgstr "Remote Capacitor Transmitter amount"
+
+msgid "Missile velocity"
+msgstr "Missile velocity"
+
+msgid "Missile exp. velocity"
+msgstr "Missile exp. velocity"
+
+msgid "Ship velocity"
+msgstr "Ship velocity"
+
+msgid "Stasis Webifier strength"
+msgstr "Stasis Webifier strength"
+
+msgid "Inertia"
+msgstr "Inertia"
+
+msgid "add system"
+msgstr "add system"
+
+msgid "select all"
+msgstr "select all"
+
+msgid "filter scope"
+msgstr "filter scope"
+
+msgid "wormhole"
+msgstr "wormhole"
+
+msgid "stargate"
+msgstr "stargate"
+
+msgid "jumpbridge"
+msgstr "jumpbridge"
+
+msgid "abyssal"
+msgstr "abyssal"
+
+msgid "map"
+msgstr "map"
+
+msgid "edit map"
+msgstr "edit map"
+
+msgid "map info"
+msgstr "map info"
+
+msgid "delete systems"
+msgstr "delete systems"
+
+msgid "toggle EOL"
+msgstr "toggle EOL"
+
+msgid "preserve mass"
+msgstr "preserve mass"
+
+msgid "mass status"
+msgstr "mass status"
+
+msgid "stage 1 (fresh)"
+msgstr "stage 1 (fresh)"
+
+msgid "stage 2 (reduced)"
+msgstr "stage 2 (reduced)"
+
+msgid "stage 3 (critical)"
+msgstr "stage 3 (critical)"
+
+msgid "ship size"
+msgstr "ship size"
+
+msgid "smallest ships"
+msgstr "smallest ships"
+
+msgid "medium ships"
+msgstr "medium ships"
+
+msgid "larger ships"
+msgstr "larger ships"
+
+msgid "capital ships"
+msgstr "capital ships"
+
+msgid "change scope"
+msgstr "change scope"
+
+msgid "detach"
+msgstr "detach"
+
+msgid "bubbled"
+msgstr "bubbled"
+
+msgid "lock system"
+msgstr "lock system"
+
+msgid "set rally point"
+msgstr "set rally point"
+
+msgid "set status"
+msgstr "set status"
+
+msgid "find route"
+msgstr "find route"
+
+msgid "select connections"
+msgstr "select connections"
+
+msgid "waypoints"
+msgstr "waypoints"
+
+msgid "add new [start]"
+msgstr "add new [start]"
+
+msgid "add new [end]"
+msgstr "add new [end]"
+
+msgid "delete system(s)"
+msgstr "delete system(s)"
+
+msgid "Nearby"
+msgstr "Nearby"
+
+msgid "<span>You&nbsp;are&nbsp;alone</span>"
+msgstr "<span>You&nbsp;are&nbsp;alone</span>"
+
+msgid "ship&nbsp;name"
+msgstr "ship&nbsp;name"
+
+msgid "pilot"
+msgstr "pilot"
+
+msgid "Magnetizer"
+msgstr "Magnetizer"
+
+msgid "Region names"
+msgstr "Region names"
+
+msgid "Compact system layout"
+msgstr "Compact system layout"
+
+msgid "Endpoint overlay"
+msgstr "Endpoint overlay"
+
+msgid "Scope filter changed"
+msgstr "Scope filter changed"
+
+msgid "Connection not found"
+msgstr "Connection not found"
+
+msgid "Connection scope changed"
+msgstr "Connection scope changed"
+
+msgid "New scope: "
+msgstr "New scope: "
+
+msgid "Connection select limit"
+msgstr "Connection select limit"
+
+msgid "You can´t select more connections"
+msgstr "You can´t select more connections"
+
+msgid "System alias"
+msgstr "System alias"
+
+msgid "Scope: "
+msgstr "Scope: "
+
+msgid "System unlocked"
+msgstr "System unlocked"
+
+msgid "System locked"
+msgstr "System locked"
+
+msgid "Map initialized"
+msgstr "Map initialized"
+
+msgid "Max system count exceeded"
+msgstr "Max system count exceeded"
+
+msgid "Limit of %s systems reached"
+msgstr "Limit of %s systems reached"
+
+msgid "New system"
+msgstr "New system"
+
+msgid "Failed to delete systems"
+msgstr "Failed to delete systems"
+
+msgid "(%1 / %2) systems could not be deleted"
+msgstr "(%1 / %2) systems could not be deleted"
+
+msgid "System deleted"
+msgstr "System deleted"
+
+msgid "%s systems deleted"
+msgstr "%s systems deleted"
+
+msgid "Rally Point"
+msgstr "Rally Point"
+
+msgid "System: "
+msgstr "System: "
+
+msgid "Rally point removed"
+msgstr "Rally point removed"
+
+msgid "Pilots"
+msgstr "Pilots"
+
+msgid "Planets"
+msgstr "Planets"
+
+msgid "System select warning"
+msgstr "System select warning"
+
+msgid " deleted"
+msgstr " deleted"
+
+msgid "Name or ID"
+msgstr "Name or ID"
+
+msgid "Access select warning"
+msgstr "Access select warning"
+
+msgid " names"
+msgstr " names"
+
+msgid "Search failed"
+msgstr "Search failed"

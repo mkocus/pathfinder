@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-xs-9">
                 <div class="form-group">
-                    <label class="col-sm-2 control-label" for="form_system">System</label>
+                    <label class="col-sm-2 control-label" for="form_system">{{#translate}}System{{/translate}}</label>
                     <div class="col-sm-10">
                         <div class="input-group">
                             <label for="form_system"></label>
@@ -16,7 +16,7 @@
                             <span class="form-control-static fade" data-type="spinner">&nbsp;&nbsp;
                                 <i class="fas fa-fw fa-lg fa-spin fa-sync txt-color txt-color-grayLight"></i>
                             </span>
-                            <span class="help-block with-errors">Search system name</span>
+                            <span class="help-block with-errors">{{#translate}}Search system name{{/translate}}</span>
                         </div>
                     </div>
                 </div>
@@ -28,7 +28,7 @@
                         <div class="checkbox checkbox-primary">
                             <input id="{{lockId}}" name="locked" value="1" type="checkbox">
                             <label for="{{lockId}}">
-                                Lock system
+                                {{#translate}}Lock system{{/translate}}
                             </label>
                             <div class="help-block with-errors"></div>
                         </div>
@@ -36,7 +36,7 @@
                         <div class="checkbox checkbox-primary">
                             <input id="{{rallyId}}" name="rallyUpdated" value="1" type="checkbox">
                             <label for="{{rallyId}}">
-                                Rally point
+                                {{#translate}}Rally point{{/translate}}
                             </label>
                             <div class="help-block with-errors"></div>
                         </div>
@@ -48,7 +48,7 @@
         <div class="row">
             <div class="col-xs-9">
                 <div class="form-group">
-                    <label class="col-sm-2 control-label" for="{{statusSelectId}}">Status</label>
+                    <label class="col-sm-2 control-label" for="{{statusSelectId}}">{{#translate}}Status{{/translate}}</label>
                     <div class="col-sm-6">
                         <select id="{{statusSelectId}}" name="statusId" class="form-control {{select2Class}}">
                             {{#statusData}}
@@ -63,7 +63,7 @@
         {{! system info -------------------------------------------------------- }}
 
         <h4 class="pf-dynamic-area collapsed" data-toggle="collapse" data-target="#{{sectionInfoId}}" style="display: none;">
-            System intel : <span id="{{sectionInfoStatusId}}"></span>
+            {{#translate}}System intel{{/translate}} : <span id="{{sectionInfoStatusId}}"></span>
             <i class="fas fa-fw fa-question-circle pf-help-light" title="show persistent system data"></i>
         </h4>
 
@@ -71,7 +71,7 @@
             <div class="row">
                 <div class="col-xs-5 col-sm-6">
                     <div class="form-group">
-                        <label class="col-xs-3 col-sm-3 control-label">Alias</label>
+                        <label class="col-xs-3 col-sm-3 control-label">{{#translate}}Alias{{/translate}}</label>
                         <div class="col-xs-9 col-sm-9">
                             <div class="controls">
                                 <div id="{{aliasId}}" class="form-control-static pf-dynamic-area"></div>
@@ -82,7 +82,7 @@
 
                 <div class="col-xs-4 col-sm-3">
                     <div class="form-group">
-                        <label class="col-xs-7 col-sm-8 control-label">Signatures</label>
+                        <label class="col-xs-7 col-sm-8 control-label">{{#translate}}Signatures{{/translate}}</label>
                         <div class="col-xs-5 col-sm-4">
                             <div class="controls">
                                 <div id="{{signaturesId}}" class="form-control-static pf-dynamic-area text-right txt-color"></div>
@@ -92,7 +92,7 @@
                 </div>
 
                 <div class="col-xs-3 col-sm-3">
-                    <div id="{{createdId}}" class="well well-sm well-text-number text-center" title="first create"></div>
+                    <div id="{{createdId}}" class="well well-sm well-text-number text-center" title="{{#translate}}first create{{/translate}}"></div>
                 </div>
             </div>
 
@@ -100,7 +100,7 @@
             <div class="row">
                 <div class="col-xs-9 col-sm-9">
                     <div class="form-group">
-                        <label class="col-xs-3 col-sm-2 control-label">Description</label>
+                        <label class="col-xs-3 col-sm-2 control-label">{{#translate}}Description{{/translate}}</label>
                         <div class="col-xs-9 col-sm-10">
                             <div class="controls">
                                 <div id="{{descriptionId}}" class="form-control-static pf-dynamic-area"></div>
@@ -110,7 +110,7 @@
                 </div>
 
                 <div class="col-xs-3 col-sm-3">
-                    <div id="{{updatedId}}" class="well well-sm well-text-number text-center" title="last update/delete"></div>
+                    <div id="{{updatedId}}" class="well well-sm well-text-number text-center" title="{{#translate}}last update/delete{{/translate}}"></div>
                 </div>
             </div>
         </div>

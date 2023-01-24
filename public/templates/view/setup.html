@@ -12,7 +12,7 @@
             <div class="col-md-6 col-md-offset-3">
                 <h2><span class="text-primary">Setup</span> and Bootstrapping</h2>
                 <p class="lead">
-                    The following steps will guide you through the database bootstrapping/update process for <em>PATHFINDER</em>.
+                    {{ @__('The following steps will guide you through the database bootstrapping/update process for <em>PATHFINDER</em>.') }}
                 </p>
             </div>
         </div>
@@ -38,36 +38,36 @@
                 <div class="panel panel-default pricing-big">
 
                     <div class="panel-heading text-left">
-                        <h3 class="panel-title">Information</h3>
+                        <h3 class="panel-title">{{ @__('Information') }}</h3>
                     </div>
                     <div class="panel-body no-padding text-align-center">
 
                         <table class="table">
                             <thead>
                             <tr>
-                                <td>Installation</td>
+                                <td>{{ @__('Installation') }}</td>
                                 <td class="text-right col-md-8">{{ @PATHFINDER.NAME }}</td>
                             </tr>
                             </thead>
                             <tbody>
                             <tr>
-                                <td>Version</td>
+                                <td>{{ @__('Version') }}</td>
                                 <td class="text-right">
                                     <kbd>{{ @PATHFINDER.VERSION }}</kbd>
                                 </td>
                             </tr>
                             <tr>
-                                <td>Package</td>
+                                <td>{{ @__('Package') }}</td>
                                 <td class="text-right">
                                     <kbd>{{ @PACKAGE }} {{ @VERSION }}</kbd>
                                 </td>
                             </tr>
                             <tr>
-                                <td>Contact</td>
+                                <td>{{ @__('Contact') }}</td>
                                 <td class="text-right"><a href="{{ @PATHFINDER.CONTACT }}" target="_blank" rel="noopener">{{ @PATHFINDER.CONTACT }}</a></td>
                             </tr>
                             <tr>
-                                <td>Repository</td>
+                                <td>{{ @__('Repository') }}</td>
                                 <td class="text-right"><a href="{{ @PATHFINDER.REPO }}" target="_blank" rel="noopener">{{ @PATHFINDER.REPO }}</a></td>
                             </tr>
                             </tbody>
@@ -79,7 +79,7 @@
                 <div class="panel panel-default pricing-big">
 
                     <div class="panel-heading text-left">
-                        <h3 class="panel-title">Directories</h3>
+                        <h3 class="panel-title">{{ @__('Directories') }}</h3>
                     </div>
                     <div class="panel-body no-padding text-align-center">
 
@@ -124,7 +124,7 @@
                 {* Server *}
                 <div class="panel panel-default pricing-big">
                     <div class="panel-heading text-left">
-                        <h3 class="panel-title">Server</h3>
+                        <h3 class="panel-title">{{ @__('Server') }}</h3>
                     </div>
                     <div class="panel-body no-padding text-align-center">
 
@@ -149,7 +149,7 @@
 
                     <div class="panel panel-default pricing-big">
                         <div class="panel-heading text-left">
-                            <h3 class="panel-title">Environment variables [optional]</h3>
+                            <h3 class="panel-title">{{ @__('Environment variables [optional]') }}</h3>
                         </div>
                         <div class="panel-body no-padding text-align-center">
                             <include href="templates/modules/requirements_table.html"/>
@@ -157,7 +157,7 @@
                         <div class="panel-footer text-align-center">
                             <check if="{{ !@tplCounter('get') }}">
                                 <true>
-                                    <h3 class="panel-title txt-color txt-color-success">OK</h3>
+                                    <h3 class="panel-title txt-color txt-color-success">{{ @__('OK') }}</h3>
                                 </true>
                                 <false>
                                     <h3 class="panel-title txt-color txt-color-warning">{{ @tplCounter('get') }} warning</h3>
@@ -172,7 +172,7 @@
 
         </div>
 
-        <h4 data-target=".pf-setup-body-server" data-toggle="collapse"><i class="fas fa-fw fa-network-wired"></i> Server
+        <h4 data-target=".pf-setup-body-server" data-toggle="collapse"><i class="fas fa-fw fa-network-wired"></i> {{ @__('Server') }}
             <div class="pull-right">
                 <span class="badge badge-warning" title="warning" data-placement="top">{{ @tplCounter('get', 'server' . '_warning') }}</span>
                 <span class="badge badge-danger" title="error" data-placement="top">{{ @tplCounter('get', 'server' . '_danger') }}</span>
@@ -190,7 +190,7 @@
 
                 <div class="panel panel-default pricing-big">
                     <div class="panel-heading text-left">
-                        <h3 class="panel-title">Requirements</h3>
+                        <h3 class="panel-title">{{ @__('Requirements') }}</h3>
                     </div>
                     <div class="panel-body no-padding text-align-center">
                         <include href="templates/modules/requirements_table.html"/>
@@ -198,10 +198,10 @@
                     <div class="panel-footer text-align-center">
                         <check if="{{ !@tplCounter('get') }}">
                             <true>
-                                <h3 class="panel-title txt-color txt-color-success">OK</h3>
+                                <h3 class="panel-title txt-color txt-color-success">{{ @__('OK') }}</h3>
                             </true>
                             <false>
-                                <h3 class="panel-title txt-color txt-color-warning">{{ @tplCounter('get') }} warning</h3>
+                                <h3 class="panel-title txt-color txt-color-warning">{{ @tplCounter('get') }} {{ @__('warning') }}</h3>
                             </false>
                         </check>
                     </div>
@@ -224,10 +224,10 @@
                     <div class="panel-footer text-align-center">
                         <check if="{{ !@tplCounter('get') }}">
                             <true>
-                                <h3 class="panel-title txt-color txt-color-success">OK</h3>
+                                <h3 class="panel-title txt-color txt-color-success">{{ @__('OK') }}</h3>
                             </true>
                             <false>
-                                <h3 class="panel-title txt-color txt-color-warning">{{ @tplCounter('get') }} warning</h3>
+                                <h3 class="panel-title txt-color txt-color-warning">{{ @tplCounter('get') }} {{ @__('warning') }}</h3>
                             </false>
                         </check>
                     </div>
@@ -237,7 +237,7 @@
             </div>
         </div>
 
-        <h4 data-target=".pf-setup-body-environment" data-toggle="collapse"><i class="fas fa-fw fa-server"></i> Environment
+        <h4 data-target=".pf-setup-body-environment" data-toggle="collapse"><i class="fas fa-fw fa-server"></i> {{ @__('Environment') }}
             <div class="pull-right">
                 <span class="badge badge-warning" title="warning" data-placement="top">{{ @tplCounter('get', 'environment' . '_warning') }}</span>
                 <span class="badge badge-danger" title="error" data-placement="top">{{ @tplCounter('get', 'environment' . '_danger') }}</span>
@@ -253,7 +253,7 @@
                 <div class="panel panel-default pricing-big">
 
                     <div class="panel-heading text-left">
-                        <h3 class="panel-title">Configuration</h3>
+                        <h3 class="panel-title">{{ @__('Configuration') }}</h3>
                     </div>
 
                     <div class="panel-body no-padding text-align-center">
@@ -287,21 +287,21 @@
                 <div class="panel panel-default pricing-big">
 
                     <div class="panel-heading text-left">
-                        <h3 class="panel-title">Modules</h3>
+                        <h3 class="panel-title">{{ @__('Modules') }}</h3>
                     </div>
 
                     <div class="panel-body no-padding text-align-center">
                         <table class="table">
                             <thead>
                             <tr>
-                                <td><i class="fas fa-fw fa-sign-in-alt"></i> Registration/Login</td>
+                                <td><i class="fas fa-fw fa-sign-in-alt"></i>{{ @__('Registration/Login') }}</td>
                                 <td class="text-right col-md-2">
                                     <check if="{{ @PATHFINDER.REGISTRATION.STATUS }}">
                                         <true>
-                                            <kbd class="txt-color txt-color-success">enabled</kbd>
+                                            <kbd class="txt-color txt-color-success">{{ @__('enabled') }}</kbd>
                                         </true>
                                         <false>
-                                            <kbd class="txt-color txt-color-warning">disabled</kbd>
+                                            <kbd class="txt-color txt-color-warning">{{ @__('disabled') }}</kbd>
                                         </false>
                                     </check>
                                 </td>
@@ -309,27 +309,27 @@
                             </thead>
                             <tbody>
                             <tr>
-                                <td><i class="fab fa-fw fa-slack-hash"></i> Slack</td>
+                                <td><i class="fab fa-fw fa-slack-hash"></i>{{ @__('Slack') }}</td>
                                 <td class="text-right col-md-2">
                                     <check if="{{ @PATHFINDER.SLACK.STATUS }}">
                                         <true>
-                                            <kbd class="txt-color txt-color-success">enabled</kbd>
+                                            <kbd class="txt-color txt-color-success">{{ @__('enabled') }}</kbd>
                                         </true>
                                         <false>
-                                            <kbd class="txt-color txt-color-warning">disabled</kbd>
+                                            <kbd class="txt-color txt-color-warning">{{ @__('disabled') }}</kbd>
                                         </false>
                                     </check>
                                 </td>
                             </tr>
                             <tr>
-                                <td><i class="fab fa-fw fa-discord"></i> Discord</td>
+                                <td><i class="fab fa-fw fa-discord"></i>{{ @__('Discord') }}</td>
                                 <td class="text-right col-md-2">
                                     <check if="{{ @PATHFINDER.DISCORD.STATUS }}">
                                         <true>
-                                            <kbd class="txt-color txt-color-success">enabled</kbd>
+                                            <kbd class="txt-color txt-color-success">{{ @__('enabled') }}</kbd>
                                         </true>
                                         <false>
-                                            <kbd class="txt-color txt-color-warning">disabled</kbd>
+                                            <kbd class="txt-color txt-color-warning">{{ @__('disabled') }}</kbd>
                                         </false>
                                     </check>
                                 </td>
@@ -344,7 +344,7 @@
                 <div class="panel panel-default pricing-big">
 
                     <div class="panel-heading text-left">
-                        <h3 class="panel-title">Map Settings</h3>
+                        <h3 class="panel-title">{{ @__('Map Settings') }}</h3>
                     </div>
 
                     <div class="panel-body no-padding text-align-center">
@@ -370,10 +370,10 @@
                                             <td class="text-right">
                                                 <switch expr="{{ @mapTypeConfValue }}">
                                                     <case value="1" break="true">
-                                                        <kbd class="txt-color txt-color-success">enabled</kbd>
+                                                        <kbd class="txt-color txt-color-success">{{ @__('enabled') }}</kbd>
                                                     </case>
                                                     <case value="0" break="true">
-                                                        <kbd>disabled</kbd>
+                                                        <kbd>{{ @__('disabled') }}</kbd>
                                                     </case>
                                                     <default>
                                                         <kbd>{{ @mapTypeConfValue }}</kbd>
@@ -392,7 +392,7 @@
 
         </div>
 
-        <h4 data-target=".pf-setup-body-settings" data-toggle="collapse"><i class="fas fa-fw fa-sliders-h"></i> Settings
+        <h4 data-target=".pf-setup-body-settings" data-toggle="collapse"><i class="fas fa-fw fa-sliders-h"></i> {{ @__('Settings') }}
             <div class="pull-right">
                 <span class="badge badge-warning" title="warning" data-placement="top">{{ @tplCounter('get', 'settings' . '_warning') }}</span>
                 <span class="badge badge-danger" title="error" data-placement="top">{{ @tplCounter('get', 'settings' . '_danger') }}</span>
@@ -488,7 +488,7 @@
                                                 </kbd>
                                             </true>
                                             <false>
-                                                <kbd class="txt-color txt-color-danger">failed</kbd>
+                                                <kbd class="txt-color txt-color-danger">{{ @__('failed') }}</kbd>
                                             </false>
                                         </check>
                                     </td>
@@ -516,8 +516,8 @@
                                         <td data-target=".{{ @dbInformation.info.name }}_dbConfig_col" data-toggle="collapse">
                                             <i class="fas fa-fw fa-chevron-right pf-animate-rotate"></i>
                                         </td>
-                                        <td class="col-sm-3 col-md-3 text-right">required</td>
-                                        <td class="col-sm-3 col-md-3 text-right">installed</td>
+                                        <td class="col-sm-3 col-md-3 text-right">{{ @__('required') }}</td>
+                                        <td class="col-sm-3 col-md-3 text-right">{{ @__('installed') }}</td>
                                         <td class="col-sm-1 col-md-1 text-right"></td>
                                     </tr>
                                     <repeat group="{{ @dbInformation.info.dbConfig.data }}" value="{{ @setting }}">
@@ -582,8 +582,8 @@
                                             <i class="fas fa-fw fa-hashtag"></i>
                                         </th>
                                         <th>Table</th>
-                                        <th class="col-sm-1 col-md-1 text-center">exist</th>
-                                        <th class="col-sm-3 col-md-3">charset</th>
+                                        <th class="col-sm-1 col-md-1 text-center">{{ @__('exist') }}</th>
+                                        <th class="col-sm-3 col-md-3">{{ @__('charset') }}</th>
                                         <th class="col-sm-1 col-md-1 text-center">
                                             <i class="fas fa-fw fa-battery-half"></i>
                                         </th>
@@ -798,7 +798,7 @@
                                                 <td class="text-right bg-color bg-color-tealDarkest">
                                                     <i class="fas fa-fw fa-hashtag"></i>
                                                 </td>
-                                                <td class="bg-color bg-color-tealDarkest">foreign key</td>
+                                                <td class="bg-color bg-color-tealDarkest">{{ @__('foreign key') }}</td>
                                                 <td class="bg-color bg-color-tealDarkest"></td>
                                                 <td class="bg-color bg-color-tealDarkest"></td>
                                                 <td class="bg-color bg-color-tealDarkest"></td>
@@ -883,15 +883,15 @@
                             <check if="{{ @dbInformation.info.dbCreate }}">
                                 <true>
                                     <a href="?action=createDB&db={{ @dbKey }}#pf-setup-database" class="btn btn-success {{ true ?'':'disabled' }}" title="Try to create new '{{ @dbInformation.info.name }}' database." data-container="body">
-                                        <i class="fas fa-fw fa-plus"></i> Create database
+                                        <i class="fas fa-fw fa-plus"></i>{{ @__('Create database') }}
                                     </a>
                                 </true>
                                 <false>
                                     <a href="?action=bootstrapDB&db={{ @dbKey }}#pf-setup-database" class="btn btn-primary {{ (@dbInformation.info.setupEnable && @dbConnectionStatus == 'OK') ?'':'disabled' }}">
-                                        <i class="fas fa-fw fa-sync"></i> Setup tables
+                                        <i class="fas fa-fw fa-sync"></i>{{ @__('Setup tables') }}
                                     </a>
                                     <a href="?action=fixCols#pf-setup-database" class="btn btn-default {{ @dbInformation.info.columnQueries ?'':'disabled' }}">
-                                        <i class="fas fa-fw fa-magic"></i> Fix columns/keys
+                                        <i class="fas fa-fw fa-magic"></i>{{ @__('Fix columns/keys') }}
                                     </a>
                                 </false>
                             </check>
@@ -904,7 +904,7 @@
 
         </div>
 
-        <h4 data-target=".pf-setup-body-database" data-toggle="collapse"><i class="fas fa-fw fa-database"></i> Database
+        <h4 data-target=".pf-setup-body-database" data-toggle="collapse"><i class="fas fa-fw fa-database"></i>{{ @__('Database') }}
             <div class="pull-right">
                 <span class="badge badge-warning" title="warning" data-placement="top">{{ @tplCounter('get', 'database' . '_warning') }}</span>
                 <span class="badge badge-danger" title="error" data-placement="top">{{ @tplCounter('get', 'database' . '_danger') }}</span>
@@ -924,7 +924,7 @@
                         <div class="col-xs-12 col-md-6 pf-landing-pricing-panel">
                             <div class="panel panel-default pricing-big">
                                 <div class="panel-heading text-left">
-                                    <h3 class="panel-title">Redis server No.{{ @countRedisServer }}</h3>
+                                    <h3 class="panel-title">{{ @__('Redis server No. %s', @countRedisServes) }}</h3>
                                 </div>
 
                                 <div class="panel-body no-padding text-left">
@@ -942,10 +942,10 @@
                                             <td class="text-right col-sm-6 col-md-3" colspan="2">
                                                 <check if="{{ @redisInformation.connected.value }}">
                                                     <true>
-                                                        <kbd class="txt-color txt-color-success">connected</kbd>
+                                                        <kbd class="txt-color txt-color-success">{{ @__('connected') }}</kbd>
                                                     </true>
                                                     <false>
-                                                        <kbd class="txt-color txt-color-danger">failed</kbd>
+                                                        <kbd class="txt-color txt-color-danger">{{ @__('failed') }}</kbd>
                                                     </false>
                                                 </check>
                                             </td>
@@ -964,7 +964,7 @@
                                         <repeat group="{{ @redisInformation.errors }}"  value="{{ @redisError }}">
                                             <tr>
                                                 <td colspan="2">{{ @redisError.label | raw}}: {{ @redisError.error }}</td>
-                                                <td class="text-right"><kbd class="txt-color txt-color-danger">error</kbd></td>
+                                                <td class="text-right"><kbd class="txt-color txt-color-danger">{{ @__('error') }}</kbd></td>
                                                 <td class="text-right"><i class="fas fa-fw fa-exclamation-triangle txt-color txt-color-danger"></i></td>
                                             </tr>
                                             {{ @tplCounter('increment', 'cache_danger') }}
@@ -990,10 +990,10 @@
                                 <div class="panel-footer text-align-center">
                                     <check if="{{ !@tplCounter('get', 'cache_danger') }}">
                                         <true>
-                                            <h3 class="panel-title txt-color txt-color-success">OK</h3>
+                                            <h3 class="panel-title txt-color txt-color-success">{{ @__('OK') }}</h3>
                                         </true>
                                         <false>
-                                            <h3 class="panel-title txt-color txt-color-danger">Connection failed</h3>
+                                            <h3 class="panel-title txt-color txt-color-danger">{{ @__('Connection failed') }}</h3>
                                         </false>
                                     </check>
                                 </div>
@@ -1007,7 +1007,7 @@
                     <div class="col-xs-12 col-md-6 pf-landing-pricing-panel">
                         <div class="panel panel-default pricing-big" style="position: relative">
                             <div class="panel-heading text-left">
-                                <h3 class="panel-title">Redis server</h3>
+                                <h3 class="panel-title">{{ @__('Redis server') }}</h3>
                             </div>
 
                             <div class="panel-body no-padding text-left">
@@ -1016,14 +1016,14 @@
                                         <tr>
                                             <td>
                                                 <i class="fas fa-fw fa-exclamation txt-color txt-color-info"></i>
-                                                Redis can be used as Cache backend
+                                                {{ @__('Redis can be used as Cache backend') }}
                                             </td>
                                             <td class="text-right"><kbd>pathfinder.ini</kbd></td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <i class="fas fa-fw fa-exclamation txt-color txt-color-info"></i>
-                                                Redis can be used as PHP Sessions handler
+                                                {{ @__('Redis can be used as PHP Sessions handler') }}
                                             </td>
                                             <td class="text-right"><kbd>php.ini</kbd></td>
                                         </tr>
@@ -1032,7 +1032,7 @@
                             </div>
 
                             <div class="panel-footer text-align-center">
-                                <h3 class="panel-title txt-color txt-color-warning">No Redis configuration found</h3>
+                                <h3 class="panel-title txt-color txt-color-warning">{{ @__('No Redis configuration found') }}</h3>
                             </div>
                         </div>
                     </div>
@@ -1041,7 +1041,7 @@
 
         </div>
 
-        <h4 data-target=".pf-setup-body-cache" data-toggle="collapse"><i class="fas fa-fw fa-hdd"></i> Cache <span class="txt-color txt-color-gray">[optional]</span>
+        <h4 data-target=".pf-setup-body-cache" data-toggle="collapse"><i class="fas fa-fw fa-hdd"></i> {{ @__('Cache <span class="txt-color txt-color-gray">[optional]') }}</span>
             <div class="pull-right">
                 <span class="badge badge-warning" title="warning" data-placement="top">{{ @tplCounter('get', 'cache' . '_warning') }}</span>
                 <span class="badge badge-danger" title="error" data-placement="top">{{ @tplCounter('get', 'cache' . '_danger') }}</span>
@@ -1117,10 +1117,10 @@
                                         <td class="col-xs-1" data-target=".{{ @socketType }}_log_col" data-toggle="collapse">
                                             <i class="fas fa-fw fa-chevron-right pf-animate-rotate"></i>
                                         </td>
-                                        <td>client URI</td>
-                                        <td class="col-xs-2">file #line</td>
-                                        <td>message</td>
-                                        <td class="col-md-1 text-right">type</td>
+                                        <td>{{ @__('client URI') }}</td>
+                                        <td class="col-xs-2">{{ @__('file #line') }}</td>
+                                        <td>{{ @__('message') }}</td>
+                                        <td class="col-md-1 text-right">{{ @__('type') }}</td>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -1156,7 +1156,7 @@
                                                     </true>
                                                     <false>
                                                         <check if="{{ @logData.action != 'START' }}">
-                                                            <kbd title="send to multiple clients" class="txt-color txt-color-success">broadcast</kbd>
+                                                            <kbd title="send to multiple clients" class="txt-color txt-color-success">{{ @__('broadcast') }}</kbd>
                                                         </check>
                                                     </false>
                                                 </check>
@@ -1181,7 +1181,7 @@
 
         </div>
 
-        <h4 data-target=".pf-setup-body-socket" data-toggle="collapse"><i class="fas fa-fw fa-random"></i> Socket configuration <span class="txt-color txt-color-gray">[optional]</span>
+        <h4 data-target=".pf-setup-body-socket" data-toggle="collapse"><i class="fas fa-fw fa-random"></i> {{ @__('Socket configuration <span class="txt-color txt-color-gray">[optional]') }}</span>
             <div class="pull-right">
                 <span class="badge badge-warning" title="warning" data-placement="top">{{ @tplCounter('get', 'socket' . '_warning') }}</span>
                 <span class="badge badge-danger" title="error" data-placement="top">{{ @tplCounter('get', 'socket' . '_danger') }}</span>
@@ -1198,7 +1198,7 @@
                 <div class="panel panel-default pricing-big">
 
                     <div class="panel-heading text-left">
-                        <h3 class="panel-title"><i class="fas fa-user-clock"></i>&nbsp;&nbsp;Configuration <kbd class="pull-right">app/cron.ini</kbd></h3>
+                        <h3 class="panel-title"><i class="fas fa-user-clock"></i>&nbsp;&nbsp;{{ @__('Configuration <kbd class="pull-right">app/cron.ini</kbd>') }}</h3>
                     </div>
 
                     <div class="panel-body no-padding text-left">
@@ -1214,7 +1214,7 @@
                 <div class="panel panel-default pricing-big">
 
                     <div class="panel-heading text-left">
-                        <h3 class="panel-title"><i class="fas fa-calendar"></i>&nbsp;&nbsp;Jobs</h3>
+                        <h3 class="panel-title"><i class="fas fa-calendar"></i>&nbsp;&nbsp;{{ @__('Jobs') }}</h3>
                     </div>
 
                     <div class="panel-body no-padding text-left">
@@ -1252,15 +1252,15 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="text-right bg-color bg-color-gray">status</td>
+                                    <td class="text-right bg-color bg-color-gray">{{ @__('status') }}</td>
                                     <td>name</td>
-                                    <td class="hidden-xs hidden-sm">handler</td>
-                                    <td class="separator-right">schedule</td>
-                                    <td class="text-center">start time</td>
-                                    <td class="text-right">exec.&nbsp;time</td>
-                                    <td class="text-right separator-right">mem.&nbsp;peak</td>
-                                    <td class="text-right hidden-xs hidden-sm">exec.&nbsp;time</td>
-                                    <td class="text-right hidden-xs hidden-sm separator-right">mem.&nbsp;peak</td>
+                                    <td class="hidden-xs hidden-sm">{{ @__('handler') }}</td>
+                                    <td class="separator-right">{{ @__('schedule') }}</td>
+                                    <td class="text-center">{{ @__('start time') }}</td>
+                                    <td class="text-right">{{ @__('exec.&nbsp;time') }}</td>
+                                    <td class="text-right separator-right">{{ @__('mem.&nbsp;peak') }}</td>
+                                    <td class="text-right hidden-xs hidden-sm">{{ @__('exec.&nbsp;time') }}</td>
+                                    <td class="text-right hidden-xs hidden-sm separator-right">{{ @__('mem.&nbsp;peak') }}</td>
                                     <td class="text-center"><i class="fas fa-fw fa-file-alt"></i></td>
                                     <td class="text-right"></td>
                                 </tr>
@@ -1281,7 +1281,7 @@
 
         </div>
 
-        <h4 data-target=".pf-setup-body-cronjob" data-toggle="collapse"><i class="fas fa-fw fa-user-clock"></i> Cronjob
+        <h4 data-target=".pf-setup-body-cronjob" data-toggle="collapse"><i class="fas fa-fw fa-user-clock"></i>{{ @__('Cronjob') }}
             <div class="pull-right">
                 <span class="badge badge-warning" title="warning" data-placement="top">{{ @tplCounter('get', 'cronjob' . '_warning') }}</span>
                 <span class="badge badge-danger" title="error" data-placement="top">{{ @tplCounter('get', 'cronjob' . '_danger') }}</span>
@@ -1300,7 +1300,7 @@
 
                     <div class="panel-heading text-left">
                         <h3 class="panel-title">
-                            <i class="fas fa-cloud-download-alt"></i>&nbsp;&nbsp;Import static data
+                            <i class="fas fa-cloud-download-alt"></i>&nbsp;&nbsp;{{ @__('Import static data') }}
                             <i class="fas fa-fw fa-sm fa-question-circle pf-help-light"
                                title="Re-importing/update static data from either ESI API and/or /export/*.csv files. Increase 'max_execution_time' if you run into PHP timeouts."
                                data-container="body"
@@ -1315,8 +1315,8 @@
                                     {* hide table head row if there is just one (error!) table row *}
                                     <tr>
                                         <td></td>
-                                        <td class="col-xs-2 col-md-2 text-right">count</td>
-                                        <td class="col-xs-2 col-md-2 text-right">sub count</td>
+                                        <td class="col-xs-2 col-md-2 text-right">{{ @__('count') }}</td>
+                                        <td class="col-xs-2 col-md-2 text-right">{{ @__('sub count') }}</td>
                                         <td class="col-xs-4 col-md-4"></td>
                                     </tr>
                                 </check>
@@ -1398,7 +1398,7 @@
                 <div class="panel panel-default pricing-big">
 
                     <div class="panel-heading text-left">
-                        <h3 class="panel-title"><i class="fas fa-folder"></i>&nbsp;&nbsp;Filesystem cache
+                        <h3 class="panel-title"><i class="fas fa-folder"></i>&nbsp;&nbsp;{{ @__('Filesystem cache') }}
                             <kbd class="pull-right">
                                 <check if="{{ @checkDirSize.sizeAll }}">
                                     <true>
@@ -1451,7 +1451,7 @@
                 {* Cookie *}
                 <div class="panel panel-default pricing-big">
                     <div class="panel-heading text-left">
-                        <h3 class="panel-title"><i class="fas fa-cookie-bite"></i>&nbsp;&nbsp;Cookies
+                        <h3 class="panel-title"><i class="fas fa-cookie-bite"></i>&nbsp;&nbsp;{{ @__('Cookies') }}
                             <i class="fas fa-fw fa-sm fa-question-circle pf-help-light" title="Force all users to re-login through SSO. "></i>
                         </h3>
                     </div>
@@ -1460,11 +1460,11 @@
                         <table class="table">
                             <thead>
                             <tr>
-                                <td>Invalidate all Cookie data</td>
+                                <td>{{ @__('Invalidate all Cookie data') }}</td>
                                 <td class="col-xs-6 no-padding">
                                     <div class="btn-group btn-group-justified">
                                         <a class="btn btn-danger" href="?action=invalidateCookies#pf-setup-administration" role="button" >
-                                            <i class="fas fa-fw fa-trash"></i>&nbsp;Clear authentication data
+                                            <i class="fas fa-fw fa-trash"></i>{{ @__('&nbsp;Clear authentication data') }}
                                         </a>
                                     </div>
                                 </td>
@@ -1480,7 +1480,7 @@
 
         </div>
 
-        <h4 data-target=".pf-setup-body-administration" data-toggle="collapse"><i class="fas fa-fw fa-wrench"></i> Administration
+        <h4 data-target=".pf-setup-body-administration" data-toggle="collapse"><i class="fas fa-fw fa-wrench"></i>{{ @__('Administration') }}
             <div class="pull-right">
                 <span class="badge badge-warning" title="warning" data-placement="top">{{ @tplCounter('get', 'administration' . '_warning') }}</span>
                 <span class="badge badge-danger" title="error" data-placement="top">{{ @tplCounter('get', 'administration' . '_danger') }}</span>

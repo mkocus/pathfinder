@@ -6,8 +6,9 @@ define([
     'jquery',
     'app/init',
     'app/util',
-    'bootbox'
-], ($, Init, Util, bootbox) => {
+    'bootbox',
+    'i18n!'
+], ($, Init, Util, bootbox, __) => {
     'use strict';
 
     let config = {
@@ -41,11 +42,11 @@ define([
                 show: false,
                 buttons: {
                     close: {
-                        label: 'cancel',
+                        label: __('cancel'),
                         className: 'btn-default'
                     },
                     success: {
-                        label: '<i class="fas fa-user-times fa-fw"></i>&nbsp;delete account',
+                        label: '<i class="fas fa-user-times fa-fw"></i>&nbsp;' + __('delete account'),
                         className: 'btn-danger',
                         callback: function(){
                             let dialogElement = $(this);

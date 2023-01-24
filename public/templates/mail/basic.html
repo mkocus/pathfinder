@@ -332,12 +332,12 @@
                         <tr>
                             <td class="content-block">
                                 <span class="apple-link">Made by <a href="{{ @appContact }}">{{ @appContact }}</a><check if="{{ @appMail }}"> - <a href="mailto:{{ @appMail }}">{{ @appMail }}</a></check></span>
-                                <br> Please do not respond to this e-mail. <a href="#">Unsubscribe</a>.
+                                <br>{{ @__('Please do not respond to this e-mail. <a href="#">Unsubscribe</a>.') }}
                             </td>
                         </tr>
                         <tr>
                             <td class="content-block powered-by">
-                                Powered by <a href="{{ @appUrl }}">{{ @appHost }} ({{ @appName }})</a>.
+                                {{ @__('Powered by') }} <a href="{{ @appUrl }}">{{ @appHost }} ({{ @appName }})</a>.
                             </td>
                         </tr>
                     </table>

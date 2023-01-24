@@ -10,8 +10,9 @@ define([
     'app/render',
     'app/counter',
     'bootbox',
+    'i18n!',
     'peityInlineChart'
-], ($, Init, Util, Render, Counter, bootbox) => {
+], ($, Init, Util, Render, Counter, bootbox, __) => {
     'use strict';
 
     let config = {
@@ -107,10 +108,10 @@ define([
             searching: true,
             hover: false,
             language: {
-                emptyTable:  'No statistics found',
-                zeroRecords: 'No characters found',
-                lengthMenu:  'Show _MENU_ characters',
-                info:        'Showing _START_ to _END_ of _TOTAL_ characters'
+                emptyTable:  __('No statistics found'),
+                zeroRecords: __('No characters found'),
+                lengthMenu:  __('Show _MENU_ characters'),
+                info:        __('Showing _START_ to _END_ of _TOTAL_ characters')
             },
             columnDefs: [
                 {
@@ -139,7 +140,7 @@ define([
                 },{
                     targets: 2,
                     name: 'name',
-                    title: 'name',
+                    title: __('name'),
                     width: 200,
                     data: 'character',
                     render: {
@@ -149,7 +150,7 @@ define([
                 },{
                     targets: 3,
                     name: 'lastLogin',
-                    title: 'last login',
+                    title: __('last login'),
                     searchable: false,
                     width: 70,
                     className: ['text-right', 'separator-right'].join(' '),
@@ -158,7 +159,7 @@ define([
                 },{
                     targets: 4,
                     name: 'mapCreate',
-                    title: '<span title="created" data-toggle="tooltip">C&nbsp;&nbsp;</span>',
+                    title: '<span title="' + __('created') + '" data-toggle="tooltip">C&nbsp;&nbsp;</span>',
                     orderable: false,
                     searchable: false,
                     width: columnNumberWidth,
@@ -170,7 +171,7 @@ define([
                 },{
                     targets: 5,
                     name: 'mapUpdate',
-                    title: '<span title="updated" data-toggle="tooltip">U&nbsp;&nbsp;</span>',
+                    title: '<span title="'+ __('updated') + '" data-toggle="tooltip">U&nbsp;&nbsp;</span>',
                     orderable: false,
                     searchable: false,
                     width: columnNumberWidth,
@@ -182,7 +183,7 @@ define([
                 },{
                     targets: 6,
                     name: 'mapDelete',
-                    title: '<span title="deleted" data-toggle="tooltip">D&nbsp;&nbsp;</span>',
+                    title: '<span title="'+ __('deleted') + '" data-toggle="tooltip">D&nbsp;&nbsp;</span>',
                     orderable: false,
                     searchable: false,
                     width: columnNumberWidth,
@@ -205,7 +206,7 @@ define([
                 },{
                     targets: 8,
                     name: 'systemCreate',
-                    title: '<span title="created" data-toggle="tooltip">C&nbsp;&nbsp;</span>',
+                    title: '<span title="'+ __('created') + '" data-toggle="tooltip">C&nbsp;&nbsp;</span>',
                     orderable: false,
                     searchable: false,
                     width: columnNumberWidth,
@@ -217,7 +218,7 @@ define([
                 },{
                     targets: 9,
                     name: 'systemUpdate',
-                    title: '<span title="updated" data-toggle="tooltip">U&nbsp;&nbsp;</span>',
+                    title: '<span title="' + __('updated') + '" data-toggle="tooltip">U&nbsp;&nbsp;</span>',
                     orderable: false,
                     searchable: false,
                     width: columnNumberWidth,
@@ -229,7 +230,7 @@ define([
                 },{
                     targets: 10,
                     name: 'systemDelete',
-                    title: '<span title="deleted" data-toggle="tooltip">D&nbsp;&nbsp;</span>',
+                    title: '<span title="' + __('deleted') + '" data-toggle="tooltip">D&nbsp;&nbsp;</span>',
                     orderable: false,
                     searchable: false,
                     width: columnNumberWidth,
@@ -252,7 +253,7 @@ define([
                 },{
                     targets: 12,
                     name: 'connectionCreate',
-                    title: '<span title="created" data-toggle="tooltip">C&nbsp;&nbsp;</span>',
+                    title: '<span title="' + __('created') + '" data-toggle="tooltip">C&nbsp;&nbsp;</span>',
                     orderable: false,
                     searchable: false,
                     width: columnNumberWidth,
@@ -264,7 +265,7 @@ define([
                 },{
                     targets: 13,
                     name: 'connectionUpdate',
-                    title: '<span title="updated" data-toggle="tooltip">U&nbsp;&nbsp;</span>',
+                    title: '<span title="'+ __('updated') + '" data-toggle="tooltip">U&nbsp;&nbsp;</span>',
                     orderable: false,
                     searchable: false,
                     width: columnNumberWidth,
@@ -276,7 +277,7 @@ define([
                 },{
                     targets: 14,
                     name: 'connectionDelete',
-                    title: '<span title="deleted" data-toggle="tooltip">D&nbsp;&nbsp;</span>',
+                    title: '<span title="'+ __('deleted') + '" data-toggle="tooltip">D&nbsp;&nbsp;</span>',
                     orderable: false,
                     searchable: false,
                     width: columnNumberWidth,
@@ -299,7 +300,7 @@ define([
                 },{
                     targets: 16,
                     name: 'signatureCreate',
-                    title: '<span title="created" data-toggle="tooltip">C&nbsp;&nbsp;</span>',
+                    title: '<span title="' + __('created') + '" data-toggle="tooltip">C&nbsp;&nbsp;</span>',
                     orderable: false,
                     searchable: false,
                     width: columnNumberWidth,
@@ -311,7 +312,7 @@ define([
                 },{
                     targets: 17,
                     name: 'signatureUpdate',
-                    title: '<span title="updated" data-toggle="tooltip">U&nbsp;&nbsp;</span>',
+                    title: '<span title="' + __('updated') + '" data-toggle="tooltip">U&nbsp;&nbsp;</span>',
                     orderable: false,
                     searchable: false,
                     width: columnNumberWidth,
@@ -323,7 +324,7 @@ define([
                 },{
                     targets: 18,
                     name: 'signatureDelete',
-                    title: '<span title="deleted" data-toggle="tooltip">D&nbsp;&nbsp;</span>',
+                    title: '<span title="' + __('deleted') + '" data-toggle="tooltip">D&nbsp;&nbsp;</span>',
                     orderable: false,
                     searchable: false,
                     width: columnNumberWidth,
@@ -458,13 +459,13 @@ define([
         // update period pagination -------------------------------------------------------------------------
         let prevButton = dialogElement.find('.' + config.dialogNavigationPrevClass);
         prevButton.data('newOffset', responseData.prev);
-        prevButton.find('span').text('Week ' + responseData.prev.week + ', ' + responseData.prev.year);
+        prevButton.find('span').text(__('Week') +' ' + responseData.prev.week + ', ' + responseData.prev.year);
         prevButton.css('visibility', 'visible');
 
         let nextButton = dialogElement.find('.' + config.dialogNavigationNextClass);
         if(responseData.next){
             nextButton.data('newOffset', responseData.next);
-            nextButton.find('span').text('Week ' + responseData.next.week + ', ' + responseData.next.year);
+            nextButton.find('span').text(__('Week') + ' ' + responseData.next.week + ', ' + responseData.next.year);
             nextButton.css('visibility', 'visible');
         }else{
             nextButton.css('visibility', 'hidden');
@@ -472,7 +473,7 @@ define([
 
         // update current period information label ----------------------------------------------------------
         // if period == "weekly" there is no "offset" -> just a single week
-        let offsetText = 'Week ' + responseData.start.week + ', ' + responseData.start.year;
+        let offsetText = __('Week') + ' ' + responseData.start.week + ', ' + responseData.start.year;
         if(responseData.period !== 'weekly'){
             offsetText += ' <small><i class="fas fa-fw fa-minus"></i></small> ' +
                             'Week ' + responseData.offset.week + ', ' + responseData.offset.year;
@@ -822,7 +823,7 @@ define([
             let content = Mustache.render(template, data);
 
             let statsDialog = bootbox.dialog({
-                title: 'Statistics',
+                title: __('Statistics'),
                 message: content,
                 size: 'large',
                 show: false

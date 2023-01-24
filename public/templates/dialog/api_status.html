@@ -1,4 +1,4 @@
-<p>Shows status information for external used APIs. Provides a general health indicator per route and method.</p>
+<p>{{#translate}}Shows status information for external used APIs. Provides a general health indicator per route and method.{{/translate}}</p>
 
 <h4 class="pf-dynamic-area">
     <span class="pf-help-default" title="{{#statusTitle}}{{ apiData.statusColor }}{{/statusTitle}}">
@@ -8,27 +8,27 @@
 </h4>
 
 <dl class="dl-horizontal" style="float: left;">
-    <dt>base url</dt>
+    <dt>{{#translate}}base url{{/translate}}</dt>
     <dd><kbd>{{ apiData.url }}</kbd></dd>
-    <dt>datasource</dt>
+    <dt>{{#translate}}datasource{{/translate}}</dt>
     <dd><kbd>{{ apiData.dataSource }}</kbd></dd>
-    <dt>status for</dt>
+    <dt>{{#translate}}status for{{/translate}}</dt>
     <dd><kbd>{{ apiData.statusVersion }}</kbd></dd>
 </dl>
 <dl class="dl-horizontal" style="float: left;">
-    <dt>timeout</dt>
+    <dt>{{#translate}}timeout{{/translate}}</dt>
     <dd><kbd>&nbsp;{{#secondsFormat}}{{ apiData.timeout }}{{/secondsFormat}}</kbd></dd>
-    <dt>connect timeout</dt>
+    <dt>{{#translate}}connect timeout{{/translate}}</dt>
     <dd><kbd>&nbsp;{{#secondsFormat}}{{ apiData.connectTimeout }}{{/secondsFormat}}</kbd></dd>
-    <dt>read timeout</dt>
+    <dt>{{#translate}}read timeout{{/translate}}</dt>
     <dd><kbd>{{#secondsFormat}}{{ apiData.readTimeout }}{{/secondsFormat}}</kbd></dd>
 </dl>
 <dl class="dl-horizontal" style="float: right;">
-    <dt>proxy</dt>
+    <dt>{{#translate}}proxy{{/translate}}</dt>
     <dd><kbd>{{ apiData.proxy }}</kbd></dd>
-    <dt>verify</dt>
+    <dt>{{#translate}}verify{{/translate}}</dt>
     <dd><kbd>{{ apiData.verify }}</kbd></dd>
-    <dt>debug</dt>
+    <dt>{{#translate}}debug{{/translate}}</dt>
     <dd><kbd>{{ apiData.debug }}</kbd></dd>
 </dl>
 
@@ -38,7 +38,7 @@
         <td></td>
         <td class="col-sm-1"></td>
         <td class="col-sm-1"></td>
-        <td>route</td>
+        <td>{{#translate}}route{{/translate}}</td>
         <td class="col-sm-3 text-right">tags</td>
     </tr>
     </thead>

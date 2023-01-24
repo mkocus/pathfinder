@@ -6,8 +6,9 @@ define([
     'jquery',
     'app/init',
     'app/util',
-    'app/map/util'
-], ($, Init, Util, MapUtil) => {
+    'app/map/util',
+    'i18n!'
+], ($, Init, Util, MapUtil, __) => {
     'use strict';
 
     let config = {
@@ -431,7 +432,7 @@ define([
                         if( !Util.isXHRAborted(jqXHR) ){
 
                             let reason = status + ' ' + jqXHR.status + ': ' + error;
-                            Util.showNotify({title: 'System select warning', text: reason + ' deleted', type: 'warning'});
+                            Util.showNotify({title: __('System select warning'), text: reason + __(' deleted'), type: 'warning'});
                         }
 
                     }
@@ -439,7 +440,7 @@ define([
                 dropdownParent: selectElement.parents('.modal-body'),
                 minimumInputLength: 3,
                 templateResult: formatResultData,
-                placeholder: 'Name or ID',
+                placeholder: __('Name or ID'),
                 allowClear: true,
                 maximumSelectionLength: options.maxSelectionLength
             }).on('change', function(e){
@@ -515,14 +516,14 @@ define([
                             if( !Util.isXHRAborted(jqXHR) ){
 
                                 let reason = status + ' ' + jqXHR.status + ': ' + error;
-                                Util.showNotify({title: 'Access select warning', text: reason + ' deleted', type: 'warning'});
+                                Util.showNotify({title: __('Access select warning'), text: reason + __(' deleted'), type: 'warning'});
                             }
 
                         }
                     },
                     dropdownParent: selectElement.parents('.modal-body'),
                     minimumInputLength: 3,
-                    placeholder: options.type + ' names',
+                    placeholder: options.type + __(' names'),
                     allowClear: false,
                     maximumSelectionLength: options.maxSelectionLength,
                     templateResult: formatCategoryTypeResultData,
@@ -546,7 +547,7 @@ define([
     $.fn.initUniverseSearch = function(options){
 
         let showErrorNotification = (reason) => {
-            Util.showNotify({title: 'Search failed', text: reason + ' deleted', type: 'warning'});
+            Util.showNotify({title: __('Search failed'), text: reason + __(' deleted'), type: 'warning'});
         };
 
         /**
