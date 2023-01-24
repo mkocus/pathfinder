@@ -8,9 +8,8 @@ define([
     'app/util',
     'bootbox',
     'app/map/util',
-    'module/base',
-    'i18n!'
-], ($, Init, Util, bootbox, MapUtil, BaseModule, __) => {
+    'module/base'
+], ($, Init, Util, bootbox, MapUtil, BaseModule) => {
     'use strict';
 
     let SystemRouteModule = class SystemRouteModule extends BaseModule {
@@ -105,7 +104,7 @@ define([
                 autoWidth: false,
                 rowId: 'systemTo',
                 language: {
-                    emptyTable: __('No routes added')
+                    emptyTable: 'No routes added'
                 },
                 columnDefs: [
                     {
@@ -122,7 +121,7 @@ define([
                     },{
                         targets: 1,
                         orderable: true,
-                        title: __('system') + '&nbsp;&nbsp;&nbsp;',
+                        title: 'system&nbsp;&nbsp;&nbsp;',
                         class: Util.config.popoverTriggerClass,
                         data: 'systemToData',
                         render: {
@@ -140,7 +139,7 @@ define([
                     },{
                         targets: 2,
                         orderable: true,
-                        title: '<span title="' + __('jumps') + '"><i class="fas fa-arrows-alt-h"></i>&nbsp;&nbsp;</span>',
+                        title: '<span title="jumps"><i class="fas fa-arrows-alt-h"></i>&nbsp;&nbsp;</span>',
                         width: 16,
                         class: 'text-right',
                         data: 'jumps',
@@ -151,7 +150,7 @@ define([
                     },{
                         targets: 3,
                         orderable: true,
-                        title: '<span title="' + __('average security') + '">&#216;&nbsp;&nbsp;</span>',
+                        title: '<span title="average security">&#216;&nbsp;&nbsp;</span>',
                         width: 14,
                         class: 'text-right',
                         data: 'avgTrueSec',
@@ -170,7 +169,7 @@ define([
                         }
                     },{
                         targets: 5,
-                        title: '<i title="'+ __('toggle connections') + '" class="fas fa-code-branch fa-rotate-270 text-right"></i>',
+                        title: '<i title="toggle connections" class="fas fa-code-branch fa-rotate-270 text-right"></i>',
                         orderable: false,
                         searchable: false,
                         width: 10,
@@ -196,7 +195,7 @@ define([
                         }
                     },{
                         targets: 6,
-                        title: '<i title="'+ __('search safer (HS)') + '" class="fas fa-shield-alt text-right"></i>',
+                        title: '<i title="search safer (HS)" class="fas fa-shield-alt text-right"></i>',
                         orderable: false,
                         searchable: false,
                         width: 10,
@@ -309,7 +308,7 @@ define([
                         // selected systems (if already stored)
                         let systemsTo = [{
                             systemId: 30000142,
-                            name: __('Jita')
+                            name: 'Jita'
                         }];
 
                         if(
@@ -387,7 +386,7 @@ define([
                     {
                         name: 'search',
                         className: 'fa-search',
-                        titleAttr: __('find&nbsp;route'),
+                        titleAttr: 'find&nbsp;route',
                         attr:  {
                             'data-toggle': 'tooltip',
                             'data-html': true
@@ -409,7 +408,7 @@ define([
                     {
                         name: 'refresh',
                         className: 'fa-sync',
-                        titleAttr: __('refresh'),
+                        titleAttr: 'refresh',
                         attr:  {
                             'data-toggle': 'tooltip',
                             'data-html': true
@@ -532,7 +531,7 @@ define([
                 .catch(payload => {
                     let reason = payload.data.status + ' ' + payload.data.error;
                     this.showNotify({
-                        title: payload.data.jqXHR.status + __(': System route data'),
+                        title: payload.data.jqXHR.status + ': System route data',
                         text: reason,
                         type: 'warning'
                     });
@@ -627,15 +626,15 @@ define([
              */
             let getStatusIcon = status => {
                 let color = 'txt-color-danger';
-                let title = __('route not found');
+                let title = 'route not found';
                 switch(status){
                     case 1:
                         color = 'txt-color-success';
-                        title = __('route exists');
+                        title = 'route exists';
                         break;
                     case 2:
                         color = 'txt-color-warning';
-                        title = __('not search performed');
+                        title = 'not search performed';
                         break;
                 }
                 return '<i class="fas fa-fw fa-circle txt-color ' + color + '" title="' + title + '"></i>';
@@ -676,7 +675,7 @@ define([
                     formatted: ''
                 },
                 route: {
-                    value: routeStatus === 2 ? __('search now') : __('not found'),
+                    value: routeStatus === 2 ? 'search now' : 'not found',
                     data: routeData.route
                 },
                 stargates: routeData.stargates,
@@ -916,6 +915,7 @@ define([
                     routeSettings: routeSettingsOptions,
                     select2Class: Util.config.select2Class,
                     routeDialogSizeSelectId: this._config.routeDialogSizeSelectId,
+                    select2Class: Util.config.select2Class,
                     sizeOptions: MapUtil.allConnectionJumpMassTypes().map(type => ({
                         id: type,
                         name: type,
@@ -928,12 +928,12 @@ define([
                     let content = Mustache.render(template, data);
 
                     let settingsDialog = bootbox.dialog({
-                        title: __('Route settings'),
+                        title: 'Route settings',
                         message: content,
                         show: false,
                         buttons: {
                             close: {
-                                label: __('cancel'),
+                                label: 'cancel',
                                 className: 'btn-default'
                             },
                             success: {
@@ -974,7 +974,7 @@ define([
                                     // end route settings additions
 
 
-                                    this.showNotify({title: __('Route settings stored'), type: 'success'});
+                                    this.showNotify({title: 'Route settings stored', type: 'success'});
 
                                     // (re) draw table
                                     this.drawRouteTable(dialogData.mapId, dialogData.systemFromData, systemsToData, routeSettingsData);
@@ -1037,12 +1037,12 @@ define([
                 let content = Mustache.render(template, data);
 
                 let findRouteDialog = bootbox.dialog({
-                    title: __('Route finder'),
+                    title: 'Route finder',
                     message: content,
                     show: false,
                     buttons: {
                         close: {
-                            label: __('cancel'),
+                            label: 'cancel',
                             className: 'btn-default'
                         },
                         success: {
@@ -1232,7 +1232,7 @@ define([
     SystemRouteModule.scope = 'system';                                         // module scope controls how module gets updated and what type of data is injected
     SystemRouteModule.sortArea = 'b';                                           // default sortable area
     SystemRouteModule.position = 1;                                             // default sort/order position within sortable area
-    SystemRouteModule.label = __('Routes');                                         // static module label (e.g. description)
+    SystemRouteModule.label = 'Routes';                                         // static module label (e.g. description)
     SystemRouteModule.cacheConfig = {
         routes: {
             ttl: 5,
@@ -1243,7 +1243,7 @@ define([
     SystemRouteModule.defaultConfig = {
         className: 'pf-system-route-module',                                    // class for module
         sortTargetAreas: ['a', 'b', 'c'],                                       // sortable areas where module can be dragged into
-        headline: __('Routes'),
+        headline: 'Routes',
 
         // dialog
         routeDialogId: 'pf-route-dialog',                                       // id for route "search" dialog

@@ -9,9 +9,8 @@ define([
     'app/render',
     'app/counter',
     'bootbox',
-    'app/map/util',
-    'i18n!'
-], ($, Init, Util, Render, Counter, bootbox, MapUtil, __) => {
+    'app/map/util'
+], ($, Init, Util, Render, Counter, bootbox, MapUtil) => {
 
     'use strict';
 
@@ -80,7 +79,7 @@ define([
      * @returns {string}
      */
     let getLabelForUnknownData = () => {
-        return '<span class="' + config.tableCellUnknownDataClass + '">' + __('unknown') + '</span>';
+        return '<span class="' + config.tableCellUnknownDataClass + '">unknown</span>';
     };
 
     /**
@@ -112,7 +111,7 @@ define([
             class: 'dl-horizontal',
             css: {'float': 'left'}
         }).append(
-            $('<dt>').text(__('Icon'))
+            $('<dt>').text('Icon')
         ).append(
             $('<dd>').append(
                 $('<i>', {
@@ -120,23 +119,23 @@ define([
                 })
             )
         ).append(
-            $('<dt>').text(__('Name'))
+            $('<dt>').text('Name')
         ).append(
             $('<dd>').text(mapData.config.name)
         ).append(
-            $('<dt>').text(__('Type'))
+            $('<dt>').text('Type')
         ).append(
             $('<dd>', {
                 class: mapType.class
             }).text(mapType.name)
         ).append(
-            $('<dt>').text(__('Link'))
+            $('<dt>').text('Link')
         ).append(
             $('<dd>', {
                 class: [config.textActionIconClass, config.textActionIconCopyClass].join(' ')
             }).append(
                 $('<span>', {
-                    title: __('copy to clipboard'),
+                    title: 'copy to clipboard',
                 }).text(MapUtil.getMapDeeplinkUrl(mapData.config.id) + ' ')
             ).append(
                 $('<i>', {
@@ -151,24 +150,24 @@ define([
             class: 'dl-horizontal',
             css: {'float': 'right'}
         }).append(
-            $('<dt>').text(__('Systems'))
+            $('<dt>').text('Systems')
         ).append(
             $('<dd>', {
                 class: ['txt-color', maxSystemsClass].join(' ')
             }).text(countSystems + ' / ' + mapType.defaultConfig.max_systems)
         ).append(
-            $('<dt>').text(__('Connections'))
+            $('<dt>').text('Connections')
         ).append(
             $('<dd>').text(countConnections)
         ).append(
-            $('<dt>').text(__('Lifetime'))
+            $('<dt>').text('Lifetime')
         ).append(
             $('<dd>', {
                 class: config.mapInfoLifetimeCounterClass,
                 text: mapData.config.created
             })
         ).append(
-            $('<dt>').text(__('Created'))
+            $('<dt>').text('Created')
         ).append(
             $('<dd>').text(Util.getObjVal(mapDataOrigin, 'config.created.character.name'))
         );
@@ -182,7 +181,7 @@ define([
            let mapUrl = $(this).find('span').text().trim();
             Util.copyToClipboard(mapUrl).then(payload => {
                 if(payload.data){
-                    Util.showNotify({title: __('Copied to clipboard'), text: mapUrl, type: 'success'});
+                    Util.showNotify({title: 'Copied to clipboard', text: mapUrl, type: 'success'});
                 }
             });
         });
@@ -223,15 +222,15 @@ define([
                 data: mapData.data.systems,
                 columnDefs: [],
                 language: {
-                    emptyTable:  __('Map is empty'),
-                    zeroRecords: __('No systems found'),
-                    lengthMenu:  __('Show _MENU_ systems'),
-                    info:        __('Showing _START_ to _END_ of _TOTAL_ systems')
+                    emptyTable:  'Map is empty',
+                    zeroRecords: 'No systems found',
+                    lengthMenu:  'Show _MENU_ systems',
+                    info:        'Showing _START_ to _END_ of _TOTAL_ systems'
                 },
                 columns: [
                     {
                         name: 'type',
-                        title: __('type'),
+                        title: 'type',
                         width: 25,
                         className: ['min-screen-l'].join(' '),
                         data: 'type',
@@ -253,7 +252,7 @@ define([
                         }
                     },{
                         name: 'trueSec',
-                        title: __('sec'),
+                        title: 'sec',
                         width: 18,
                         className: ['text-center', 'min-screen-l'].join(' '),
                         searchable: false,
@@ -266,7 +265,7 @@ define([
                         }
                     },{
                         name: 'shattered',
-                        title: '<i class="fas fa-chart-pie" title="' + __('shattered') + '" data-toggle="tooltip"></i>',
+                        title: '<i class="fas fa-chart-pie" title="shattered" data-toggle="tooltip"></i>',
                         width: 10,
                         className: ['text-center', 'min-screen-l'].join(' '),
                         searchable: false,
@@ -282,7 +281,7 @@ define([
                         }
                     },{
                         name: 'name',
-                        title: __('system'),
+                        title: 'system',
                         data: 'name',
                         className: [config.tableCellLinkClass].join(' '),
                         createdCell: function(cell, cellData, rowData, rowIndex, colIndex){
@@ -293,7 +292,7 @@ define([
                         }
                     },{
                         name: 'alias',
-                        title: __('alias'),
+                        title: 'alias',
                         data: 'alias',
                         render: {
                             _: (cellData, type, rowData, meta) => {
@@ -302,7 +301,7 @@ define([
                         }
                     },{
                         name: 'region',
-                        title: __('region'),
+                        title: 'region',
                         data: 'region.name',
                         className: 'min-screen-l',
                     },{
@@ -323,7 +322,7 @@ define([
                         }
                     },{
                         name: 'planets',
-                        title: '<i class="fas fa-circle" title="' + __('planets') + '" data-toggle="tooltip"></i>',
+                        title: '<i class="fas fa-circle" title="planets" data-toggle="tooltip"></i>',
                         width: 10,
                         className: ['text-right', config.systemInfoPlanetsClass, Util.config.helpDefaultClass, Util.config.popoverTriggerClass].join(' '),
                         searchable: false,
@@ -336,7 +335,7 @@ define([
                         }
                     },{
                         name: 'status',
-                        title: '<i class="far fa-square" title="' + __('system&nbsp;status') + '" data-toggle="tooltip"></i>',
+                        title: '<i class="far fa-square" title="system&nbsp;status" data-toggle="tooltip"></i>',
                         width: 10,
                         className: 'text-center',
                         searchable: false,
@@ -353,7 +352,7 @@ define([
                         }
                     },{
                         name: 'effect',
-                        title: '<i class="fas fa-square" title="' + __('system&nbsp;effect') + '" data-toggle="tooltip"></i>',
+                        title: '<i class="fas fa-square" title="system&nbsp;effect" data-toggle="tooltip"></i>',
                         width: 10,
                         className: 'text-center',
                         searchable: false,
@@ -371,7 +370,7 @@ define([
                         }
                     },{
                         name: 'statics',
-                        title: __('statics'),
+                        title: 'statics',
                         width: 30,
                         searchable: false,
                         data: 'statics',
@@ -389,7 +388,7 @@ define([
                         }
                     },{
                         name: 'position',
-                        title: '<i class="fas fa-map-marker-alt" title="' + __('your&nbsp;position') + '" data-toggle="tooltip"></i>',
+                        title: '<i class="fas fa-map-marker-alt" title="your&nbsp;position" data-toggle="tooltip"></i>',
                         width: 8,
                         className: 'text-center',
                         searchable: false,
@@ -406,7 +405,7 @@ define([
                         }
                     },{
                         name: 'userCount',
-                        title: '<i class="fas fa-plane" title="' + __('active&nbsp;pilots') + '" data-toggle="tooltip"></i>',
+                        title: '<i class="fas fa-plane" title="active&nbsp;pilots" data-toggle="tooltip"></i>',
                         width: 12,
                         className: 'text-center',
                         searchable: false,
@@ -422,7 +421,7 @@ define([
                         }
                     },{
                         name: 'locked',
-                        title: '<i class="fas fa-lock" title="' + __('system&nbsp;locked') + '" data-toggle="tooltip"></i>',
+                        title: '<i class="fas fa-lock" title="system&nbsp;locked" data-toggle="tooltip"></i>',
                         width: 10,
                         className: 'text-center',
                         searchable: false,
@@ -438,7 +437,7 @@ define([
                         }
                     },{
                         name: 'updated',
-                        title: __('updated'),
+                        title: 'updated',
                         width: 80,
                         searchable: false,
                         className: ['text-right', config.tableCellCounterClass].join(' '),
@@ -546,15 +545,15 @@ define([
                 data: mapData.data.connections,
                 columnDefs: [],
                 language: {
-                    emptyTable:  __('No connections'),
-                    zeroRecords: __('No connections found'),
-                    lengthMenu:  __('Show _MENU_ connections'),
-                    info:        __('Showing _START_ to _END_ of _TOTAL_ connections')
+                    emptyTable:  'No connections',
+                    zeroRecords: 'No connections found',
+                    lengthMenu:  'Show _MENU_ connections',
+                    info:        'Showing _START_ to _END_ of _TOTAL_ connections'
                 },
                 columns: [
                     {
                         name: 'scope',
-                        title: __('scope'),
+                        title: 'scope',
                         width: 50,
                         orderable: true,
                         data: 'scope',
@@ -565,7 +564,7 @@ define([
                         }
                     },{
                         name: 'sourceName',
-                        title: __('source system'),
+                        title: 'source system',
                         data: 'sourceName',
                         className: [config.tableCellLinkClass].join(' '),
                         createdCell: function(cell, cellData, rowData, rowIndex, colIndex){
@@ -576,7 +575,7 @@ define([
                         }
                     },{
                         name: 'sourceBubble',
-                        title: '<i class="fas fa-globe" title="' + __('bubbled') + '" data-toggle="tooltip"></i>',
+                        title: '<i class="fas fa-globe" title="bubbled" data-toggle="tooltip"></i>',
                         width: 10,
                         data: 'endpoints.source',
                         className: 'text-right',
@@ -591,7 +590,7 @@ define([
                         }
                     },{
                         name: 'connection',
-                        title: __('connection'),
+                        title: 'connection',
                         width: 80,
                         className: 'text-center',
                         orderable: false,
@@ -606,7 +605,7 @@ define([
                         }
                     },{
                         name: 'targetBubble',
-                        title: '<i class="fas fa-globe" title="' + __('bubbled') + '" data-toggle="tooltip"></i>',
+                        title: '<i class="fas fa-globe" title="bubbled" data-toggle="tooltip"></i>',
                         width: 10,
                         data: 'endpoints.target',
                         className: 'text-left',
@@ -621,7 +620,7 @@ define([
                         }
                     },{
                         name: 'targetName',
-                        title: __('target system'),
+                        title: 'target system',
                         data: 'targetName',
                         className: [config.tableCellLinkClass].join(' '),
                         createdCell: function(cell, cellData, rowData, rowIndex, colIndex){
@@ -632,7 +631,7 @@ define([
                         }
                     },{
                         name: 'updated',
-                        title: __('updated'),
+                        title: 'updated',
                         width: 80,
                         searchable: false,
                         className: ['text-right', config.tableCellCounterClass].join(' '),
@@ -734,10 +733,10 @@ define([
             hover: false,
             data: usersData,
             language: {
-                emptyTable:  __('No active pilots'),
-                zeroRecords: __('No active pilots found'),
-                lengthMenu:  __('Show _MENU_ pilots'),
-                info:        __('Showing _START_ to _END_ of _TOTAL_ pilots')
+                emptyTable:  'No active pilots',
+                zeroRecords: 'No active pilots found',
+                lengthMenu:  'Show _MENU_ pilots',
+                info:        'Showing _START_ to _END_ of _TOTAL_ pilots'
             },
             columnDefs: [
                 {
@@ -760,7 +759,7 @@ define([
                     }
                 },{
                     targets: 1,
-                    title: __('ship name'),
+                    title: 'ship name',
                     width: 100,
                     orderable: true,
                     searchable: true,
@@ -798,7 +797,7 @@ define([
                     }
                 },{
                     targets: 3,
-                    title: __('pilot'),
+                    title: 'pilot',
                     orderable: true,
                     searchable: true,
                     className: [config.tableCellActionClass].join(' '),
@@ -838,7 +837,7 @@ define([
                     }
                 },{
                     targets: 5,
-                    title: __('corporation'),
+                    title: 'corporation',
                     orderable: true,
                     searchable: true,
                     className: [config.tableCellActionClass, 'min-screen-l'].join(' '),
@@ -861,7 +860,7 @@ define([
                     }
                 },{
                     targets: 6,
-                    title: __('system'),
+                    title: 'system',
                     orderable: true,
                     searchable: true,
                     data: 'log.system',
@@ -877,7 +876,7 @@ define([
                     }
                 },{
                     targets: 7,
-                    title: __('docked'),
+                    title: 'docked',
                     orderable: true,
                     searchable: true,
                     className: [config.tableCellActionClass].join(' '),
@@ -900,7 +899,7 @@ define([
                     }
                 },{
                     targets: 8,
-                    title: __('role'),
+                    title: 'role',
                     width: 30,
                     orderable: true,
                     searchable: true,
@@ -1035,15 +1034,15 @@ define([
             hover: false,
             data: [],
             language: {
-                emptyTable: __('No logs available'),
-                zeroRecords: __('No logs found'),
-                lengthMenu: __('Show _MENU_ rows'),
-                info: __('Showing _START_ to _END_ of _TOTAL_ rows')
+                emptyTable: 'No logs available',
+                zeroRecords: 'No logs found',
+                lengthMenu: 'Show _MENU_ rows',
+                info: 'Showing _START_ to _END_ of _TOTAL_ rows'
             },
             columnDefs: [
                 {
                     targets: 0,
-                    title: '<span title="' + __('action') + '" data-toggle="tooltip">&nbsp;</span>',
+                    title: '<span title="action" data-toggle="tooltip">&nbsp;</span>',
                     width: 12,
                     data: 'context.tag',
                     render: {
@@ -1058,7 +1057,7 @@ define([
                     }
                 },{
                     targets: 1,
-                    name: __('timestamp'),
+                    name: 'timestamp',
                     title: '<i class="far fa-fw fa-clock"></i>',
                     width: 100,
                     className: ['text-right'].join(' '),
@@ -1095,18 +1094,18 @@ define([
                     }
                 },{
                     targets: 2,
-                    title: __('level'),
+                    title: 'level',
                     width: 40,
                     data: 'level_name'
                 },{
                     targets: 3,
-                    title: __('channel'),
+                    title: 'channel',
                     className: [config.tableCellEllipsisClass].join(' '),
                     width: 40,
                     data: 'channel'
                 },{
                     targets: 4,
-                    title: __('message'),
+                    title: 'message',
                     width: 115,
                     data: 'message',
                     render: {
@@ -1140,7 +1139,7 @@ define([
                     }
                 },{
                     targets: 6,
-                    title: __('pilot'),
+                    title: 'pilot',
                     width: 110,
                     className: [config.tableCellActionClass].join(' '),
                     data: 'context.data.character.name',
@@ -1162,7 +1161,7 @@ define([
                     }
                 },{
                     targets: 7,
-                    title: __('context'),
+                    title: 'context',
                     className: [config.tableCellEllipsisClass].join(' '),
                     data: 'context.data.formatted'
                 },{
@@ -1261,7 +1260,7 @@ define([
             buttons: [
                 {
                     className: 'btn btn-sm btn-default',
-                    text: '<i class="fas fa-fw fa-plus"></i>&nbsp;' + __('load more'),
+                    text: '<i class="fas fa-fw fa-plus"></i>&nbsp;load more',
                     enabled: false,
                     action: function(e, dt, node, config ){
                         let pageInfo = dt.page.info();
@@ -1320,7 +1319,7 @@ define([
                 let content = Mustache.render(template, data);
 
                 let mapInfoDialog = bootbox.dialog({
-                    title: __('Map information'),
+                    title: 'Map information',
                     message: content,
                     size: 'large',
                     buttons: {
@@ -1389,8 +1388,8 @@ define([
         }else{
             // no active map found (e.g. not loaded yet, or no map exists)
             Util.showNotify({
-                title: __('Map data not found'),
-                text: __('No map initialized at this point'),
+                title: 'Map data not found',
+                text: 'No map initialized at this point',
                 type: 'warning'}
             );
         }

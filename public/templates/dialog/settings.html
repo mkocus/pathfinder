@@ -5,18 +5,18 @@
             <ul class="nav navbar-nav" role="tablist">
                 <li class="active">
                     <a role="tab" data-toggle="tab" data-name="account" href="#{{settingsAccountContainerId}}">
-                        <i class="fas fa-user fa-fw"></i>&nbsp;{{#translate}}Account{{/translate}}
+                        <i class="fas fa-user fa-fw"></i>&nbsp;Account
                     </a>
                 </li>
                 {{#userData.character}}
                     <li>
                         <a role="tab" data-toggle="tab" data-name="share" href="#{{settingsShareContainerId}}">
-                            <i class="fas fa-share-alt fa-fw"></i>&nbsp;{{#translate}}Share{{/translate}}
+                            <i class="fas fa-share-alt fa-fw"></i>&nbsp;Share
                         </a>
                     </li>
                     <li>
                         <a role="tab" data-toggle="tab" data-name="share" href="#{{settingsCharacterContainerId}}">
-                            <i class="fas fa-user-cog fa-fw"></i>&nbsp;{{#translate}}Character{{/translate}}
+                            <i class="fas fa-user-cog fa-fw"></i>&nbsp;Character
                         </a>
                     </li>
                 {{/userData.character}}
@@ -33,7 +33,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="form-group">
-                            <label class="col-sm-3 control-label">{{#translate}}Username{{/translate}}</label>
+                            <label class="col-sm-3 control-label">Username</label>
                             <div class="col-sm-9">
                                 <p class="form-control-static">
                                     <i class="fas fa-fw fa-lg fa-pen pull-right pf-dialog-icon-button collapsed" data-toggle="collapse" data-target="#collapseUsername" aria-expanded="false" aria-controls="collapseUsername"></i>
@@ -73,7 +73,7 @@
                                     {{userData.email}}
                                     {{/userData.email}}
                                     {{^userData.email}}
-                                    {{#translate}}unknown{{/translate}}
+                                    unknown
                                     {{/userData.email}}
                                 </p>
                             </div>
@@ -88,7 +88,7 @@
                                 <label for="email" class="col-sm-3 control-label">New Email</label>
                                 <div class="col-sm-6">
                                     <div class="input-group" title="Enter your email. It will be kept private!" data-placement="right">
-                                        <input name="email" type="email" class="form-control" id="email" value="" placeholder="your@email.com" data-error="{{#translate}}Email required{{/translate}}" autocomplete="email" required>
+                                        <input name="email" type="email" class="form-control" id="email" value="" placeholder="your@email.com" data-error="Email required" autocomplete="email" required>
                                         <span class="input-group-addon"><i class="fas fa-fw fa-envelope"></i></span>
                                     </div>
                                     <div class="note help-block with-errors"></div>
@@ -100,10 +100,10 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="form-group">
-                                <label for="email_confirm" class="col-sm-3 control-label">{{#translate}}Confirm Email{{/translate}}</label>
+                                <label for="email_confirm" class="col-sm-3 control-label">Confirm Email</label>
                                 <div class="col-sm-6">
-                                    <div class="input-group" title="{{#translate}}Confirm your email{{/translate}}" data-placement="right">
-                                        <input name="email_confirm" type="email" class="form-control" id="email_confirm" value="" placeholder="your@email.com" data-error="{{#translate}}Email required{{/translate}}" data-match="#email" data-match-error="{{#translate}}Email fields do not match{{/translate}}" autocomplete="email" required>
+                                    <div class="input-group" title="Confirm your email" data-placement="right">
+                                        <input name="email_confirm" type="email" class="form-control" id="email_confirm" value="" placeholder="your@email.com" data-error="Email required" data-match="#email" data-match-error="Email fields do not match" autocomplete="email" required>
                                         <span class="input-group-addon"><i class="fas fa-fw fa-envelope"></i></span>
                                     </div>
                                     <div class="note help-block with-errors"></div>
@@ -136,7 +136,7 @@
                                 <label for="captcha" class="col-sm-3 control-label">Captcha</label>
                                 <div class="col-sm-6">
                                     <div class="input-group" title="Enter Captcha" data-placement="right">
-                                        <input name="captcha" type="text" class="form-control" id="captcha" placeholder="" data-error={{#translate}}Captcha required{{/translate}}" data-minlength="6" maxlength="6" autocomplete="off"  required>
+                                        <input name="captcha" type="text" class="form-control" id="captcha" placeholder="" data-error="Captcha required" data-minlength="6" maxlength="6" autocomplete="off"  required>
                                         <span class="input-group-addon"><i class="far fa-fw fa-image"></i></span>
                                     </div>
                                     <div class="note help-block with-errors"></div>
@@ -147,8 +147,8 @@
                 </div>
 
                 <div class="{{formErrorContainerClass}} alert alert-danger" style="display: none;">
-                    <span class="txt-color txt-color-danger">{{#translate}}Error{{/translate}}</span>
-                    <small> ({{#translate}}important non-critical information{{/translate}})</small>
+                    <span class="txt-color txt-color-danger">Error</span>
+                    <small> (important non-critical information)</small>
                 </div>
 
             </form>
@@ -162,22 +162,22 @@
                     <div class="col-sm-11">
                         <blockquote>
                             <p>
-                                {{#translate}}Before other pilots, corporations or alliances can invite you to their maps, you have to enable the associated option.{{/translate}}
+                                Before other pilots, corporations or alliances can invite you to their maps, you have to enable the associated option.
                             </p>
-                            <small>{{#translate}}Check out the "<a href="javascript:void(0);" onclick="$(document).triggerMenuEvent('Manual');">manual</a>" for more information{{/translate}}
+                            <small>Check out the "<a href="javascript:void(0);" onclick="$(document).triggerMenuEvent('Manual');">manual</a>" for more information
                             </small>
                         </blockquote>
                     </div>
                 </div>
 
                 {{#userData.character}}
-                    <h4 class="pf-dynamic-area"><img src="{{ccpImageServer}}/Character/{{id}}_64.jpg">&nbsp;&nbsp;{{#translate}}Private maps "<em class="pf-map-type-private">{{name}}</em>"</h4>{{/translate}}
+                    <h4 class="pf-dynamic-area"><img src="{{ccpImageServer}}/Character/{{id}}_64.jpg">&nbsp;&nbsp;Private maps "<em class="pf-map-type-private">{{name}}</em>"</h4>
 
                     <div class="form-group">
                         <div class="col-sm-9">
                             <label class="control-label" for="privateSharing">
                                 <input id="privateSharing" type="checkbox" name="privateSharing" data-toggle="toggle" value="1" {{#shared}}checked{{/shared}}>
-                                &nbsp;{{#translate}}map invite for private maps{{/translate}}
+                                &nbsp;map invite for private maps
                             </label>
                         </div>
                         <div class="col-sm-3"></div>
@@ -191,7 +191,7 @@
                                 <div class="col-sm-9">
                                     <label class="control-label" for="corporationSharing">
                                         <input id="corporationSharing" type="checkbox" name="corporationSharing" data-toggle="toggle" value="1" {{#shared}}checked{{/shared}}>
-                                        &nbsp;{{#translate}}map invite for corporation maps{{/translate}}
+                                        &nbsp;map invite for corporation maps
                                     </label>
                                 </div>
                                 <div class="col-sm-3"></div>
@@ -199,20 +199,20 @@
                         {{/hasRightCorporationShare}}
                         {{^hasRightCorporationShare}}
                             <div class="alert alert-info">
-                                <span class="txt-color txt-color-info">{{#translate}}Restricted{{/translate}}</span>
-                                <small>{{#translate}}You don´t have the required roles.{{/translate}}</small>
+                                <span class="txt-color txt-color-info">Restricted</span>
+                                <small>You don´t have the required roles.</small>
                             </div>
                         {{/hasRightCorporationShare}}
                     {{/corporation}}
 
                     {{#alliance}}
-                    <h4 class="pf-dynamic-area"><img src="{{ccpImageServer}}/Alliance/{{id}}_64.png">&nbsp;&nbsp;{{#translate}}Alliance maps "<em class="pf-map-type-alliance">{{name}}</em>"{{/translate}}</h4>
+                    <h4 class="pf-dynamic-area"><img src="{{ccpImageServer}}/Alliance/{{id}}_64.png">&nbsp;&nbsp;Alliance maps "<em class="pf-map-type-alliance">{{name}}</em>"</h4>
 
                     <div class="form-group">
                         <div class="col-sm-9">
                             <label class="control-label" for="allianceSharing">
                                 <input id="allianceSharing" type="checkbox" name="allianceSharing" data-toggle="toggle" value="1" {{#shared}}checked{{/shared}}>
-                                &nbsp;{{#translate}}map invite for alliance maps{{/translate}}
+                                &nbsp;map invite for alliance maps
                             </label>
                         </div>
                         <div class="col-sm-3"></div>
@@ -240,7 +240,7 @@
                                     <div class="checkbox checkbox-primary">
                                         <input id="logLocation" name="logLocation" value="1" type="checkbox" {{#logLocation}}checked{{/logLocation}}>
                                         <label for="logLocation">
-                                            {{#translate}}Auto update current location{{/translate}}
+                                            Auto update current location
                                             <i class="fas fa-fw fa-question-circle pf-help-light" title="show/share current location on map"></i>
                                         </label>
                                     </div>
@@ -254,11 +254,11 @@
                                     <div class="checkbox checkbox-warning" {{^characterAutoLocationSelectEnabled}}title="Globally disabled for all characters"{{/characterAutoLocationSelectEnabled}}>
                                         <input id="selectLocation" name="selectLocation" value="1" type="checkbox" {{#selectLocation}}checked{{/selectLocation}} {{^characterAutoLocationSelectEnabled}}disabled{{/characterAutoLocationSelectEnabled}}>
                                         <label for="selectLocation">
-                                            {{#translate}}Auto select current location{{/translate}}
-                                            <i class="fas fa-fw fa-question-circle pf-help-light" title="{{#translate}}Auto select current system after jump.
-                                                Unsaved changes (e.g. system description) will be discarded!{{/translate}}"
+                                            Auto select current location
+                                            <i class="fas fa-fw fa-question-circle pf-help-light" title="Auto select current system after jump.
+                                                Unsaved changes (e.g. system description) will be discarded!"
                                             ></i>
-                                            <span class="badge bg-color bg-color-grayDarker txt-color txt-color-warning">{{#translate}}beta{{/translate}}</span>
+                                            <span class="badge bg-color bg-color-grayDarker txt-color txt-color-warning">beta</span>
                                         </label>
                                     </div>
                                 </div>

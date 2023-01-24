@@ -1,9 +1,8 @@
 define([
     'jquery',
     'app/init',
-    'i18n!',
     'summernote'
-], ($, Init, __) => {
+], ($, Init) => {
     'use strict';
 
     // all Summernote stuff is available...
@@ -79,7 +78,7 @@ define([
                     // show "discard" changes confirmation
                     let confirmationSettings = {
                         placement: 'top',
-                        title: __('discard changes'),
+                        title: 'discard changes',
                         btnCancelIcon: '',
                         btnOkClass: 'btn btn-sm btn-warning',
                         btnOkLabel: 'discard',

@@ -3,13 +3,13 @@
         <div class="navbar-header pull-left">
             <ul class="nav navbar-nav {{dialogNavigationClass}}">
                 <li class="{{dialogNavLiClass}} {{#activePrivateTab}} active {{/activePrivateTab}} {{^enablePrivateTab}} disabled {{/enablePrivateTab}}">
-                    <a role="tab" data-toggle="tab" data-type="typeId" data-value="2" href="#{{statsContainerId}}">{{#translate}}Private{{/translate}}</a>
+                    <a role="tab" data-toggle="tab" data-type="typeId" data-value="2" href="#{{statsContainerId}}">Private</a>
                 </li>
                 <li class="{{dialogNavLiClass}} {{#activeCorporationTab}} active {{/activeCorporationTab}} {{^enableCorporationTab}} disabled {{/enableCorporationTab}}">
-                    <a role="tab" data-toggle="tab" data-type="typeId" data-value="3" href="#{{statsContainerId}}">{{#translate}}Corporation{{/translate}}</a>
+                    <a role="tab" data-toggle="tab" data-type="typeId" data-value="3" href="#{{statsContainerId}}">Corporation</a>
                 </li>
                 <li class="{{dialogNavLiClass}} {{#activeAllianceTab}} active {{/activeAllianceTab}} {{^enableAllianceTab}} disabled {{/enableAllianceTab}}">
-                    <a role="tab" data-toggle="tab" data-type="typeId" data-value="4" href="#{{statsContainerId}}">{{#translate}}Alliance{{/translate}}</a>
+                    <a role="tab" data-toggle="tab" data-type="typeId" data-value="4" href="#{{statsContainerId}}">Alliance</a>
                 </li>
             </ul>
         </div>
@@ -20,21 +20,21 @@
             </p>
             <ul class="nav navbar-nav {{dialogNavigationClass}}">
                 <li class="{{dialogNavLiClass}}">
-                    <a role="tab" data-toggle="tab" data-type="period" data-value="weekly" href="#{{statsContainerId}}">{{#translate}}Weekly{{/translate}}</a>
+                    <a role="tab" data-toggle="tab" data-type="period" data-value="weekly" href="#{{statsContainerId}}">Weekly</a>
                 </li>
                 <li class="{{dialogNavLiClass}} active">
-                    <a role="tab" data-toggle="tab" data-type="period" data-value="monthly" href="#{{statsContainerId}}">{{#translate}}Monthly{{/translate}}</a>
+                    <a role="tab" data-toggle="tab" data-type="period" data-value="monthly" href="#{{statsContainerId}}">Monthly</a>
                 </li>
                 <li class="{{dialogNavLiClass}}">
-                    <a role="tab" data-toggle="tab" data-type="period" data-value="yearly" href="#{{statsContainerId}}">{{#translate}}Yearly{{/translate}}</a>
+                    <a role="tab" data-toggle="tab" data-type="period" data-value="yearly" href="#{{statsContainerId}}">Yearly</a>
                 </li>
             </ul>
         </div>
     </nav>
 
     <div class="alert alert-info fade in hidden-md hidden-lg">
-        <span class="txt-color txt-color-information">{{#translate}}Info{{/translate}}</span>
-        <small>{{#translate}}Your browser window is to small. Resize it to obtain more columns.{{/translate}}</small>
+        <span class="txt-color txt-color-information">Info</span>
+        <small> Your browser window is to small. Resize it to obtain more columns.</small>
     </div>
 
     <div class="tab-content">
@@ -61,16 +61,16 @@
                 <table class="compact stripe order-column row-border nowrap" id="{{statsTableId}}">
                     <thead>
                     <tr>
-                        <th colspan="4" class="separator-right">{{#translate}}character{{/translate}}</th>
-                        <th colspan="3" class="hidden-xs hidden-sm">{{#translate}}maps{{/translate}}</th>
-                        <th class="text-right separator-right"><span class="hidden-md hidden-lg">{{#translate}}map.{{/translate}}</span></th>
-                        <th colspan="3" class="hidden-xs hidden-sm">{{#translate}}systems{{/translate}}</th>
-                        <th class="text-right separator-right"><span class="hidden-md hidden-lg">{{#translate}}sys.{{/translate}}</span></th>
-                        <th colspan="3" class="hidden-xs hidden-sm">{{#translate}}connection{{/translate}}</th>
-                        <th class="text-right separator-right"><span class="hidden-md hidden-lg">{{#translate}}con.{{/translate}}</span></th>
-                        <th colspan="3" class="hidden-xs hidden-sm">{{#translate}}signatures{{/translate}}</th>
-                        <th class="text-right separator-right"><span class="hidden-md hidden-lg">{{#translate}}sig.{{/translate}}</span></th>
-                        <th class="text-right">{{#translate}}sum{{/translate}}</th>
+                        <th colspan="4" class="separator-right">character</th>
+                        <th colspan="3" class="hidden-xs hidden-sm">maps</th>
+                        <th class="text-right separator-right"><span class="hidden-md hidden-lg">map.</span></th>
+                        <th colspan="3" class="hidden-xs hidden-sm">systems</th>
+                        <th class="text-right separator-right"><span class="hidden-md hidden-lg">sys.</span></th>
+                        <th colspan="3" class="hidden-xs hidden-sm">connection</th>
+                        <th class="text-right separator-right"><span class="hidden-md hidden-lg">con.</span></th>
+                        <th colspan="3" class="hidden-xs hidden-sm">signatures</th>
+                        <th class="text-right separator-right"><span class="hidden-md hidden-lg">sig.</span></th>
+                        <th class="text-right">sum</th>
                     </tr>
                     <tr>
                         <th></th>
@@ -127,12 +127,12 @@
             <div class="flex-row flex-between well well-sm">
                 <div class="flex-col">Map config:</div>
                 <div class="flex-col">
-                    {{#translate}}Store user statistics{{/translate}}&nbsp;
+                    Store user statistics&nbsp;
                     {{#logActivityEnabled}}
-                    <kbd class="txt-color txt-color-success">{{#translate}}enabled{{/translate}}</kbd>
+                    <kbd class="txt-color txt-color-success">enabled</kbd>
                     {{/logActivityEnabled}}
                     {{^logActivityEnabled}}
-                    <kbd>{{#translate}}disabled{{/translate}}</kbd>
+                    <kbd>disabled</kbd>
                     {{/logActivityEnabled}}
                 </div>
             </div>

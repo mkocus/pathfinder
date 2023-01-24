@@ -6,9 +6,8 @@ define([
     'jquery',
     'app/init',
     'app/util',
-    'bootbox',
-    'i18n!'
-], ($, Init, Util, bootbox, __) => {
+    'bootbox'
+], ($, Init, Util, bootbox) => {
     'use strict';
 
     let config = {
@@ -62,16 +61,16 @@ define([
             let content = Mustache.render(template, data);
 
             let accountSettingsDialog = bootbox.dialog({
-                title: __('Account settings'),
+                title: 'Account settings',
                 message: content,
                 show: false,
                 buttons: {
                     close: {
-                        label: __('cancel'),
+                        label: 'cancel',
                         className: 'btn-default'
                     },
                     success: {
-                        label: '<i class="fas fa-check fa-fw"></i>&nbsp;' + __('save'),
+                        label: '<i class="fas fa-check fa-fw"></i>&nbsp;save',
                         className: 'btn-success',
                         callback: function(){
 
@@ -128,7 +127,7 @@ define([
                                             }
                                         });
 
-                                        Util.showNotify({title: __('Account saved'), type: 'success'});
+                                        Util.showNotify({title: 'Account saved', type: 'success'});
 
                                         // close dialog/menu
                                         Util.triggerMenuAction(document, 'Close');

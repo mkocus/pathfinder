@@ -4,9 +4,8 @@
 
 define([
     'jquery',
-    'app/render',
-    'i18n!'
-], ($, Render, __) => {
+    'app/render'
+], ($, Render) => {
 
     'use strict';
 
@@ -75,20 +74,20 @@ define([
         let moduleData = {
             id: config.mapContextMenuId,
             items: [
-                {icon: 'fa-plus', action: 'add_system', text: __('add system')},
-                {icon: 'fa-object-ungroup', action: 'select_all', text: __('select all')},
-                {icon: 'fa-filter', action: 'filter_scope', text: __('filter scope'), subitems: [
-                        {subIcon: '', subAction: 'filter_wh', subText: __('wormhole')},
-                        {subIcon: '', subAction: 'filter_stargate', subText: __('stargate')},
-                        {subIcon: '', subAction: 'filter_jumpbridge', subText: __('jumpbridge')},
-                        {subIcon: '', subAction: 'filter_abyssal', subText: __('abyssal')}
+                {icon: 'fa-plus', action: 'add_system', text: 'add system'},
+                {icon: 'fa-object-ungroup', action: 'select_all', text: 'select all'},
+                {icon: 'fa-filter', action: 'filter_scope', text: 'filter scope', subitems: [
+                        {subIcon: '', subAction: 'filter_wh', subText: 'wormhole'},
+                        {subIcon: '', subAction: 'filter_stargate', subText: 'stargate'},
+                        {subIcon: '', subAction: 'filter_jumpbridge', subText: 'jumpbridge'},
+                        {subIcon: '', subAction: 'filter_abyssal', subText: 'abyssal'}
                     ]},
-                {icon: 'fa-sitemap', action: 'map', text: __('map'), subitems: [
-                        {subIcon: 'fa-edit', subAction: 'map_edit', subText: __('edit map')},
-                        {subIcon: 'fa-street-view', subAction: 'map_info', subText: __('map info')},
+                {icon: 'fa-sitemap', action: 'map', text: 'map', subitems: [
+                        {subIcon: 'fa-edit', subAction: 'map_edit', subText: 'edit map'},
+                        {subIcon: 'fa-street-view', subAction: 'map_info', subText: 'map info'},
                     ]},
                 {divider: true, action: 'delete_systems'},
-                {icon: 'fa-trash', action: 'delete_systems', text: __('delete systems')}
+                {icon: 'fa-trash', action: 'delete_systems', text: 'delete systems'}
             ]
         };
 
@@ -103,29 +102,29 @@ define([
         let moduleData = {
             id: config.connectionContextMenuId,
             items: [
-                {icon: 'fa-hourglass-end', action: 'wh_eol', text: __('toggle EOL')},
-                {icon: 'fa-exclamation-triangle', action: 'preserve_mass', text: __('preserve mass')},
-                {icon: 'fa-reply fa-rotate-180', action: 'change_status', text: __('mass status'), subitems: [
-                        {subIcon: 'fa-circle', subIconClass: 'txt-color txt-color-gray', subAction: 'status_fresh', subText: __('stage 1 (fresh)')},
-                        {subIcon: 'fa-circle', subIconClass: 'txt-color txt-color-orange', subAction: 'status_reduced', subText: __('stage 2 (reduced)')},
-                        {subIcon: 'fa-circle', subIconClass: 'txt-color txt-color-redDark', subAction: 'status_critical', subText: __('stage 3 (critical)')}
+                {icon: 'fa-hourglass-end', action: 'wh_eol', text: 'toggle EOL'},
+                {icon: 'fa-exclamation-triangle', action: 'preserve_mass', text: 'preserve mass'},
+                {icon: 'fa-reply fa-rotate-180', action: 'change_status', text: 'mass status', subitems: [
+                        {subIcon: 'fa-circle', subIconClass: 'txt-color txt-color-gray', subAction: 'status_fresh', subText: 'stage 1 (fresh)'},
+                        {subIcon: 'fa-circle', subIconClass: 'txt-color txt-color-orange', subAction: 'status_reduced', subText: 'stage 2 (reduced)'},
+                        {subIcon: 'fa-circle', subIconClass: 'txt-color txt-color-redDark', subAction: 'status_critical', subText: 'stage 3 (critical)'}
 
                     ]},
-                {icon: 'fa-reply fa-rotate-180', action: 'wh_jump_mass_change', text: __('ship size'), subitems: [
-                        {subIcon: 'fa-char', subChar: 'S', subAction: 'wh_jump_mass_s', subText: __('smallest ships')},
-                        {subIcon: 'fa-char', subChar: 'M', subAction: 'wh_jump_mass_m', subText: __('medium ships')},
-                        {subIcon: 'fa-char', subChar: 'L', subAction: 'wh_jump_mass_l', subText: __('larger ships')},
-                        {subIcon: 'fa-char', subChar: 'XL', subAction: 'wh_jump_mass_xl', subText: __('capital ships')}
+                {icon: 'fa-reply fa-rotate-180', action: 'wh_jump_mass_change', text: 'ship size', subitems: [
+                        {subIcon: 'fa-char', subChar: 'S', subAction: 'wh_jump_mass_s', subText: 'smallest ships'},
+                        {subIcon: 'fa-char', subChar: 'M', subAction: 'wh_jump_mass_m', subText: 'medium ships'},
+                        {subIcon: 'fa-char', subChar: 'L', subAction: 'wh_jump_mass_l', subText: 'larger ships'},
+                        {subIcon: 'fa-char', subChar: 'XL', subAction: 'wh_jump_mass_xl', subText: 'capital ships'}
 
                     ]},
-                {icon: 'fa-crosshairs', action: 'change_scope', text: __('change scope'), subitems: [
-                        {subIcon: 'fa-minus-circle', subIconClass: '', subAction: 'scope_wh', subText: __('wormhole')},
-                        {subIcon: 'fa-minus-circle', subIconClass: 'txt-color txt-color-indigoDarkest', subAction: 'scope_stargate', subText: __('stargate')},
-                        {subIcon: 'fa-minus-circle', subIconClass: 'txt-color txt-color-tealLighter', subAction: 'scope_jumpbridge', subText: __('jumpbridge')}
+                {icon: 'fa-crosshairs', action: 'change_scope', text: 'change scope', subitems: [
+                        {subIcon: 'fa-minus-circle', subIconClass: '', subAction: 'scope_wh', subText: 'wormhole'},
+                        {subIcon: 'fa-minus-circle', subIconClass: 'txt-color txt-color-indigoDarkest', subAction: 'scope_stargate', subText: 'stargate'},
+                        {subIcon: 'fa-minus-circle', subIconClass: 'txt-color txt-color-tealLighter', subAction: 'scope_jumpbridge', subText: 'jumpbridge'}
 
                     ]},
                 {divider: true, action: 'separator'} ,
-                {icon: 'fa-unlink', action: 'delete_connection', text: __('detach')}
+                {icon: 'fa-unlink', action: 'delete_connection', text: 'detach'}
             ]
         };
 
@@ -140,7 +139,7 @@ define([
         let moduleData = {
             id: config.endpointContextMenuId,
             items: [
-                {icon: 'fa-globe', action: 'bubble', text: __('bubbled')}
+                {icon: 'fa-globe', action: 'bubble', text: 'bubbled'}
             ]
         };
 
@@ -166,20 +165,20 @@ define([
         let moduleData = {
             id: config.systemContextMenuId,
             items: [
-                {icon: 'fa-plus', action: 'add_system', text: __('add system')},
-                {icon: 'fa-lock', action: 'lock_system', text: __('lock system')},
-                {icon: 'fa-volume-up', action: 'set_rally', text: __('set rally point')},
-                {icon: 'fa-tags', text: __('set status'), subitems: statusData},
-                {icon: 'fa-route', action: 'find_route', text: __('find route')},
-                {icon: 'fa-object-group', action: 'select_connections', text: __('select connections')},
-                {icon: 'fa-reply fa-rotate-180', text: __('waypoints'), subitems: [
-                        {subIcon: 'fa-flag', subAction: 'set_destination', subText: __('set destination')},
+                {icon: 'fa-plus', action: 'add_system', text: 'add system'},
+                {icon: 'fa-lock', action: 'lock_system', text: 'lock system'},
+                {icon: 'fa-volume-up', action: 'set_rally', text: 'set rally point'},
+                {icon: 'fa-tags', text: 'set status', subitems: statusData},
+                {icon: 'fa-route', action: 'find_route', text: 'find route'},
+                {icon: 'fa-object-group', action: 'select_connections', text: 'select connections'},
+                {icon: 'fa-reply fa-rotate-180', text: 'waypoints', subitems: [
+                        {subIcon: 'fa-flag', subAction: 'set_destination', subText: 'set destination'},
                         {subDivider: true, action: ''},
-                        {subIcon: 'fa-step-backward', subAction: 'add_first_waypoint', subText: __('add new [start]')},
-                        {subIcon: 'fa-step-forward', subAction: 'add_last_waypoint', subText: __('add new [end]')}
+                        {subIcon: 'fa-step-backward', subAction: 'add_first_waypoint', subText: 'add new [start]'},
+                        {subIcon: 'fa-step-forward', subAction: 'add_last_waypoint', subText: 'add new [end]'}
                     ]},
                 {divider: true, action: 'delete_system'},
-                {icon: 'fa-trash', action: 'delete_system', text: __('delete system(s)')}
+                {icon: 'fa-trash', action: 'delete_system', text: 'delete system(s)'}
             ]
         };
 

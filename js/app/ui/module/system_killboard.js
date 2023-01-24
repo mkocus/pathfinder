@@ -7,9 +7,8 @@ define([
     'app/init',
     'app/util',
     'module/base',
-    'app/map/util',
-    'i18n!'
-], ($, Init, Util, BaseModule, MapUtil, __) => {
+    'app/map/util'
+], ($, Init, Util, BaseModule, MapUtil) => {
     'use strict';
 
     let SystemKillboardModule = class SystemKillboardModule extends BaseModule {
@@ -45,14 +44,14 @@ define([
                 'fa-external-link-alt', 'fa-fw',
                 this._config.moduleHeadlineIconClass
             ]);
-            iconKbEl.setAttribute('title', __('zkillboard.com'));
+            iconKbEl.setAttribute('title', 'zkillboard.com');
             iconKbEl.onclick = e => this.openKillboardUrl(e);
             
             let iconRegKbEl = this.newIconElement([
                 'fa-map-marked-alt', 'fa-fw',
                 this._config.moduleHeadlineIconClass
             ]);
-            iconRegKbEl.setAttribute('title', __('zkillboard.com region'));
+            iconRegKbEl.setAttribute('title', 'zkillboard.com region');
             iconRegKbEl.onclick = e => this.openKillboardUrlRegion(e);
 
             toolbarEl.append(iconRegKbEl, iconKbEl, this._iconFilterEl);
@@ -122,7 +121,7 @@ define([
                     this.request(url).then(result => {
                         if(result.error){
                             // successful request with error response
-                            this.showNotify({title: __('Data fetch() from zKillboard failed'), text: result.error, type: 'error'});
+                            this.showNotify({title: 'Data fetch() from zKillboard failed', text: result.error, type: 'error'});
                             return Promise.reject(result);
                         }else{
                             // zkb result needs to be cached and becomes reduced on "load more"
@@ -131,7 +130,7 @@ define([
                         }
                     }).then(result => resolve(result)).catch(e => {
                         console.error(e);
-                        this.showNotify({title: __('Data fetch() from zKillboard failed'), text: e, type: 'error'});
+                        this.showNotify({title: 'Data fetch() from zKillboard failed', text: e, type: 'error'});
                     });
                 });
             }
@@ -178,7 +177,7 @@ define([
             if(this._dataPromise instanceof Promise){
                 this._dataPromise
                     .then(result => {
-                        this._killboardLabelEl = this.newLabelElement(__('recent kills within the last hour'), [
+                        this._killboardLabelEl = this.newLabelElement('recent kills within the last hour', [
                             'label-warning', this._config.labelRecentKillsClass, 'hidden'
                         ]);
 
@@ -202,7 +201,7 @@ define([
                         }else{
                             // no kills found
                             this._bodyEl.append(
-                                this.newLabelElement(__('No kills found within the last 24h'), ['label-success'])
+                                this.newLabelElement('No kills found within the last 24h', ['label-success'])
                             );
                         }
                 })
@@ -293,10 +292,10 @@ define([
             let color, label;
             if(zkb.solo){
                 color = '#5cb85c';
-                label = __('solo');
+                label = 'solo';
             }else if(zkb.npc){
                 color = '#d747d6';
-                label = __('npc');
+                label = 'npc';
             }else if(attackersCount){
                 color = '#adadad';
                 label = attackersCount;
@@ -504,13 +503,13 @@ define([
 
                 let sourceOptions = [{
                     value: 'system',
-                    text: __(`System (%1)`).replace('%1', this._systemData.name)
+                    text: `System (${this._systemData.name})`
                 },{
                     value: 'map',
-                    text: __(`Map (%1)`).replace('%1', BaseModule.Util.getObjVal(BaseModule.Util.getCurrentMapData(this._mapId), 'config.name'))
+                    text: `Map (${BaseModule.Util.getObjVal(BaseModule.Util.getCurrentMapData(this._mapId), 'config.name')})`
                 },{
                     value: 'all',
-                    text: __(`All (New Eden)`)
+                    text: `All (New Eden)`
                 }];
 
                 $(this._iconFilterEl).editable({
@@ -520,7 +519,7 @@ define([
                     showbuttons: false,
                     onblur: 'submit',
                     highlight: false,
-                    title: __('Streams'),
+                    title: 'Streams',
                     placement: 'left',
                     pk: this._mapId,
                     value: this._filterStreams,
@@ -632,19 +631,19 @@ define([
             let title = 'unknown';
             switch(SystemKillboardModule.wsStatus){
                 case 1: // connecting
-                    title = __('connecting…');
+                    title = 'connecting…';
                     isWarning = true;
                     break;
                 case 2: // connected
-                    title = __('connected');
+                    title = 'connected';
                     isSuccess = true;
                     break;
                 case 3: // error
-                    title = __('error');
+                    title = 'error';
                     isError = true;
                     break;
                 case 4: // close
-                    title = __('closed');
+                    title = 'closed';
                     isError = true;
                     break;
             }
@@ -805,7 +804,7 @@ define([
     SystemKillboardModule.scope = 'system';                                     // module scope controls how module gets updated and what type of data is injected
     SystemKillboardModule.sortArea = 'c';                                       // default sortable area
     SystemKillboardModule.position = 1;                                         // default sort/order position within sortable area
-    SystemKillboardModule.label = __('Killboard');                                  // static module label (e.g. description)
+    SystemKillboardModule.label = 'Killboard';                                  // static module label (e.g. description)
     SystemKillboardModule.wsStatus = undefined;
     SystemKillboardModule.serverTime = BaseModule.Util.getServerTime();         // static Date() with current EVE server time
     SystemKillboardModule.wsSubscribtions = [];                                 // static container for all KB module instances (from multiple maps) for WS responses
@@ -823,7 +822,7 @@ define([
     SystemKillboardModule.defaultConfig = {
         className: 'pf-system-killboard-module',                                // class for module
         sortTargetAreas: ['a', 'b', 'c'],                                       // sortable areas where module can be dragged into
-        headline: __('Killboard'),
+        headline: 'Killboard',
 
         // system killboard list
         systemKillboardListClass: 'pf-system-killboard-list',                   // class for a list with kill entries

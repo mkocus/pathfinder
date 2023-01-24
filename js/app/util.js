@@ -3,7 +3,6 @@
  */
 define([
     'jquery',
-    'i18n!',
     'app/init',
     'app/lib/prototypes',
     'app/lib/console',
@@ -25,7 +24,6 @@ define([
     'select2'
 ], (
     $,
-    __,
     Init,
     Proto,
     Con,
@@ -578,7 +576,7 @@ define([
                 html: true,
                 trigger: 'hover',
                 container: 'body',
-                title: __('Created / Updated'),
+                title: 'Created / Updated',
                 delay: {
                     show: 150,
                     hide: 0
@@ -674,7 +672,7 @@ define([
                         // init popover and add specific class to it (for styling)
                         button.popover({
                             html: true,
-                            title: __('select character'),
+                            title: 'select character',
                             trigger: 'manual',
                             placement: 'bottom',
                             content: content,
@@ -1591,7 +1589,7 @@ define([
             dataType: 'json'
         }).done(function(responseData){
             if(responseData.error.length > 0){
-                showNotify({title: 'getCaptchaImage', text: __('Captcha image generation failed'), type: 'error'});
+                showNotify({title: 'getCaptchaImage', text: 'Captcha image generation failed', type: 'error'});
             }else{
                 callback(responseData.img);
             }
@@ -3094,13 +3092,13 @@ define([
         let description = '';
         switch(type){
             case 'set_destination':
-                description = __('Set destination');
+                description = 'Set destination';
                 break;
             case 'add_first_waypoint':
-                description = __('Set first waypoint');
+                description = 'Set first waypoint';
                 break;
             case 'add_last_waypoint':
-                description = __('Set new waypoint');
+                description = 'Set new waypoint';
                 break;
         }
 
@@ -3171,13 +3169,13 @@ define([
                                 payload.data = true;
                                 resolve(payload);                        })
                             .catch(err => {
-                                let errorMsg = __('Failed to write clipboard content');
+                                let errorMsg = 'Failed to write clipboard content';
                                 console.error(errorMsg, err);
                                 showNotify({title: 'Clipboard API', text: errorMsg, type: 'error'});
                                 resolve(payload);
                             });
                     }else{
-                        showNotify({title: __('Clipboard API'), text: __('You denied write access'), type: 'warning'});
+                        showNotify({title: 'Clipboard API', text: 'You denied write access', type: 'warning'});
                         resolve(payload);
                     }
                 });
@@ -3217,13 +3215,13 @@ define([
                                 payload.data = text;
                                 resolve(payload);                        })
                             .catch(err => {
-                                let errorMsg = __('Failed to read clipboard content');
+                                let errorMsg = 'Failed to read clipboard content';
                                 console.error(errorMsg, err);
-                                showNotify({title: __('Clipboard API'), text: errorMsg, type: 'error'});
+                                showNotify({title: 'Clipboard API', text: errorMsg, type: 'error'});
                                 resolve(payload);
                             });
                     }else{
-                        showNotify({title: __('Clipboard API'), text: __('You denied read access'), type: 'warning'});
+                        showNotify({title: 'Clipboard API', text: 'You denied read access', type: 'warning'});
                         resolve(payload);
                     }
                 });
@@ -3316,13 +3314,13 @@ define([
                 dataType: 'json'
             }).done(function(data){
                 if(data.error.length > 0){
-                    showNotify({title: __('Open window in client'), text: __('Remote window open failed'), type: 'error'});
+                    showNotify({title: 'Open window in client', text: 'Remote window open failed', type: 'error'});
                 }else{
-                    showNotify({title: __('Open window in client'), text: __('Check your EVE client'), type: 'success'});
+                    showNotify({title: 'Open window in client', text: 'Check your EVE client', type: 'success'});
                 }
             }).fail(function(jqXHR, status, error){
                 let reason = status + ' ' + error;
-                showNotify({title: jqXHR.status + __(': openWindow'), text: reason, type: 'error'});
+                showNotify({title: jqXHR.status + ': openWindow', text: reason, type: 'error'});
             });
         }
     };

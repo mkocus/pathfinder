@@ -9,9 +9,8 @@ define([
     'module/base',
     'bootbox',
     'app/counter',
-    'app/map/util',
-    'i18n!'
-], ($, Init, Util, BaseModule, bootbox, Counter, MapUtil, __) => {
+    'app/map/util'
+], ($, Init, Util, BaseModule, bootbox, Counter, MapUtil) => {
     'use strict';
 
     let ConnectionInfoModule = class ConnectionInfoModule extends BaseModule {
@@ -57,14 +56,14 @@ define([
                 this._config.moduleHeadlineIconCurrentMassClass,
                 this._config.showShip ? 'active' : ''
             ]);
-            iconMassEl.setAttribute('title', __('toggle&nbsp;current&nbsp;ship&nbsp;mass'));
+            iconMassEl.setAttribute('title', 'toggle&nbsp;current&nbsp;ship&nbsp;mass');
 
             let iconRefreshEl = this.newIconElement([
                 'fa-sync', 'fa-fw',
                 this._config.moduleHeadlineIconClass,
                 this._config.moduleHeadlineIconRefreshClass
             ]);
-            iconRefreshEl.setAttribute('title', __('refresh&nbsp;all'));
+            iconRefreshEl.setAttribute('title', 'refresh&nbsp;all');
 
             toolbarEl.append(iconMassEl, iconRefreshEl);
             headEl.append(toolbarEl);
@@ -80,7 +79,7 @@ define([
         newInfoPanelControlEl(mapId){
             let connectionEl = this.newConnectionElement(mapId);
             connectionEl.append(
-                this.newControlElement(__('add connection&nbsp;&nbsp;<kbd>ctrl</kbd>&nbsp;+&nbsp;<kbd>click</kbd>'), [], ['fa-plus'])
+                this.newControlElement('add connection&nbsp;&nbsp;<kbd>ctrl</kbd>&nbsp;+&nbsp;<kbd>click</kbd>', [], ['fa-plus'])
             );
 
             return connectionEl;
@@ -427,10 +426,10 @@ define([
                             $('<td>', {
                                 class: ['text-right', Util.config.helpClass].join(' '),
                                 html: '<i class="fas fa-fw fa-question-circle"></i>',
-                                title: __('initial mass. From signature table')
+                                title: 'initial mass. From signature table'
                             }).attr('data-toggle', 'tooltip'),
                             $('<td>', {
-                                text: __('Total mass')
+                                text: 'Total mass'
                             }),
                             $('<td>', {
                                 class: ['text-right', 'txt-color', this._config.connectionInfoTableCellMassTotalClass].join(' ')
@@ -441,7 +440,7 @@ define([
                         }).append(
                             $('<td>', {
                                 class: ['text-right', Util.config.helpClass].join(' '),
-                                title: __('recorded total jump mass')
+                                title: 'recorded total jump mass'
                             }).attr('data-toggle', 'tooltip').append(
                                 $('<i>', {
                                     class: [
@@ -464,7 +463,7 @@ define([
                                 })
                             ),
                             $('<td>', {
-                                text: __('Logged mass')
+                                text: 'Logged mass'
                             }),
                             $('<td>', {
                                 class: ['text-right', this._config.connectionInfoTableCellMassLogClass].join(' ')
@@ -475,7 +474,7 @@ define([
                         }).append(
                             $('<td>', {
                                 class: ['text-right', Util.config.helpClass].join(' '),
-                                title: __('current ship mass')
+                                title: 'current ship mass'
                             }).attr('data-toggle', 'tooltip').append(
                                 $('<i>', {
                                     class: ['fas', 'fa-fw', 'fa-question-circle'].join(' ')
@@ -490,7 +489,7 @@ define([
                             ),
                             $('<td>', {
                                 class: ['pf-table-cell-ellipses-auto'].join(' '),
-                                text: __('Ship mass')
+                                text: 'Ship mass'
                             }),
                             $('<td>', {
                                 class: ['text-right', 'txt-color', this._config.connectionInfoTableCellMassShipClass].join(' ')
@@ -500,10 +499,10 @@ define([
                             $('<td>', {
                                 class: ['text-right', Util.config.helpClass].join(' '),
                                 html: '<i class="fas fa-fw fa-question-circle"></i>',
-                                title: __('max. mass left')
+                                title: 'max. mass left'
                             }).attr('data-toggle', 'tooltip'),
                             $('<td>', {
-                                text: __('Mass left')
+                                text: 'Mass left'
                             }),
                             $('<td>', {
                                 class: ['text-right', 'txt-color', this._config.connectionInfoTableCellMassLeftClass].join(' ')
@@ -609,18 +608,18 @@ define([
                         massLogTooltipIcon.toggleClass('hidden', true);
                         massLogStage2Icon.toggleClass('hidden', true);
                         massLogStage3Icon.toggleClass('hidden', false);
-                        massLogStage3Icon.parent().attr('title', __('stage 3 (critical)')).tooltip('fixTitle');
+                        massLogStage3Icon.parent().attr('title', 'stage 3 (critical)').tooltip('fixTitle');
                     }else if(connectionData.type.indexOf('wh_reduced') !== -1){
                         massReduction = 50;
                         massLogTooltipIcon.toggleClass('hidden', true);
                         massLogStage2Icon.toggleClass('hidden', false);
                         massLogStage3Icon.toggleClass('hidden', true);
-                        massLogStage3Icon.parent().attr('title', __('stage 2 (reduced)')).tooltip('fixTitle');
+                        massLogStage3Icon.parent().attr('title', 'stage 2 (reduced)').tooltip('fixTitle');
                     }else{
                         massLogTooltipIcon.toggleClass('hidden', false);
                         massLogStage2Icon.toggleClass('hidden', true);
                         massLogStage3Icon.toggleClass('hidden', true);
-                        massLogStage3Icon.parent().attr('title', __('recorded total jump mass')).tooltip('fixTitle');
+                        massLogStage3Icon.parent().attr('title', 'recorded total jump mass').tooltip('fixTitle');
                     }
 
                     if(massReduction){
@@ -654,7 +653,7 @@ define([
                     massShipWarningIcon.toggleClass('hidden', !massIndividualError);
                     let shipMassTooltip = 'current ship mass ' + (shipName ? '"' + shipName + '"' : '');
                     if(massIndividualError){
-                        shipMassTooltip = '"' + shipName + __('" exceeds max jump mass for this connection: ') + Util.formatMassValue(massIndividual);
+                        shipMassTooltip = '"' + shipName + '" exceeds max jump mass for this connection: ' + Util.formatMassValue(massIndividual);
                     }else{
                         // current ship mass check is OK  -> add to massLogTotal
                         massLogTotal += massShip;
@@ -843,8 +842,8 @@ define([
                     hover: false,
                     autoWidth: false,
                     language: {
-                        emptyTable:  __('No jumps recorded'),
-                        info: __('_START_ - _END_ of _MAX_'),
+                        emptyTable:  'No jumps recorded',
+                        info: '_START_ - _END_ of _MAX_',
                         infoEmpty: '',
                         paginate: {
                             previous:   '',
@@ -917,7 +916,7 @@ define([
                         },{
                             targets: 3,
                             name: 'mass',
-                            title: __('mass'),
+                            title: 'mass',
                             className: ['text-right'].join(' ') ,
                             data: 'ship.mass',
                             render: {
@@ -936,7 +935,7 @@ define([
                         },{
                             targets: 4,
                             name: 'created',
-                            title: __('log'),
+                            title: 'log',
                             width: 55,
                             className: ['text-right', module._config.tableCellCounterClass].join(' '),
                             data: 'created.created'
@@ -1141,12 +1140,12 @@ define([
                 let content = Mustache.render(template, data);
 
                 let connectionDialog = bootbox.dialog({
-                    title: __('Jump log'),
+                    title: 'Jump log',
                     message: content,
                     show: false,
                     buttons: {
                         close: {
-                            label: __('cancel'),
+                            label: 'cancel',
                             className: 'btn-default'
                         },
                         success: {
@@ -1240,12 +1239,12 @@ define([
     ConnectionInfoModule.scope = 'connection';                                                  // module scope controls how module gets updated and what type of data is injected
     ConnectionInfoModule.sortArea = 'a';                                                        // default sortable area
     ConnectionInfoModule.position = 1;                                                          // default sort/order position within sortable area
-    ConnectionInfoModule.label = __('Mass tracking');                                               // static module label (e.g. description)
+    ConnectionInfoModule.label = 'Mass tracking';                                               // static module label (e.g. description)
 
     ConnectionInfoModule.defaultConfig = {
         className: 'pf-connection-info-module',                                                 // class for module
         sortTargetAreas: ['a', 'b', 'c'],                                                       // sortable areas where module can be dragged into
-        headline: __('Connection'),
+        headline: 'Connection',
 
         // headline toolbar
         moduleHeadlineIconRefreshClass: 'pf-module-icon-button-refresh',                        // class for "refresh" icon

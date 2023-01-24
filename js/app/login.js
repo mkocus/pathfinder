@@ -11,14 +11,13 @@ define([
     'layout/header_login',
     'lazyload',
     'bootbox',
-    'i18n!',
     'dialog/account_settings',
     'dialog/notification',
     'dialog/manual',
     'dialog/changelog',
     'dialog/credit',
     'dialog/api_status'
-], ($, Init, Util, Render, Gallery, HeaderLogin, LazyLoad, bootbox, __) => {
+], ($, Init, Util, Render, Gallery, HeaderLogin, LazyLoad, bootbox) => {
 
     'use strict';
 
@@ -140,7 +139,7 @@ define([
             // show Cookie accept hint on SSO login button
             let confirmationSettings = {
                 placement: 'bottom',
-                title: __('Accept cookies'),
+                title: 'Accept cookies',
                 btnCancelClass: 'btn btn-sm btn-success',
                 btnCancelLabel: 'accept',
                 btnCancelIcon: 'fas fa-fw fa-check',
@@ -229,31 +228,31 @@ define([
         // initialize carousel ------------------------------------------------
         let carousel = new Gallery([
             {
-                imgTitle: __('Browser'),
+                imgTitle: 'Browser',
                 href: 'ui/map',
                 type: 'text/html'
             },
             {
                 href: 'public/img/landing/responsive.jpg',
-                imgTitle: __('Responsive layout'),
+                imgTitle: 'Responsive layout',
                 type: 'image/jpg',
                 thumbnail: ''
             },
             {
                 href: 'public/img/landing/pathfinder_1.jpg',
-                imgTitle: __('Map view'),
+                imgTitle: 'Map view',
                 type: 'image/jpg',
                 thumbnail: ''
             },
             {
                 href: 'public/img/landing/pathfinder_3.jpg',
-                imgTitle: __('Map information'),
+                imgTitle: 'Map information',
                 type: 'image/jpg',
                 thumbnail: ''
             },
             {
                 href: 'public/img/landing/pathfinder_2.jpg',
-                imgTitle: __('System information'),
+                imgTitle: 'System information',
                 type: 'image/jpg',
                 thumbnail: ''
             }
@@ -271,7 +270,7 @@ define([
                 // -> show "demo" map
 
                 // set title for first slide
-                $(this.options.container).find(this.options.titleElement).text(__('Browser view'));
+                $(this.options.container).find(this.options.titleElement).text('Browser view');
 
                 $('#' + config.headHeaderMapId).drawDemoMap(function(){
 
@@ -598,12 +597,12 @@ define([
             let label = '';
             switch(authStatus){
                 case 'UNKNOWN':
-                    label = __('ERROR');
+                    label = 'ERROR';
                     break;
                 case 'CHARACTER':
                 case 'CORPORATION':
                 case 'ALLIANCE':
-                    label = __('INVALID');
+                    label = 'INVALID';
                     break;
                 default:
                     label = authStatus;
@@ -643,7 +642,7 @@ define([
                         $('.' + config.dynamicMessageContainerClass).showMessage({
                             dismissible: false,
                             type: responseData.error[0].type,
-                            title: __('Character verification failed'),
+                            title: 'Character verification failed',
                             text: responseData.error[0].message
                         });
                     }
@@ -690,7 +689,7 @@ define([
     let handleAjaxErrorResponse = (jqXHR, status, error) => {
 
         let type = status;
-        let title = __('Status ') + jqXHR.status + ': ' + error;
+        let title = 'Status ' + jqXHR.status + ': ' + error;
         let message = '';
 
         if(jqXHR.responseText){
@@ -703,7 +702,7 @@ define([
                 for(let i = 0; i < errorObj.error.length; i++){
                     let errorData = errorObj.error[i];
                     type = errorData.type;
-                    title = __('Status  ') + errorData.code + ': ' + errorData.status;
+                    title = 'Status  ' + errorData.code + ': ' + errorData.status;
                     message = errorData.message;
 
                     Util.showNotify({title: title, text: message, type: type});
@@ -741,28 +740,28 @@ define([
         ){
             let cls = 'txt-color-warning';
             let text = [
-                __('For security reasons, you were logged out automatically'),
-                __('Please log in again')
+                'For security reasons, you were logged out automatically',
+                'Please log in again'
             ];
 
             if(searchParams.has('logoutGraceful')){
                 cls = 'txt-color-success';
-                text = [__('You have successfully logged out')];
+                text = ['You have successfully logged out'];
             }
 
             // show logout dialog
             let options = {
                 buttons: {
                     close: {
-                        label: __('close'),
+                        label: 'close',
                         className: 'btn-default'
                     }
                 },
                 content: {
                     icon: 'fa-sign-out-alt',
                     class: cls,
-                    title: __('Logout'),
-                    headline: __('Logout'),
+                    title: 'Logout',
+                    headline: 'Logout',
                     text: text
                 }
             };

@@ -6,9 +6,8 @@ define([
     'jquery',
     'app/init',
     'app/util',
-    'bootbox',
-    'i18n!'
-], ($, Init, Util, bootbox, __) => {
+    'bootbox'
+], ($, Init, Util, bootbox) => {
     'use strict';
 
     let config = {
@@ -37,11 +36,11 @@ define([
             statusTitle: () => {
                 return (val, render) => {
                     switch(render(val)){
-                        case 'green':   return __('ok');
-                        case 'yellow':  return __('degraded: Slow or potentially dropping requests');
-                        case 'orange':  return __('bad: Most requests are not succeeding and/or are very slow (5s+) on average');
-                        case 'red':     return __('error: Status data not available. Either offline or any other fatal error');
-                        default:        return __('unknown');
+                        case 'green':   return 'ok';
+                        case 'yellow':  return 'degraded: Slow or potentially dropping requests';
+                        case 'orange':  return 'bad: Most requests are not succeeding and/or are very slow (5s+) on average';
+                        case 'red':     return 'error: Status data not available. Either offline or any other fatal error';
+                        default:        return 'unknown';
                     }
                 };
             },
@@ -55,12 +54,12 @@ define([
         requirejs(['text!templates/dialog/api_status.html', 'mustache'], (template, Mustache) => {
             let apiStatusDialog = bootbox.dialog({
                 className: config.apiStatusDialogClass,
-                title: __('API status'),
+                title: 'API status',
                 message: Mustache.render(template, data),
                 show: false,
                 buttons: {
                     close: {
-                        label: __('cancel'),
+                        label: 'cancel',
                         className: 'btn-default'
                     }
                 }

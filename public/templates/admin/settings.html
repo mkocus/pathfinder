@@ -23,7 +23,7 @@
                                 <set isManaged = "" />
 
                                 <fieldset class="reverse-order-footer" data-id="{{ @fieldsetId}}">
-                                    <h4 class="pf-dynamic-area">{{ @__('Map roles') }}</h4>
+                                    <h4 class="pf-dynamic-area">Map roles</h4>
 
                                     <repeat group="{{ @corporation->getRights() }}" value="{{ @corporationRight }}" >
                                         <check if="{{ @tplDefaultRole->_id != @corporationRight->roleId->_id }}">
@@ -41,7 +41,7 @@
                                                 <div class="form-group">
                                                     <div class="col-xs-6 col-sm-12  checkbox checkbox-warning">
                                                         <input id="{{ @fieldsetId}}" name="managed" value="1" type="checkbox" data-target="{{ @fieldsetId}}" {{ @isManaged }}>
-                                                        <label for="{{ @fieldsetId}}">{{ @__('Managed mode') }}
+                                                        <label for="{{ @fieldsetId}}">Managed mode
                                                             <i class="fas fa-fw fa-sm fa-question-circle pf-help-light" title="If active, admin roles can be set for some actions"></i>
                                                         </label>
                                                     </div>
@@ -53,14 +53,14 @@
 
 
                                 <div class="pf-dialog-warning-container alert alert-info">
-                                    <span class="txt-color txt-color-info">{{ @__('Cache expire') }}</span>
-                                    <small>{{ @__('Roles are cached for 2min') }}</small>
+                                    <span class="txt-color txt-color-info">Cache expire</span>
+                                    <small> Roles are cached for 2min</small>
                                 </div>
 
                             </div>
                             <div class="panel-footer text-right">
                                 <button type="submit" class="btn btn-success pf-overlay-trigger">
-                                    <i class="fas fa-fw fa-check"></i> {{ @__('save') }}
+                                    <i class="fas fa-fw fa-check"></i> save
                                 </button>
                             </div>
                         </div>

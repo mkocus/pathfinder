@@ -7,8 +7,7 @@ define([
     'app/init',
     'app/util',
     'bootbox',
-    'i18n!'
-], ($, Init, Util, bootbox, __) => {
+], ($, Init, Util, bootbox) => {
 
     'use strict';
 
@@ -40,12 +39,12 @@ define([
 
             // show dialog
             let manualDialog = bootbox.dialog({
-                title: __('Manual'),
+                title: 'Manual',
                 message: content,
                 size: 'large',
                 buttons: {
                     close: {
-                        label: __('close'),
+                        label: 'close',
                         className: 'btn-default'
                     }
                 },

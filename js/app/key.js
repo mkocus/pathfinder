@@ -1,31 +1,30 @@
 define([
-    'jquery',
-    'i18n!'
-], ($, __) => {
+    'jquery'
+], ($) => {
     'use strict';
 
     let allCombo = {
         // global -------------------------------------------------------------------------------------------
         tabReload: {
             group:      'global',
-            label:      __('Close open dialog'),
+            label:      'Close open dialog',
             keyNames:   ['ESC']
         },
         // map ----------------------------------------------------------------------------------------------
         mapMove: {
             group:      'map',
-            label:      __('Move map section'),
+            label:      'Move map section',
             keyNames:   ['space', 'drag']
         },
         // signature ----------------------------------------------------------------------------------------
         signatureSelect: {
             group:      'signatures',
-            label:      __('Select multiple rows'),
+            label:      'Select multiple rows',
             keyNames:   ['CONTROL', 'CLICK']
         },
         signatureNavigate: {
             group:      'signatures',
-            label:      __('Table navigation'),
+            label:      'Table navigation',
             keyNames:   ['UP', 'RIGHT', 'DOWN', 'LEFT'],
             list: true
         }
@@ -35,53 +34,53 @@ define([
         // global -------------------------------------------------------------------------------------------
         tabReload: {
             group:      'global',
-            label:      __('Reload tab'),
+            label:      'Reload tab',
             keyNames:   ['CONTROL', 'R']
         },
         clipboardPaste: {
             group:      'global',
-            label:      __('Update signatures/D-Scan from clipboard'),
+            label:      'Update signatures/D-Scan from clipboard',
             keyNames:   ['CONTROL', 'V'],
             alias:      'paste'
         },
         renameSystem: {
             group:      'map',
-            label:      __('Rename system'),
+            label:      'Rename system',
             keyNames:   ['ALT', 'N']
         },
         newSignature: {
             group:      'signatures',
-            label:      __('New Signature'),
+            label:      'New Signature',
             keyNames:   ['ALT', '3']
         },
 
         // map ----------------------------------------------------------------------------------------------
         mapSystemAdd: {
             group:      'map',
-            label:      __('New system'),
+            label:      'New system',
             keyNames:   ['ALT', '2']
         },
         mapSystemsSelect: {
             group:      'map',
-            label:      __('Select all systems'),
+            label:      'Select all systems',
             keyNames:   ['CONTROL', 'A']
         },
         mapSystemsDelete: {
             group:      'map',
-            label:      __('Delete selected systems'),
+            label:      'Delete selected systems',
             keyNames:   ['CONTROL', 'D']
         }
     };
 
     let groups = {
         global: {
-            label: __('Global')
+            label: 'Global'
         },
         map: {
-          label: __('Map')
+          label: 'Map'
         },
         signatures: {
-            label: __('Signature')
+            label: 'Signature'
         }
     };
 

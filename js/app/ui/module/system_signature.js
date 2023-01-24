@@ -11,9 +11,8 @@ define([
     'app/counter',
     'app/map/map',
     'app/map/util',
-    'app/ui/form_element',
-    'i18n!'
-], ($, Init, Util, BaseModule, bootbox, Counter, Map, MapUtil, FormElement, __) => {
+    'app/ui/form_element'
+], ($, Init, Util, BaseModule, bootbox, Counter, Map, MapUtil, FormElement) => {
     'use strict';
 
     let SystemSignatureModule = class SystemSignatureModule extends BaseModule {
@@ -259,7 +258,7 @@ define([
                                         showbuttons: false,
                                         onblur: 'submit',
                                         highlight: false,
-                                        title: __('filter groups'),
+                                        title: 'filter groups',
                                         value: selectedValues,
                                         prepend: prependOptions,
                                         source: sourceOptions,
@@ -366,7 +365,7 @@ define([
                                     type: 'checklist',
                                     showbuttons: true,
                                     highlight: false,
-                                    title: __('historical records'),
+                                    title: 'historical records',
                                     name: 'history',
                                     pk: module._systemData.id,
                                     source: Init.path.api + '/SignatureHistory/' + module._systemData.id,
@@ -411,7 +410,7 @@ define([
                                     },
                                     validate: function(value){
                                         if(!Array.isArray(value) || value.length !== 1){
-                                            return {newValue: value, msg: __('No record selected'), field: this};
+                                            return {newValue: value, msg: 'No record selected', field: this};
                                         }
                                     }
                                 });
@@ -456,7 +455,7 @@ define([
                             action: function(e, tableApi, node, config){
                                 let selectedRows = tableApi.rows({selected: true});
                                 if(selectedRows.count()){
-                                    bootbox.confirm(__('Delete %s signature?').replace('%1', selectedRows.count()), result => {
+                                    bootbox.confirm('Delete ' + selectedRows.count() + ' signature?', result => {
                                         if(result){
                                             // for some reason using 'tableApi' as first param in deleteSignature()
                                             // does not work because my custom plugin fkt 'newProcess()' is missing here...
@@ -510,7 +509,7 @@ define([
                     {
                         name: 'add',
                         className: ['fa-plus', module._config.moduleHeadlineIconAddClass].join(' '),
-                        titleAttr: __('add'),
+                        titleAttr: 'add',
                         attr:  {
                             'data-toggle': 'tooltip',
                             'data-html': true
@@ -534,7 +533,7 @@ define([
                     {
                         name: 'lazy',
                         className: ['fa-exchange-alt', module._config.moduleHeadlineIconLazyClass].join(' '),
-                        titleAttr: __('lazy \'delete\' signatures'),
+                        titleAttr: 'lazy \'delete\' signatures',
                         attr:  {
                             'data-toggle': 'tooltip',
                             'data-html': true
@@ -579,12 +578,12 @@ define([
                 order: [1, 'asc'],
                 rowId: rowData => module._config.sigTableRowIdPrefix + rowData.id,
                 language: {
-                    emptyTable:     __('No signatures added'),
-                    info:           __('Showing _START_ to _END_ of _TOTAL_ signatures'),
-                    infoEmpty:      __('Showing 0 to 0 of 0 signatures'),
-                    infoFiltered:   __('(<i class="fas fa-fw fa-filter"></i> from _MAX_ total)'),
-                    lengthMenu:     __('Show _MENU_'),
-                    zeroRecords:    __('No signatures recorded')
+                    emptyTable:     'No signatures added',
+                    info:           'Showing _START_ to _END_ of _TOTAL_ signatures',
+                    infoEmpty:      'Showing 0 to 0 of 0 signatures',
+                    infoFiltered:   '(<i class="fas fa-fw fa-filter"></i> from _MAX_ total)',
+                    lengthMenu:     'Show _MENU_',
+                    zeroRecords:    'No signatures recorded'
                 },
                 columnDefs: [
                     {
@@ -631,7 +630,7 @@ define([
                             $(cell).editable($.extend({
                                 mode: 'popup',
                                 type: 'text',
-                                title: __('signature id'),
+                                title: 'signature id',
                                 name: 'name',
                                 pk: rowData.id || null,
                                 emptytext: '? ? ?',
@@ -645,7 +644,7 @@ define([
                                     let msg = false;
                                     //let mbLength = [...$.trim(value)].length; // unicode beware
                                     if(! value.trimChars().match(/^[a-zA-Z]{3}-\d{3}$/)){
-                                        msg = __('ID format invalid. E.g.: ABC-123');
+                                        msg = 'ID format invalid. E.g.: ABC-123';
                                     }
 
                                     if(msg){
@@ -673,7 +672,7 @@ define([
                         name: 'group',
                         orderable: true,
                         searchable: true,
-                        title: __('group'),
+                        title: 'group',
                         type: 'string',     // required for sort/filter because initial data type is numeric
                         width: 40,
                         class: [module._config.tableCellFocusClass].join(' '),
@@ -693,10 +692,10 @@ define([
                             $(cell).editable($.extend({
                                 mode: 'popup',
                                 type: 'select',
-                                title: __('group'),
+                                title: 'group',
                                 name: 'groupId',
                                 pk: rowData.id || null,
-                                emptytext: __('unknown'),
+                                emptytext: 'unknown',
                                 onblur: 'submit',
                                 showbuttons: false,
                                 value: cellData,
@@ -761,7 +760,7 @@ define([
                         name: 'type',
                         orderable: false,
                         searchable: false,
-                        title: __('type'),
+                        title: 'type',
                         type: 'string',     // required for sort/filter because initial data type is numeric
                         width: 180,
                         class: [module._config.tableCellFocusClass, module._config.tableCellTypeClass].join(' '),
@@ -777,10 +776,10 @@ define([
                             $(cell).editable($.extend({
                                 mode: 'popup',
                                 type: 'select',
-                                title: __('type'),
+                                title: 'type',
                                 name: 'typeId',
                                 pk: rowData.id || null,
-                                emptytext: __('unknown'),
+                                emptytext: 'unknown',
                                 onblur: 'submit',
                                 showbuttons: false,
                                 disabled: rowData.groupId <= 0,    // initial disabled if groupId not set
@@ -834,7 +833,7 @@ define([
                         name: 'description',
                         orderable: false,
                         searchable: true,
-                        title: __('description'),
+                        title: 'description',
                         class: [module._config.tableCellFocusClass, module._config.tableCellActionClass].join(' '),
                         type: 'html',
                         data: 'description',
@@ -850,7 +849,7 @@ define([
                             $(cell).editable($.extend({
                                 mode: 'inline',
                                 type: 'textarea',
-                                title: __('description'),
+                                title: 'description',
                                 name: 'description',
                                 pk: rowData.id || null,
                                 emptytext: '<i class="fas fa-fw fa-lg fa-pen"></i>',
@@ -878,7 +877,7 @@ define([
                         name: 'connection',
                         orderable: false,
                         searchable: false,
-                        title: __('leads to'),
+                        title: 'leads to',
                         type: 'string',     // required for sort/filter because initial data type is numeric
                         className: [module._config.tableCellFocusClass, module._config.tableCellConnectionClass].join(' '),
                         width: 80,
@@ -896,10 +895,10 @@ define([
                             $(cell).editable($.extend({
                                 mode: 'popup',
                                 type: 'select',
-                                title: __('system'),
+                                title: 'system',
                                 name: 'connectionId',
                                 pk: rowData.id || null,
-                                emptytext: __('unknown'),
+                                emptytext: 'unknown',
                                 onblur: 'submit',
                                 showbuttons: false,
                                 disabled: rowData.groupId !== 5,    // initial disabled if NON wh
@@ -948,7 +947,7 @@ define([
                     },{
                         targets: 6,
                         name: 'created',
-                        title: __('created'),
+                        title: 'created',
                         searchable: false,
                         width: 80,
                         className: ['text-right', module._config.tableCellCounterClass, 'min-screen-d'].join(' '),
@@ -957,7 +956,7 @@ define([
                     },{
                         targets: 7,
                         name: 'updated',
-                        title: __('updated'),
+                        title: 'updated',
                         searchable: false,
                         width: 80,
                         className: ['text-right', module._config.tableCellCounterClass, 'min-screen-d'].join(' '),
@@ -1008,7 +1007,7 @@ define([
                                     template: Util.getConfirmationTemplate(Util.getConfirmationContent([{
                                         name: 'deleteConnection',
                                         value: '1',
-                                        label: __('delete connection'),
+                                        label: 'delete connection',
                                         class: 'pf-editable-warn',
                                         checked: true
                                     }]), {
@@ -1110,8 +1109,8 @@ define([
                                                 secondaryTableApi.clear().row.add($.extend(true, {}, SystemSignatureModule.emptySignatureData)).draw();
 
                                                 Util.showNotify({
-                                                    title: __('Signature added'),
-                                                    text: __('Name: ') + signatureData.name,
+                                                    title: 'Signature added',
+                                                    text: 'Name: ' + signatureData.name,
                                                     type: 'success'
                                                 });
 
@@ -1336,8 +1335,8 @@ define([
                 }
 
                 if(invalidSignatures > 0){
-                    let notification = invalidSignatures + ' / ' + signatureRows.length + __(' signatures invalid');
-                    Util.showNotify({title: __('Invalid signature(s)'), text: notification, type: 'warning'});
+                    let notification = invalidSignatures + ' / ' + signatureRows.length + ' signatures invalid';
+                    Util.showNotify({title: 'Invalid signature(s)', text: notification, type: 'warning'});
                 }
             }
 
@@ -1406,9 +1405,7 @@ define([
                         '"' + this._systemData.alias + '" (' + this._systemData.name + ')';
                     systemNameStr = '<span class="txt-color txt-color-warning">' + systemNameStr + '</span>';
 
-                    let msg = __('Update signatures in %1 ? This is not your current location, "%2" !')
-                        .replace('%1', systemNameStr)
-                        .replace('%2', currentLocationData.name);
+                    let msg = 'Update signatures in ' + systemNameStr + ' ? This is not your current location, "' + currentLocationData.name + '" !';
                     bootbox.confirm(msg, result => {
                         if(result){
                             saveSignatureData(signatureData);
@@ -1477,9 +1474,9 @@ define([
                             type: 'success'
                         };
                         if (payloads.length === 1) {
-                            notificationOptions.title = __('Signature deleted');
+                            notificationOptions.title = 'Signature deleted';
                         } else {
-                            notificationOptions.title = payloads.length + __(' Signatures deleted ');
+                            notificationOptions.title = payloads.length + ' Signatures deleted ';
                         }
                         module.showNotify(notificationOptions);
                     });
@@ -2140,9 +2137,9 @@ define([
                 let notification = (sigCount - sigIncompleteCount) + ' / ' + sigCount + ' (' + percent + '%) signatures scanned';
 
                 if(percent < 100){
-                    this.showNotify({title: __('Unscanned signatures'), text: notification, type: 'info'});
+                    this.showNotify({title: 'Unscanned signatures', text: notification, type: 'info'});
                 }else{
-                    this.showNotify({title: __('System is scanned'), text: notification, type: 'success'});
+                    this.showNotify({title: 'System is scanned', text: notification, type: 'success'});
                 }
             }
         }
@@ -2177,7 +2174,7 @@ define([
             let textarea                    = form.find('#' + this._config.sigInfoTextareaId);
             let deleteOutdatedCheckbox      = form.find('#' + this._config.sigReaderLazyUpdateId);
             let deleteConnectionsCheckbox   = form.find('#' + this._config.sigReaderConnectionDeleteId);
-            let errorClipboardValidation    = __('No signatures found in scan result');
+            let errorClipboardValidation    = 'No signatures found in scan result';
             let tableStatusElement          = dialogElement.find('.' + this._config.tableToolbarStatusClass);
 
             form.initFormValidation({
@@ -2189,7 +2186,7 @@ define([
                 custom: {
                     clipboard: textarea => {
                         let signatureData = this.parseSignatureString(textarea.val());
-                        tableStatusElement.text(signatureData.length + __(' signatures parsed'));
+                        tableStatusElement.text(signatureData.length + ' signatures parsed');
                         if(signatureData.length === 0){
                             return errorClipboardValidation;
                         }
@@ -2291,13 +2288,13 @@ define([
 
                 let signatureReaderDialog = bootbox.dialog({
                     className: this._config.sigReaderDialogClass,
-                    title: __('Signature reader'),
+                    title: 'Signature reader',
                     size: 'large',
                     message: Mustache.render(TplDialog, data),
                     show: false,
                     buttons: {
                         close: {
-                            label: __('cancel'),
+                            label: 'cancel',
                             className: 'btn-default'
                         },
                         success: {
@@ -2693,7 +2690,7 @@ define([
                         }, '');
 
                         if(notification.length){
-                            Util.showNotify({title: __('Signatures updated'), text: notification, type: 'success', textTrusted: true});
+                            Util.showNotify({title: 'Signatures updated', text: notification, type: 'success', textTrusted: true});
                         }
                     }
 
@@ -2805,7 +2802,7 @@ define([
              * @returns {{value: *, text: string, metaData: {type: *}}}
              */
             let getOption = (type, connectionData, systemData) => {
-                let text = __('UNKNOWN');
+                let text = 'UNKNOWN';
                 if(type === 'source'){
                     text = connectionData.sourceAlias + ' - ' + systemData.security;
                 }else if(type === 'target'){
@@ -2907,7 +2904,7 @@ define([
                     if(newSelectOptionsCount > 0){
                         if(groupId === 5){
                             // "wormhole" selected => multiple <optgroup> available
-                            newSelectOptions.push({text: __('Wandering'), children: fixSelectOptions});
+                            newSelectOptions.push({text: 'Wandering', children: fixSelectOptions});
                         }else{
                             newSelectOptions = fixSelectOptions;
                         }
@@ -2931,7 +2928,7 @@ define([
                     }
 
                     if(frigateWHData.length > 0){
-                        newSelectOptions.push({text: __('Frigate'), children: frigateWHData});
+                        newSelectOptions.push({text: 'Frigate', children: frigateWHData});
                     }
 
                     // add potential drifter holes (k-space only)
@@ -2948,7 +2945,7 @@ define([
                         }
 
                         if(drifterWHData.length > 0){
-                            newSelectOptions.push({text: __('Drifter'), children: drifterWHData});
+                            newSelectOptions.push({text: 'Drifter', children: drifterWHData});
                         }
                     }
 
@@ -2965,7 +2962,7 @@ define([
                     }
 
                     if(incomingWHData.length > 0){
-                        newSelectOptions.push({text: __('Incoming'), children: incomingWHData});
+                        newSelectOptions.push({text: 'Incoming', children: incomingWHData});
                     }
                 }else{
                     // groups without "children" (optgroup) should be sorted by "value"
@@ -2996,7 +2993,7 @@ define([
                     }
 
                     if(staticWHData.length > 0){
-                        newSelectOptions.unshift({text: __('Static'), children: staticWHData});
+                        newSelectOptions.unshift({text: 'Static', children: staticWHData});
                     }
                 }
             }
@@ -3176,7 +3173,7 @@ define([
                 status = jqXHR.status;
             }
 
-            Util.showNotify({title: status + __(': save signature'), text: reason, type: 'error'});
+            Util.showNotify({title: status + ': save signature', text: reason, type: 'error'});
             $(document).setProgramStatus('problem');
             return reason;
         }
@@ -3185,7 +3182,7 @@ define([
     SystemSignatureModule.defaultConfig = {
         className: 'pf-system-signature-module',                                // class for module
         sortTargetAreas: ['a', 'b', 'c'],                                       // sortable areas where module can be dragged into
-        headline: __('Signatures'),
+        headline: 'Signatures',
 
         // headline toolbar
         moduleHeadlineIconAddClass: 'pf-module-icon-button-add',                // class for "add signature" icon

@@ -4,11 +4,10 @@
 
 define([
     'jquery',
-    'i18n!',
     'app/init',
     'app/util',
     'datatables.loader'
-], ($, __, Init, Util, dtLoader) => {
+], ($, Init, Util, dtLoader) => {
 
     'use strict';
 
@@ -84,10 +83,10 @@ define([
                 autoWidth: false,
                 hover: false,
                 language: {
-                    emptyTable:  __('No entries'),
-                    zeroRecords: __('No entries found'),
-                    lengthMenu:  __('Show _MENU_ entries'),
-                    info:        __('Showing _START_ to _END_ of _TOTAL_ entries')
+                    emptyTable:  'No entries',
+                    zeroRecords: 'No entries found',
+                    lengthMenu:  'Show _MENU_ entries',
+                    info:        'Showing _START_ to _END_ of _TOTAL_ entries'
                 },
                 data: null      // use DOM data overwrites [] default -> data.loader.js
             });

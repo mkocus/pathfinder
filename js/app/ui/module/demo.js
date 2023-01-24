@@ -1,8 +1,7 @@
 define([                // dependencies for this module
     'module/base',      // abstract `parent` module class definition [required]
-    'app/render',        // ... for demo purpose, we load a Render helper object
-    'i18n!'
-], (BaseModule, Render, __) => {
+    'app/render'        // ... for demo purpose, we load a Render helper object
+], (BaseModule, Render) => {
     'use strict';
 
     /**
@@ -228,7 +227,7 @@ define([                // dependencies for this module
                 'fa-trash', 'fa-fw', 'pull-right',
                 this._config.moduleHeadlineIconClass
             ]);
-            iconClearEl.setAttribute('title', __('clear output'));
+            iconClearEl.setAttribute('title', 'clear output');
             iconClearEl.onclick = e => e.target.closest(`.${this._config.gridItemClassName}`).querySelector('code').innerHTML = '';
 
             let toolbarEl = this.newHeadlineToolbarElement();
@@ -254,13 +253,13 @@ define([                // dependencies for this module
     DemoModule.scope = 'system';                           // module scope controls how module gets updated and what type of data is injected
     DemoModule.sortArea = 'a';                             // default sortable area
     DemoModule.position = 10;                              // default sort/order position within sortable area
-    DemoModule.label = __('Demo');                             // static module label (e.g. description)
+    DemoModule.label = 'Demo';                             // static module label (e.g. description)
     DemoModule.fullDataUpdate = true;                      // subscribe module for frequently updates see update() method
 
     DemoModule.defaultConfig = {
         className: 'pf-system-demo-module',                 // class for module
         sortTargetAreas: ['a', 'b', 'c'],                   // sortable areas where module can be dragged into
-        headline: __('Demo Module'),
+        headline: 'Demo Module',
 
         // ... custom config for DemoModule
         gridItemClassName: 'pf-dynamic-area',
@@ -269,14 +268,14 @@ define([                // dependencies for this module
         maxCodeSections: 8,
         gridItems: {
             info: {
-                label: __(`handler/config`),
+                label: `handler/config`,
                 jsonConf: {
                     collapseDepth: 1,
                     maxDepth: 3
                 }
             },
             trigger: {
-                label: __(`trigger`),
+                label: `trigger`,
                 jsonConf: {
                     collapseDepth: 1,
                     maxDepth: 5
@@ -290,7 +289,7 @@ define([                // dependencies for this module
                 }
             },
             mapData: {
-                label: __(`map data`),
+                label: `map data`,
                 jsonConf: {
                     collapseDepth: 2,
                     maxDepth: 8,
@@ -298,7 +297,7 @@ define([                // dependencies for this module
                 }
             },
             sortableJs: {
-                label: __(`drag&drop events`),
+                label: `drag&drop events`,
                 jsonConf: {
                     collapseDepth: 0,
                     maxDepth: 4,

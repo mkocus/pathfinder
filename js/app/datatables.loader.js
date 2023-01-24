@@ -2,14 +2,13 @@ define([
     'jquery',
     'app/promises/promise.deferred',
     'app/promises/promise.timeout',
-    'i18n!',
     'datatables.net',
     'datatables.net-select',
     'datatables.net-buttons',
     'datatables.net-buttons-html',
     'datatables.net-responsive',
     'datatables.net-rowgroup'
-], ($, DeferredPromise, TimeoutPromise, __) => {
+], ($, DeferredPromise, TimeoutPromise) => {
     'use strict';
 
     /**
@@ -27,7 +26,7 @@ define([
             order: [],              // no default order because columnDefs is empty
             autoWidth: false,
             language: {
-                info: __('_START_ - _END_ of _TOTAL_ entries')
+                info: '_START_ - _END_ of _TOTAL_ entries'
             },
             responsive: {
                 breakpoints: options.breakpoints,

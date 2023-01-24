@@ -1,8 +1,7 @@
 define([                // dependencies for this module
     'module/base',      // abstract `parent` module class definition [required]
-    'app/render',        // ... for demo purpose, we load a Render helper object
-    'i18n!'
-], (BaseModule, Render, __) => {
+    'app/render'        // ... for demo purpose, we load a Render helper object
+], (BaseModule, Render) => {
     'use strict';
 
     /**
@@ -60,12 +59,12 @@ define([                // dependencies for this module
     EmptyModule.scope = 'system';                           // module scope controls how module gets updated and what type of data is injected
     EmptyModule.sortArea = 'a';                             // default sortable area
     EmptyModule.position = 15;                              // default sort/order position within sortable area
-    EmptyModule.label = __('Empty');                            // static module label (e.g. description)
+    EmptyModule.label = 'Empty';                            // static module label (e.g. description)
 
     EmptyModule.defaultConfig = {
         className: 'pf-system-empty-module',                // class for module
         sortTargetAreas: ['a', 'b', 'c'],                   // sortable areas where module can be dragged into
-        headline: __('Empty Module'),
+        headline: 'Empty Module',
     };
 
     return EmptyModule;

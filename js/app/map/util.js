@@ -8,9 +8,8 @@ define([
     'app/util',
     'app/map/layout',
     'app/map/scrollbar',
-    'app/map/overlay/util',
-    'i18n!'
-], ($, Init, Util, Layout, Scrollbar, MapOverlayUtil, __) => {
+    'app/map/overlay/util'
+], ($, Init, Util, Layout, Scrollbar, MapOverlayUtil) => {
     'use strict';
 
     let config = {
@@ -1597,8 +1596,8 @@ define([
                     rallyPoke = options.poke;
 
                     let notificationOptions = {
-                        title: __('Rally Point'),
-                        text: __('System: ') +  system.data('name')
+                        title: 'Rally Point',
+                        text: 'System: ' +  system.data('name')
                     };
 
                     if(rallyUpdated === 1){
@@ -1657,7 +1656,7 @@ define([
                     system.removeClass(rallyClass);
 
                     if( !options.hideNotification ){
-                        Util.showNotify({title: __('Rally point removed'), type: 'success'});
+                        Util.showNotify({title: 'Rally point removed', type: 'success'});
                     }
                 }
             }
@@ -1709,7 +1708,7 @@ define([
             html: true,
             trigger: 'hover',
             container: 'body',
-            title: __('Pilots'),
+            title: 'Pilots',
             content: content,
             delay: {
                 show: 150,
@@ -1862,7 +1861,7 @@ define([
             html: true,
             trigger: 'hover',
             container: 'body',
-            title: __('Planets'),
+            title: 'Planets',
             content: content,
             delay: {
                 show: 150,

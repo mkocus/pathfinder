@@ -8,9 +8,8 @@ define([
     'app/util',
     'app/counter',
     'bootbox',
-    'i18n!',
     'app/lib/resize'
-], ($, Init, Util, Counter, bootbox, __) => {
+], ($, Init, Util, Counter, bootbox) => {
 
     'use strict';
 
@@ -127,10 +126,10 @@ define([
                 lengthMenu: [[5, 10, 25, 50, 100, -1], [5, 10, 25, 50, 100, 'All']],
                 data: logData,                      // load cached logs (if available)
                 language: {
-                    emptyTable:  __('No entries'),
-                    zeroRecords: __('No entries found'),
-                    lengthMenu:  __('Show _MENU_'),
-                    info:        __('Showing _START_ to _END_ of _TOTAL_ entries')
+                    emptyTable:  'No entries',
+                    zeroRecords: 'No entries found',
+                    lengthMenu:  'Show _MENU_',
+                    info:        'Showing _START_ to _END_ of _TOTAL_ entries'
                 },
                 columnDefs: [
                     {
@@ -176,13 +175,13 @@ define([
                     },{
                         targets: 3,
                         name: 'description',
-                        title: __('description'),
+                        title: 'description',
                         searchable: true,
                         data: 'description'
                     },{
                         targets: 4,
                         name: 'logType',
-                        title: __('type'),
+                        title: 'type',
                         width: 40,
                         searchable: true,
                         class: ['text-center'].join(' '),
@@ -196,7 +195,7 @@ define([
                     },{
                         targets: 5,
                         name: 'process',
-                        title: __('Prozess-ID'),
+                        title: 'Prozess-ID',
                         width: 80,
                         searchable: false,
                         class: 'text-right',
@@ -208,12 +207,12 @@ define([
 
             // open dialog
             let logDialog = bootbox.dialog({
-                title: __('Task-Manager'),
+                title: 'Task-Manager',
                 message: contentTaskManager,
                 size: 'large',
                 buttons: {
                     close: {
-                        label: __('close'),
+                        label: 'close',
                         className: 'btn-default'
                     }
                 }
@@ -250,7 +249,7 @@ define([
                         }).prepend(
                             $('<span>', {
                                 class: ['txt-color', 'txt-color-grayLight'].join(' '),
-                                text: __('Prozess-ID: ')
+                                text: 'Prozess-ID: '
                             })
                         );
 
@@ -433,7 +432,7 @@ define([
                 // change goals line color
                 if(avgStatus === 'warning'){
                     chartData[key].graph.options.goalLineColors = ['#e28a0d'];
-                    $(document).setProgramStatus(__('slow connection'));
+                    $(document).setProgramStatus('slow connection');
                 }else{
                     chartData[key].graph.options.goalLineColors = ['#5cb85c'];
                 }

@@ -1,11 +1,11 @@
 <div id="{{panelId}}" class="panel panel-default pricing-big">
     <div class="panel-heading text-left">
         <h3 class="panel-title">
-            <i class="fas fa-sitemap fa-rotate-270"></i>&nbsp;&nbsp;{{#translate}}Web-Socket stats{{/translate}}
+            <i class="fas fa-sitemap fa-rotate-270"></i>&nbsp;&nbsp;Web-Socket stats
             <span class="pull-right">
-                <kbd title="current subscribed maps">{{channelCount}} {{#translate}}maps{{/translate}}</kbd>&nbsp;&nbsp;&nbsp;
-                <kbd title="current subscribed unique characters">{{ subStats.countSub }} {{/translate}}chars</kbd>&nbsp;&nbsp;&nbsp;
-                <kbd title="current unique connections">{{ subStats.countCon }} {{#translate}}con{{/translate}}</kbd>
+                <kbd title="current subscribed maps">{{channelCount}} maps</kbd>&nbsp;&nbsp;&nbsp;
+                <kbd title="current subscribed unique characters">{{ subStats.countSub }} chars</kbd>&nbsp;&nbsp;&nbsp;
+                <kbd title="current unique connections">{{ subStats.countCon }} con</kbd>
             </span>
         </h3>
     </div>
@@ -16,8 +16,8 @@
             <thead>
             <tr>
                 <td class="col-xs-1"></td>
-                <td class="col-xs-1 text-right">{{#translate}}id{{/translate}}</td>
-                <td class="col-xs-2">{{#translate}}map name{{/translate}}</td>
+                <td class="col-xs-1 text-right">id</td>
+                <td class="col-xs-2">map name</td>
                 <td class="col-xs-2"></td>
                 <td class="col-xs-2"></td>
                 <td class="col-xs-2"></td>
@@ -32,8 +32,8 @@
                 </td>
                 <td class="text-right"><kbd>{{ channelId }}</kbd></td>
                 <td colspan="3">{{ channelName }}</td>
-                <td class="text-right" title="current subscribed characters"><kbd>{{ countSub }}&nbsp;{{#translate}}chars{{/translate}}</kbd></td>
-                <td class="text-right" title="current unique map connections"><kbd>{{ countCon }}&nbsp;con{{/translate}}</kbd></td>
+                <td class="text-right" title="current subscribed characters"><kbd>{{ countSub }}&nbsp;chars</kbd></td>
+                <td class="text-right" title="current unique map connections"><kbd>{{ countCon }}&nbsp;con</kbd></td>
             </tr>
             <tr class="subStats_channel_{{ channelId }}_col collapse">
                 <td class="bg-color bg-color-tealDarkest">
@@ -41,8 +41,8 @@
                 </td>
                 <td class="bg-color bg-color-tealDarkest"></td>
                 <td class="bg-color bg-color-tealDarkest"></td>
-                <td class="bg-color bg-color-tealDarkest text-right">{{#translate}}id{{/translate}}</td>
-                <td class="bg-color bg-color-tealDarkest" colspan="2">{{#translate}}character name{{/translate}}</td>
+                <td class="bg-color bg-color-tealDarkest text-right">id</td>
+                <td class="bg-color bg-color-tealDarkest" colspan="2">character name</td>
                 <td class="bg-color bg-color-tealDarkest"></td>
             </tr>
             {{#subscriptions}}
@@ -54,7 +54,7 @@
                 <td class="bg-color bg-color-tealDarker"></td>
                 <td class="bg-color bg-color-tealDarker text-right"><kbd>{{ characterId }} {{@index}}</kbd></td>
                 <td class="bg-color bg-color-tealDarker" colspan="2">{{ characterName }}</td>
-                <td class="bg-color bg-color-tealDarker text-right"><kbd>{{ countCon }}&nbsp;{{#translate}}con{{/translate}}</kbd></td>
+                <td class="bg-color bg-color-tealDarker text-right"><kbd>{{ countCon }}&nbsp;con</kbd></td>
             </tr>
 
             <tr class="subStats_channel_{{ channelId }}_col collapse">
@@ -66,9 +66,9 @@
                                 <i class="fas fa-level-up-alt fa-rotate-90"></i>
                             </td>
                             <td class="col-xs-1 bg-color bg-color-tealDarkest"></td>
-                            <td class="col-xs-2 bg-color bg-color-tealDarkest">{{#translate}}last update{{/translate}}</td>
-                            <td class="bg-color bg-color-tealDarkest text-right" colspan="3">{{#translate}}client{{/translate}}</td>
-                            <td class="col-xs-2 bg-color bg-color-tealDarkest text-right">{{#translate}}id{{/translate}}</td>
+                            <td class="col-xs-2 bg-color bg-color-tealDarkest">last update</td>
+                            <td class="bg-color bg-color-tealDarkest text-right" colspan="3">client</td>
+                            <td class="col-xs-2 bg-color bg-color-tealDarkest text-right">id</td>
                         </tr>
                         </thead>
                         <tbody>
@@ -96,7 +96,7 @@
 
     <div class="panel-footer btn-group btn-group-justified">
         <span id="{{ refreshButtonId }}" class="btn btn-default" title="Reload WebSocket stats" data-container="body">
-            <i class="fas fa-fw fa-sync"></i> {{#translate}}Reload stats{{/translate}}
+            <i class="fas fa-fw fa-sync"></i> Reload stats
         </span>
     </div>
 </div>

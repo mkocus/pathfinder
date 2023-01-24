@@ -4,7 +4,6 @@
 
 define([
     'jquery',
-    'i18n!',
     'app/init',
     'app/util',
     'app/counter',
@@ -28,7 +27,7 @@ define([
     'dialog/credit',
     'xEditable',
     'app/module_map'
-], ($, __, Init, Util, Counter, Logging, Mustache, MapUtil, MapContextMenu, SlideBars, TplHead, TplFooter) => {
+], ($, Init, Util, Counter, Logging, Mustache, MapUtil, MapContextMenu, SlideBars, TplHead, TplFooter) => {
 
     'use strict';
 
@@ -253,63 +252,63 @@ define([
             $(pageMenuLeftEl).append(getMenu([
                 {
                     type: 'button',
-                    label: __('Home'),
+                    label: 'Home',
                     icon: 'fa-home',
                     href: '/'
                 },{
                     type: 'heading',
-                    label: __('Information')
+                    label: 'Information'
                 },{
                     type: 'button',
-                    label: __('Statistics'),
+                    label: 'Statistics',
                     icon: 'fa-chart-line',
                     btnType: 'info',
                     action: 'ShowStatsDialog'
                 },{
                     type: 'button',
-                    label: __('Wormhole data'),
+                    label: 'Wormhole data',
                     icon: 'fa-space-shuttle',
                     btnType: 'info',
                     action: 'ShowJumpInfo'
                 },{
                     type: 'button',
-                    label: __('Wormhole effects'),
+                    label: 'Wormhole effects',
                     icon: 'fa-crosshairs',
                     btnType: 'info',
                     action: 'ShowSystemEffectInfo'
                 },{
                     type: 'heading',
-                    label: __('Settings')
+                    label: 'Settings'
                 },{
                     type: 'button',
                     class: 'loading',
-                    label: __('Account'),
+                    label: 'Account',
                     icon: 'fa-user',
                     group: 'userOptions',
                     action: 'ShowSettingsDialog'
                 }, document.fullscreenEnabled ? {
                     type: 'button',
                     id: Util.config.menuButtonFullScreenId,
-                    label: __('Full screen'),
+                    label: 'Full screen',
                     icon: 'fa-expand-arrows-alt',
                     action: 'Fullscreen'
                 } : null,{
                     type: 'button',
-                    label: __('Notification test'),
+                    label: 'Notification test',
                     icon: 'fa-volume-up',
                     action: 'NotificationTest'
                 },{
                     type: 'heading',
-                    label: __('Danger zone')
+                    label: 'Danger zone'
                 },{
                     type: 'button',
-                    label: __('Delete account'),
+                    label: 'Delete account',
                     icon: 'fa-user-times',
                     btnType: 'danger',
                     action: 'DeleteAccount'
                 },{
                     type: 'button',
-                    label: __('Logout'),
+                    label: 'Logout',
                     icon: 'fa-sign-in-alt',
                     btnType: 'warning',
                     action: 'Logout',
@@ -338,25 +337,25 @@ define([
                 {
                     type: 'button',
                     class: 'loading',
-                    label: __('Settings'),
+                    label: 'Settings',
                     icon: 'fa-cogs',
                     group: 'mapOptions',
                     action: 'ShowMapSettings',
                     data: {tab: 'settings'}
                 },{
                     type: 'button',
-                    label: __('Information'),
+                    label: 'Information',
                     icon: 'fa-street-view',
                     action: 'ShowMapInfo',
                     data: {tab: 'information'}
                 },{
                     type: 'heading',
-                    label: __('Map')
+                    label: 'Map'
                 },{
                     type: 'button',
                     id: Util.config.menuButtonGridId,
                     class: 'loading',
-                    label: __('Grid snapping'),
+                    label: 'Grid snapping',
                     icon: 'fa-th',
                     group: 'mapOptions',
                     action: 'MapOption',
@@ -366,7 +365,7 @@ define([
                     type: 'button',
                     id: Util.config.menuButtonMagnetizerId,
                     class: 'loading',
-                    label: __('Magnetizing'),
+                    label: 'Magnetizing',
                     icon: 'fa-magnet',
                     group: 'mapOptions',
                     action: 'MapOption',
@@ -374,12 +373,12 @@ define([
                     data: {option: 'mapMagnetizer', toggle: true}
                 },{
                     type: 'heading',
-                    label: __('System')
+                    label: 'System'
                 },{
                     type: 'button',
                     id: Util.config.menuButtonRegionId,
                     class: 'loading',
-                    label: __('Region label'),
+                    label: 'Region label',
                     icon: 'fa-map-marked-alt',
                     group: 'mapOptions',
                     action: 'MapOption',
@@ -389,7 +388,7 @@ define([
                     type: 'button',
                     id: Util.config.menuButtonCompactId,
                     class: 'loading',
-                    label: __('Compact view'),
+                    label: 'Compact view',
                     icon: 'fa-compress',
                     group: 'mapOptions',
                     action: 'MapOption',
@@ -397,12 +396,12 @@ define([
                     data: {option: 'systemCompact', toggle: true}
                 },{
                     type: 'heading',
-                    label: __('Connection')
+                    label: 'Connection'
                 },{
                     type: 'button',
                     id: Util.config.menuButtonEndpointId,
                     class: 'loading',
-                    label: __('Signature overlay'),
+                    label: 'Signature overlay',
                     icon: 'fa-link',
                     group: 'mapOptions',
                     action: 'MapOption',
@@ -410,32 +409,32 @@ define([
                     data: {option: 'connectionSignatureOverlays', toggle: true}
                 },{
                     type: 'heading',
-                    label: __('Help')
+                    label: 'Help'
                 },{
                     type: 'button',
-                    label: __('Manual'),
+                    label: 'Manual',
                     icon: 'fa-book-reader',
                     btnType: 'info',
                     action: 'Manual'
                 },{
                     type: 'button',
-                    label: __('Shortcuts'),
+                    label: 'Shortcuts',
                     icon: 'fa-keyboard',
                     btnType: 'info',
                     action: 'Shortcuts'
                 },{
                     type: 'button',
-                    label: __('Task-Manager'),
+                    label: 'Task-Manager',
                     icon: 'fa-tasks',
                     btnType: 'info',
                     action: 'ShowTaskManager'
                 },{
                     type: 'heading',
-                    label: __('Danger zone')
+                    label: 'Danger zone'
                 },{
                     type: 'button',
                     id: Util.config.menuButtonMapDeleteId,
-                    label: __('Delete map'),
+                    label: 'Delete map',
                     icon: 'fa-trash',
                     btnType: 'danger',
                     action: 'DeleteMap'
@@ -594,15 +593,15 @@ define([
             mapTrackingCheckbox.on('change', e => {
                 let value = $(e.target).is(':checked');
                 let tracking = 'off';
-                let trackingText = __('Your current location will not actually be added');
+                let trackingText = 'Your current location will not actually be added';
                 let trackingType = 'info';
                 if(value){
                     tracking = 'on';
-                    trackingText = __('New connections will actually be added');
+                    trackingText = 'New connections will actually be added';
                     trackingType = 'success';
                 }
 
-                Util.showNotify({title: __('Map tracking: ') + tracking, text: trackingText, type: trackingType}, false);
+                Util.showNotify({title: 'Map tracking: ' + tracking, text: trackingText, type: trackingType}, false);
             });
 
             // init all tooltips
@@ -744,12 +743,12 @@ define([
                             break;
                         case 'NotificationTest':
                             Util.showNotify({
-                                title: __('Test Notification'),
-                                text: __('Accept browser security question')
+                                title: 'Test Notification',
+                                text: 'Accept browser security question'
                             },{
                                 desktop: {
-                                    title: __('Test OK'),
-                                    text: __('Desktop notifications active')
+                                    title: 'Test OK',
+                                    text: 'Desktop notifications active'
                                 },
                                 stack: 'barBottom'
                             });
@@ -881,7 +880,7 @@ define([
                     content: {
                         icon: 'fa-bolt',
                         class: 'txt-color-danger',
-                        title: __('Application error'),
+                        title: 'Application error',
                         headline: 'Logged out',
                         text: [
                             data.reason
@@ -901,7 +900,7 @@ define([
 
                 documentElement.setProgramStatus('offline');
 
-                Util.showNotify({title: __('Logged out'), text: data.reason, type: 'error'}, false);
+                Util.showNotify({title: 'Logged out', text: data.reason, type: 'error'}, false);
 
                 // remove map
                 Util.getMapModule().velocity('fadeOut', {
@@ -1200,7 +1199,7 @@ define([
                     breadcrumbHtml += '<span class="pf-head-breadcrumb-item">';
 
                     if(isCurrentLocation){
-                        breadcrumbHtml += '<i class="fas fa-fw fa-map-marker-alt" title="' + __('current location') +'"></i>';
+                        breadcrumbHtml += '<i class="fas fa-fw fa-map-marker-alt" title="current location"></i>';
 
                         if(stationId > 0){
                             breadcrumbHtml += '<i class="fas fa-home" title="' + stationName + '"></i>';

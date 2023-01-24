@@ -8,9 +8,8 @@ define([
     'app/util',
     'module/base',
     'bootbox',
-    'app/counter',
-    'i18n!'
-], ($, Init, Util, BaseModule, bootbox, Counter, __) => {
+    'app/counter'
+], ($, Init, Util, BaseModule, bootbox, Counter) => {
     'use strict';
 
     let SystemIntelModule = class SystemIntelModule extends BaseModule {
@@ -32,7 +31,7 @@ define([
          * @returns {string}
          */
         getIconForInformationWindow(){
-            return '<i class="fas fa-fw fa-id-card ' + this._config.tableCellActionIconClass + '" title="' + __('open ingame') + '" data-toggle="tooltip"></i>';
+            return '<i class="fas fa-fw fa-id-card ' + this._config.tableCellActionIconClass + '" title="open ingame" data-toggle="tooltip"></i>';
         }
 
         /**
@@ -171,8 +170,8 @@ define([
                     selector: 'td:not(.' + module._config.tableCellActionClass + ')'
                 },
                 language: {
-                    emptyTable:  __('No structures recorded'),
-                    info: __('_START_ to _END_ of _MAX_'),
+                    emptyTable:  'No structures recorded',
+                    info: '_START_ to _END_ of _MAX_',
                     infoEmpty: ''
                 },
                 columnDefs: [
@@ -211,7 +210,7 @@ define([
                     },{
                         targets: 2,
                         name: 'structureType',
-                        title: __('type'),
+                        title: 'type',
                         width: 30,
                         className: [module._config.tableCellEllipsisClass, 'all'].join(' '),
                         data: 'structure.name',
@@ -219,7 +218,7 @@ define([
                     },{
                         targets: 3,
                         name: 'name',
-                        title: __('name'),
+                        title: 'name',
                         width: 60,
                         className: [module._config.tableCellEllipsisClass, 'all'].join(' '),
                         data: 'name'
@@ -246,7 +245,7 @@ define([
                     },{
                         targets: 5,
                         name: 'ownerName',
-                        title: __('owner'),
+                        title: 'owner',
                         width: 50,
                         className: [module._config.tableCellEllipsisClass, 'all'].join(' '),
                         data: 'owner.name',
@@ -254,13 +253,13 @@ define([
                     },{
                         targets: 6,
                         name: 'note',
-                        title: __('note'),
+                        title: 'note',
                         className: [module._config.tableCellEllipsisClass, 'all', Util.config.popoverTriggerClass, module._config.tableCellPopoverClass].join(' '),
                         data: 'description'
                     },{
                         targets: 7,
                         name: 'updated',
-                        title: __('updated'),
+                        title: 'updated',
                         width: 60,
                         className: ['text-right', module._config.tableCellCounterClass, 'not-screen-l'].join(' '),
                         data: 'updated.updated'
@@ -422,7 +421,7 @@ define([
                     {
                         name: 'add',
                         className: 'fa-plus',
-                        titleAttr: __('add'),
+                        titleAttr: 'add',
                         attr:  {
                             'data-toggle': 'tooltip',
                             'data-html': true
@@ -434,7 +433,7 @@ define([
                     {
                         name: 'selectToggle',
                         className: ['fa-check-double'].join(' '),
-                        titleAttr: __('select&nbsp;all'),
+                        titleAttr: 'select&nbsp;all',
                         attr:  {
                             'data-toggle': 'tooltip',
                             'data-html': true
@@ -458,7 +457,7 @@ define([
                     {
                         name: 'dScan',
                         className: 'fa-paste',
-                        titleAttr: __('D-Scan&nbsp;reader'),
+                        titleAttr: 'D-Scan&nbsp;reader',
                         attr:  {
                             'data-toggle': 'tooltip',
                             'data-html': true
@@ -470,7 +469,7 @@ define([
                     {
                         name: 'refresh',
                         className: 'fa-sync',
-                        titleAttr: __('refresh'),
+                        titleAttr: 'refresh',
                         attr:  {
                             'data-toggle': 'tooltip',
                             'data-html': true
@@ -513,8 +512,8 @@ define([
                 order: [[1, 'asc' ], [8, 'asc' ]],
                 rowId: rowData => module.getRowId('stations', rowData.id),
                 language: {
-                    emptyTable: __('No stations found'),
-                    info: __('_START_ to _END_ of _MAX_'),
+                    emptyTable: 'No stations found',
+                    info: '_START_ to _END_ of _MAX_',
                     infoEmpty: ''
                 },
                 columnDefs: [
@@ -566,7 +565,7 @@ define([
                     },{
                         targets: 2,
                         name: 'name',
-                        title: __('station'),
+                        title: 'station',
                         className: [module._config.tableCellEllipsisClass, 'all'].join(' '),
                         data: 'name',
                         render: {
@@ -596,7 +595,7 @@ define([
                     },{
                         targets: 3,
                         name: 'stationType',
-                        title: __('type'),
+                        title: 'type',
                         width: 100,
                         className: [module._config.tableCellEllipsisClass, 'not-screen-l'].join(' '),
                         data: 'type.name',
@@ -636,7 +635,7 @@ define([
                     },{
                         targets: 5,
                         name: 'ownerName',
-                        title: __('owner'),
+                        title: 'owner',
                         width: 80,
                         className: [module._config.tableCellActionClass, module._config.tableCellEllipsisClass, 'all'].join(' '),
                         data: 'corporation',
@@ -659,7 +658,7 @@ define([
                         }
                     },{
                         targets: 6,
-                        title: '<i title="' + __('set&nbsp;destination') + '" data-toggle="tooltip" class="fas fa-flag text-right"></i>',
+                        title: '<i title="set&nbsp;destination" data-toggle="tooltip" class="fas fa-flag text-right"></i>',
                         orderable: false,
                         searchable: false,
                         width: 10,
@@ -826,7 +825,7 @@ define([
                     disableButtonAutoFill = false;
                 }
             }else{
-                buttonLabelAutoFill += __('unknown structure');
+                buttonLabelAutoFill += 'unknown structure';
             }
 
             let data = {
@@ -856,7 +855,7 @@ define([
                     show: false,
                     buttons: {
                         close: {
-                            label: __('cancel'),
+                            label: 'cancel',
                             className: 'btn-default pull-left'
                         },
                         autoFill: {
@@ -973,16 +972,16 @@ define([
         showDscanReaderDialog(tableApi){
             requirejs(['text!templates/dialog/dscan_reader.html', 'mustache'], (template, Mustache) => {
                 let structureDialog = bootbox.dialog({
-                    title: __('D-Scan reader'),
+                    title: 'D-Scan reader',
                     message: Mustache.render(template, {}),
                     show: true,
                     buttons: {
                         close: {
-                            label: __('cancel'),
+                            label: 'cancel',
                             className: 'btn-default'
                         },
                         success: {
-                            label: '<i class="fas fa-fw fa-paste fa-fw"></i>&nbsp;' + __('update intel'),
+                            label: '<i class="fas fa-fw fa-paste fa-fw"></i>&nbsp;update intel',
                             className: 'btn-success',
                             callback: e => {
                                 let form = $(e.delegateTarget).find('form');
@@ -1074,7 +1073,7 @@ define([
             }, '');
 
             if(hadData && notification.length){
-                this.showNotify({title: __('Structures updated'), text: notification, type: 'success', textTrusted: true});
+                this.showNotify({title: 'Structures updated', text: notification, type: 'success', textTrusted: true});
             }
         }
 
@@ -1112,8 +1111,7 @@ define([
                         '"' + this._systemData.alias + '" (' + this._systemData.name + ')';
                     systemNameStr = '<span class="txt-color txt-color-warning">' + systemNameStr + '</span>';
 
-                    let msg = __('Update structures in %1 ? This is not your current location, "%2" !')
-                        .replace('%1', systemNameStr).replace('%2', currentLocationData.name);
+                    let msg = 'Update structures in ' + systemNameStr + ' ? This is not your current location, "' + currentLocationData.name + '" !';
                     bootbox.confirm(msg, result => {
                         if(result){
                             saveStructureData(structureData, context);
@@ -1199,7 +1197,7 @@ define([
 
             if(deletedCounter){
                 context.tableApi.draw();
-                Util.showNotify({title: __('Structure deleted'), text: deletedCounter + __(' deleted'), type: 'success'});
+                Util.showNotify({title: 'Structure deleted', text: deletedCounter + ' deleted', type: 'success'});
             }
         }
 
@@ -1330,7 +1328,7 @@ define([
     SystemIntelModule.scope = 'system';                                         // module scope controls how module gets updated and what type of data is injected
     SystemIntelModule.sortArea = 'b';                                           // default sortable area
     SystemIntelModule.position = 2;                                             // default sort/order position within sortable area
-    SystemIntelModule.label = __('Structures');                                     // static module label (e.g. description)
+    SystemIntelModule.label = 'Structures';                                     // static module label (e.g. description)
     SystemIntelModule.fullDataUpdate = true;                                    // static module requires additional data (e.g. system description,...)
 
     SystemIntelModule.maxDescriptionLength = 512;
@@ -1338,8 +1336,8 @@ define([
     SystemIntelModule.defaultConfig = {
         className: 'pf-system-intel-module',                                    // class for module
         sortTargetAreas: ['a', 'b', 'c'],                                       // sortable areas where module can be dragged into
-        headline: __('Structures'),
-        headlineSub: __('Stations'),
+        headline: 'Structures',
+        headlineSub: 'Stations',
 
         // system intel module
         intelTableId: 'pf-intel-table-',                                        // id prefix for all tables in module
