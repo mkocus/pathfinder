@@ -156,7 +156,8 @@ class Controller {
                     ));
                     // .. continue with default onSuspect() handler
                     // -> destroy session
-                    return false;
+                    // MK: workaround for constant logout / 403
+                    return true;
                 };
 
                 new Mysql\Session($db, 'sessions', true, $onSuspect);
