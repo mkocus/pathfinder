@@ -512,7 +512,7 @@ define([
                 excludeTypes:       (rowData.hasOwnProperty('excludeTypes'))        ? rowData.excludeTypes          : routeSettings.excludeTypes,
                 endpointsBubble:    (rowData.hasOwnProperty('endpointsBubble'))     ? rowData.endpointsBubble   | 0 : routeSettings.endpointsBubble,
                 connections:        (rowData.hasOwnProperty('connections'))         ? rowData.connections.value | 0 : 0,
-                flag:               (rowData.hasOwnProperty('flag'))                ? rowData.flag.value            : 'shortest'
+                flag:               (rowData.hasOwnProperty('flag'))                ? rowData.flag.value            : 'secure'
             };
         }
 
@@ -1090,7 +1090,7 @@ define([
                                             wormholesSizeMin: routeDialogData.wormholesSizeMin || '',
                                             excludeTypes: SystemRouteModule.getLowerSizeConnectionTypes(routeDialogData.wormholesSizeMin),
                                             endpointsBubble: routeDialogData.hasOwnProperty('endpointsBubble') ? parseInt(routeDialogData.endpointsBubble) : 0,
-                                            flag: routeDialogData.hasOwnProperty('flag') ? routeDialogData.flag : 'shortest'
+                                            flag: routeDialogData.hasOwnProperty('flag') ? routeDialogData.flag : 'secure'
                                         }]
                                     };
 
