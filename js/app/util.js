@@ -2526,7 +2526,7 @@ define([
      */
     let getSystemPlanetsTable = planets => {
         let table = '';
-	if(!planets) return '<table></table>'
+        if(!planets) return '<table></table>'
         if(planets.length > 0){
             let regex = /\(([^)]+)\)/;
             table += '<table>';
